@@ -664,139 +664,141 @@ $.detail-cn > .row > [class*="col-"]:last-child: (
 );
 
 
-$head-detail.bg-gray
+head-detail.bg-gray
 
 
-$head-detail h1
+head-detail h1
 
-$head-detail .start-address .star 
+.head-detail .start-address .star 
 
-$head-detail .start-address .address 
+.head-detail .start-address .address 
 
-$head-detail ul li
+.head-detail ul li
 
-$price-book
+.price-book
 
-$price-book span
+price-book span
 
-$support
+.support
 
-$support small
+.support small
 
-$head-detail .see-other-room 
+.head-detail .see-other-room 
 
-$head-detail .see-other-room:hover
+.head-detail .see-other-room:hover
 
-$detail-footer .detail-footer-cn .review-more a 
-
-
-$detail-footer .detail-footer-cn .review-more a:hover
+.detail-footer .detail-footer-cn .review-more a 
 
 
-$detail-slider .slide-room-sm 
-
-$detail-slider .slide-room-sm #slide-room-sm .owl-item:after
-
-$detail-slider .slide-room-sm #slide-room-sm .prev-next-room 
+.detail-footer .detail-footer-cn .review-more a:hover
 
 
-$detail-sidebar .scroll-heading h2
+.detail-slider .slide-room-sm 
 
-$detail-sidebar .scroll-heading a
+.detail-slider .slide-room-sm #slide-room-sm .owl-item:after
 
-$detail-sidebar .scroll-heading a:hover 
-
-$detail-sidebar .hight-light h2 
+.detail-slider .slide-room-sm #slide-room-sm .prev-next-room 
 
 
-$detail-sidebar .hight-light .vote-text p 
+detail-sidebar .scroll-heading h2
+
+.detail-sidebar .scroll-heading a
 
 
-$detail-sidebar .hight-light .vote-text small
+.detail-sidebar .scroll-heading a:hover 
 
-$detail-sidebar .hight-light .vote-text a 
-
-$detail-sidebar .hight-light .vote-text a:hover
-
-$hotel-content:after
+detail-sidebar .hight-light h2 
 
 
-$hl-customer-like h2 
-
-$hl-customer-like .customer-like .cs-like-label
-
-$hl-customer-like .customer-like ul li
-
-$hl-customer-like .customer-like ul li:before
+.detail-sidebar .hight-light .vote-text p 
 
 
-$check-rates 
+.detail-sidebar .hight-light .vote-text small
 
-$check-rates .check-rates-cn 
+.detail-sidebar .hight-light .vote-text a 
 
-$check-rates-form h3 
+.detail-sidebar .hight-light .vote-text a:hover
 
-$check-rates-form .form-search
-
-$check-rates-form .form-search .form-field 
+.hotel-content:after
 
 
-$service-check-rate h2
+.hl-customer-like h2 
+
+.hl-customer-like .customer-like .cs-like-label
+
+hl-customer-like .customer-like ul li
+
+.hl-customer-like .customer-like ul li:before
 
 
-$service-check-rate .tb-service-check-rate thead 
+.check-rates 
+
+.check-rates .check-rates-cn 
+
+.check-rates-form h3 
+
+.check-rates-form .form-search
 
 
-$service-check-rate .tb-service-check-rate thead th
-
-$service-check-rate .tb-service-check-rate td
-
-$hl-availability .table-availability th 
-
-$hl-availability .table-availability th span
-
-$hl-availability .table-availability .avai-td-text h3
-
-$hl-availability .table-availability .avai-td-text p 
-
-$hl-availability .table-availability .avai-td-text a
-
-$hl-availability .table-availability .avai-td-text a:hover
+.check-rates-form .form-search .form-field 
 
 
-$hl-availability .table-availability .avai-td-price .price 
+.service-check-rate h2
 
 
-$hl-availability .table-availability .avai-td-price .price small
-
-$hl-availability .table-availability .avai-td-room .select
-
-$hl-availability .table-availability .avai-td-room .select span 
+.service-check-rate .tb-service-check-rate thead 
 
 
+.service-check-rate .tb-service-check-rate thead th
 
-$hl-availability .table-availability .avai-td-room .select span:after
+.service-check-rate .tb-service-check-rate td
+
+.hl-availability .table-availability th 
+
+.hl-availability .table-availability th span
+
+.hl-availability .table-availability .avai-td-text h3
+
+.hl-availability .table-availability .avai-td-text p 
+
+.hl-availability .table-availability .avai-td-text a
+
+hl-availability .table-availability .avai-td-text a:hover
+
+
+.hl-availability .table-availability .avai-td-price .price 
+
+
+.hl-availability .table-availability .avai-td-price .price small
+
+.hl-availability .table-availability .avai-td-room .select
+
+.hl-availability .table-availability .avai-td-room .select span 
+
+
+
+.hl-availability .table-availability .avai-td-room .select span:after
 
 /* Hotel Featured */
-$hl-features .hl-features-cn
+.hl-features .hl-features-cn
 
-$featured-service h3 
-
-
-
-$featured-service .service-list li figure .icon-service 
-
-$featured-service .service-list li figure .icon-service:after 
+.featured-service h3 
 
 
-$featured-service .service-list li figure figcaption
 
-$featured-service .service-spoken li
+.featured-service .service-list li figure .icon-service 
+
+.featured-service .service-list li figure .icon-service:after 
+
+
+.featured-service .service-list li figure figcaption
+
+.featured-service .service-spoken li
 
 /* Detail & Policies */
-$details-policies .details-policies-cn
+.details-policies .details-policies-cn
 
-$policies-item h3 
+.policies-item h3 
 
 .policies-item p 
 
@@ -1137,258 +1139,260 @@ date-availability-cn .cruise-dates-table td.td-date
 
 /* 16. Contact Page 
 --------------------------------------------------------------------------------*/
-$contact-cn 
+.contact-cn 
 
-$contact-cn h3
+.contact-cn h3
 
-$contact-cn ul li 
+.contact-cn ul li 
 
-$contact-cn ul li a
+.contact-cn ul li a
 
 
 /* 17. Payment Page 
  --------------------------------------------------------------------------------*/
-$payment-step:before
-
-$payment-step li.step-select:after,
-$payment-step li.step-select:before
-
-$payment-step li.step-done:before 
+.payment-step:before
 
 
-$payment-step li.step-done:after 
+.payment-step li.step-select:after,
+.payment-step li.step-select:before
+
+.payment-step li.step-done:before 
 
 
-$payment-step li.step-part:after
+.payment-step li.step-done:after 
 
 
-$payment-step li:after,
-$payment-step li:before
-
-$payment-step li span
-
-$payment-step li p 
-
-$payment-room .payment-info h2 
+.payment-step li.step-part:after
 
 
-$payment-room .payment-info .star-room
+.payment-step li:after,
+.payment-step li:before
 
-$payment-room .payment-info ul li
+.payment-step li span
 
-$payment-room .payment-price
+.payment-step li p 
 
-$payment-room .payment-price .total-trip span
-
-$payment-room .payment-price .total-trip span small
-
-$payment-room .payment-price .total-trip p
-
-$payment-room .payment-price .total-trip p ins 
+.payment-room .payment-info h2 
 
 
-$payment-room .payment-price .total-trip p i
+.payment-room .payment-info .star-room
+
+.payment-room .payment-info ul li
+
+.payment-room .payment-price
+
+.payment-room .payment-price .total-trip span
+
+.payment-room .payment-price .total-trip span small
+
+.payment-room .payment-price .total-trip p
+
+.payment-room .payment-price .total-trip p ins 
 
 
-$payment-form h2 
+.payment-room .payment-price .total-trip p i
 
-$payment-form span 
 
-$payment-form .form-field .field-input
+.payment-form h2 
 
-$payment-form .form-field .field-input:-moz-placeholder
+.payment-form span 
 
-$payment-form .form-field .field-input:-ms-input-placeholder
+.payment-form .form-field .field-input
 
-$payment-form .form-field .field-input::-webkit-input-placeholder 
+.payment-form .form-field .field-input:-moz-placeholder
 
-$payment-form ul li .radio-checkbox label
+.payment-form .form-field .field-input:-ms-input-placeholder
 
-$payment-form .expiry-date:before 
+.payment-form .form-field .field-input::-webkit-input-placeholder 
+
+
+.payment-form ul li .radio-checkbox label
+
+.payment-form .expiry-date:before 
 
 
 /* 18. Cart 
  --------------------------------------------------------------------------------*/
 
-$cart-cn .tb-cart thead th
+.cart-cn .tb-cart thead th
  
-$cart-cn .tb-cart .date 
+.cart-cn .tb-cart .date 
 
-$cart-cn .tb-cart .date small
+.cart-cn .tb-cart .date small
 
-$cart-cn .tb-cart .price
+.cart-cn .tb-cart .price
 
-$cart-cn .tb-cart .price small
+.cart-cn .tb-cart .price small
 
-$cart-cn .tb-cart .select
+.cart-cn .tb-cart .select
 
-$cart-cn .tb-cart .sub-total-price 
+.cart-cn .tb-cart .sub-total-price 
 
-$cart-room .star-room 
+.cart-room .star-room 
 
-$cart-room ul li 
+.cart-room ul li 
 
-$cart-flight .airline span 
-
-
-$cart-flight .stop-cn label
-
-$cart-flight .stop-cn .stops
-
-$cart-flight .stop-cn .stop 
+.cart-flight .airline span 
 
 
-$cart-flight .group-time:before
+.cart-flight .stop-cn label
 
-$cart-flight .group-time p 
+.cart-flight .stop-cn .stops
 
-$cart-flight .group-time p span
-
-$cart-flight .group-time p + p:before
+.cart-flight .stop-cn .stop 
 
 
-$cart-car h2 
+.cart-flight .group-time:before
 
-$cart-car p
+.cart-flight .group-time p 
 
-$cart-car ul li,
-$cart-cruise ul li 
+.cart-flight .group-time p span
+
+.cart-flight .group-time p + p:before
 
 
-$cart-cn .tb-cart tfoot td 
+.cart-car h2 
+
+.cart-car p
+
+.cart-car ul li,
+.cart-cruise ul li 
+
+
+.cart-cn .tb-cart tfoot td 
 
 
 /* 19. Element Page 
  --------------------------------------------------------------------------------*/
-$element-sc
+.element-sc
 
 
-$element-sc .element-cn h2 
+.element-sc .element-cn h2 
 
 
-$element-sc .element-cn .tab-pane
+.element-sc .element-cn .tab-pane
 
 
 /* 20. 404 
 --------------------------------------------------------------------------------*/
-$page-comingsoon .page-body .item-content h4,
-$page-comingsoon .page-body .item-content p,
-$page-not-found .page-body .item-content * 
+.page-comingsoon .page-body .item-content h4,
+.page-comingsoon .page-body .item-content p,
+.page-not-found .page-body .item-content * 
 
 
-$page-slide .owl-pagination .owl-page span 
+.page-slide .owl-pagination .owl-page span 
 
 
-$page-slide .owl-pagination .owl-page.active span
+.page-slide .owl-pagination .owl-page.active span
 
 
 
 /* 21. Comingsoon 
 --------------------------------------------------------------------------------*/
 
-$countdown-wrapper
+.countdown-wrapper
 
-$countdown .item 
+#countdown .item 
 
-$countdown .item .count:after
+#countdown .item .count:after
 
 /* 22. User Profile 
  --------------------------------------------------------------------------------*/
 
-$user-profile__header
+.user-profile__header
 
-$user-profile__navigation
+.user-profile__navigation
 
-$user-profile__navigation li a 
-
-
-$user-profile__navigation li:hover,
-$user-profile__navigation li.current
+.user-profile__navigation li a 
 
 
-$user-profile .user-profile__title 
+.user-profile__navigation li:hover,
+.user-profile__navigation li.current
 
 
-$user-profile .user-profile__count-number span
-
-$user-profile .user-profile__total li 
-
-$user-profile .user-profile__total li.has-number
-
-$user-profile .user-profile__total li span
+.user-profile .user-profile__title 
 
 
-$user-profile__my-booking
+.user-profile .user-profile__count-number span
 
-$user-profile__my-booking .table thead th 
+.user-profile .user-profile__total li 
 
-$user-profile__my-booking .table td
+.user-profile .user-profile__total li.has-number
 
-$user-profile__my-booking .table td .icon
+.user-profile .user-profile__total li span
 
 
-$user-profile__my-booking .table td a
+.user-profile__my-booking
 
-$user-profile__my-booking .table td a:hover
+.user-profile__my-booking .table thead th 
 
-$my-profile .my-profile__title
+.user-profile__my-booking .table td
 
-$my-profile ul li
+.user-profile__my-booking .table td .icon
 
-$my-profile ul li span
 
-$my-profile p
+.user-profile__my-booking .table td a
 
-$user-profile .check-box label
+.user-profile__my-booking .table td a:hover
 
-$user-profile .check-box label:before
+.my-profile .my-profile__title
 
-$my-profile .btn
+.my-profile ul li
 
-$my-profile .btn:hover
+.my-profile ul li span
 
-$user-form h3
+.my-profile p
 
-$user-form .field-input .input-text
+.user-profile .check-box label
 
-$user-form p
+.user-profile .check-box label:before
 
-$user-form a
+.my-profile .btn
 
-$user-signup:after
+.my-profile .btn:hover
+
+.user-form h3
+
+.user-form .field-input .input-text
+
+.user-form p
+
+.user-form a
+
+.user-signup:after
 
 /* 23. Footer 
  --------------------------------------------------------------------------------*/
 
-$footer
+footer
 
 
-$footer .currency-lang-bottom .dropdown-head 
+footer .currency-lang-bottom .dropdown-head 
 
 
-$footer .currency-lang-bottom .dropdown-head span 
+footer .currency-lang-bottom .dropdown-head span 
 
-$footer .currency-lang-bottom ul
+footer .currency-lang-bottom ul
 
-$footer .currency-lang-bottom ul li a 
+footer .currency-lang-bottom ul li a 
 
-$footer .currency-lang-bottom ul li a:hover
+footer .currency-lang-bottom ul li a:hover
 
-$footer .copyright 
+footer .copyright 
 
 
 /** Patch CSS Works 
 -----------------------------------------------------------------------------------*/
 /* updated on sept 23 2021 **/
-$footer
+footer
 
-$header
+#header
 
-$cart-btn
+.cart-btn
 
 
-$select2-container--default .select2-selection--single .select2-selection__placeholder
+.select2-container--default .select2-selection--single .select2-selection__placeholder
 
-$error 
+.error 
 
-$select2-selection__rendered:after
+.select2-selection__rendered:after
