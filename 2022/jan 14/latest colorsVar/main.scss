@@ -1,0 +1,475 @@
+
+@import "./button-colors.scss";
+@import "./border.scss";
+@import "./global.scss";
+@import  "./mixins.scss";
+@import "./colors.scss";
+
+
+// breadcrumb 
+
+$breadcrum: (
+    "li-Pcolor": #888888,
+    "li-a-Pcolor": #888888,
+
+    "li-active-Pcolor": #59c45a,
+    "li-active-Pcolor-a": #59c45a,
+);
+
+
+// panel-title
+$panel-title-num: (
+    "color": #343434,
+    "backgroundColor": #dfdfdf,
+);
+
+$panel-title-num1: (
+    "color": #fff,
+    "backgroundColor": #dec001,
+);
+
+$panel-title-num2: (
+    "color": #fff,
+    "backgroundColor": #b55b24,
+);
+
+
+$panel-title-num3: (
+    "color": #fff,
+    "backgroundColor": #447498,
+);
+
+$panel-title-num4: (
+    "color": #fff,
+    "backgroundColor": #b3af91,
+);
+
+$panel-title-num5: (
+    "color": #fff,
+    "backgroundColor": #94b4c5,
+);
+
+$panel-body: (
+    "color": #555555,
+);
+
+// Alert Box
+$alert-box: (
+    "backgroundColor": #fff,
+);
+
+$alert-box-span: (
+    "color" : #333,
+);
+
+$alert-box-alert-attention: (
+    "backgroundColor": #f7eed8,
+);
+
+
+$alert-box-alert-attention-h6: (
+    "color": #be7c0b,
+);
+
+
+$alert-box-alert-success: (
+    "background-color": #eefff3,
+    "border-color": #d6f2de,
+);
+
+
+$alert-box-alert-success-h6: (
+    "color": #25ab4b,
+);
+
+
+$alert-box-alert-error: (
+    "backgroundColor": #fff2ea,
+    "borderColor": #f2dbdc,
+);
+
+$alert-box-alert-error-h6:(
+    "color": #c7170f,
+);
+
+
+// ui-datepicker
+$ui-datepicker-title: (
+    "color": #333333,
+);
+
+$ui-datepicker-today: (
+    "backgroundColor": #59c45a,
+);
+
+$ui-datepicker-current-day-a: (
+    "backgroundColor": #7da9f8,
+);
+
+$ui-datepicker-other-month-a: (
+    "color": #999999,
+);
+
+// blackquote
+
+$blockquote-p: (
+    "color": #666666,
+);
+
+$blockquote-p-span-b: (
+    "color": #111111,
+);
+
+
+$travel-title-h2: (
+    "color": #111111,
+);
+
+$travel-title-span: (
+    "color": #666666,
+    "font-weight": 300,
+);
+
+
+// title-wrap
+
+$travel-title-select: (
+    "border-bottom": #4da981,
+);
+
+$travel-title-select-span: (
+    "color": #25ab4b,
+);
+
+$travel-title-select-span-after: (
+    "color": #b9b9b9,
+);
+
+
+// sort view
+$sort-view-sort-by-sort-select-after: (
+    "backgroundColor": #f2f2f2,
+);
+
+$sort-select-span: (
+    "borderBottom": #d7d7d7,
+);
+
+$sort-select-span-after: (
+    "color": #888888,
+);
+
+$view-by-ul: (
+    "borderColor": #e6e6e6,
+);
+
+$view-by-ul-li-a: (
+    "borderLeftColor": #e6e6e6,
+);
+
+$narrow-form: (
+    "borderColor": #dedede,
+    "color": #dedede,
+);
+
+// widget-sidebar
+$widget-sidebar: (
+    "color": #111111,
+    "borderBottom": #dedede,
+    "p-color": #555555,
+);
+
+
+$title-sidebar-span: (
+    "color": #555555,
+    "borderBottom": #dedede,
+);
+
+$widget-rate: (
+    "color": #999999,
+);
+
+
+// price slider
+
+$ui-slider-range: (
+    "backgroundColor": #141414,
+);
+
+$slider-sidebar-label: (
+    "color": #999999,
+);
+
+// form radio
+$form-radio: (
+    "p-color": #25ab4b,
+    "primary-bgColor": #25ab4b,
+);
+
+$form-field-input: (
+    "primaryColor": #545454,
+    "border-bottomColor": #545454,
+);
+
+$form-field-label: (
+    "color": #bcbcbc,
+);
+
+$form-field-field-select-span: (
+    "border-bottomColor": #4da981,
+);
+
+$form-field-field-select-span-after: (
+    "color":  #b9b9b9,
+);
+
+$form-field-field-select-select: (
+    "color":  #545454,
+);
+
+
+// post-share
+
+$post-share-a: (
+    "color": #cccccc,
+);
+
+
+// Form Contact
+
+$form-field-label: (
+    "color": #333333,
+    "supColor": #b10e0f,
+);
+
+$form-field-label-field-input: (
+    "borderColor": #dfdfdf,
+);
+
+// Radio Check
+$radio-checkbox-after: (
+    "backgroundColor": #555,
+);
+
+$radio-checkbox-label: (
+    "color": #555,
+);
+
+$radio-checkbox-before: (
+    "backgroundColor": #f2f2f2,
+    "borderColor": #d8d8d8,
+);
+
+// follow
+$follow-group-a: (
+    // insert colors here
+    "color": #555, 
+    "borderColor": #dedede,
+);
+
+
+
+// header 
+
+$header: (
+    "backgroundColor": $white-color,
+);
+
+
+$header-bars: (
+    "borderColor": #59c35c,
+);
+
+$header-bars-after-before: (
+    "backgroundColor": #59c35c,
+);
+
+// Navigation
+$nav-desktop-ul-li-hover: (
+    "backgroundColor": #59c45a,
+    "borderColor": #59c45a,
+);
+
+$nav-desktop-ul-li-li: (
+    "backgroundColor": #f1f1f1,
+);
+
+$nav-desktop-ul-ul-li-a: (
+    "transform:" uppercase,
+);
+
+$nav-desktop-ul-ul-li-span: (
+    "color": #333,
+);
+
+$nav-desktop-menu-parent-a: (
+    "borderTopColor": $hexGray,
+);
+
+$nav-desktop-menu-parent-a-after: (
+    "borderTopColor": $hexGray,
+);
+
+// $nav-nav-inner: (
+//     "backgroundColor": rgba(14, 34, 64, 0.9),
+// );
+
+
+// Banner
+
+$banner-video-control: (
+    "color": #59c45a,
+);
+
+// form cn
+$form-cn: (
+    "backgroundColor": rgba(255, 255, 255, 0.85),
+);
+
+$form-cn-h2: (
+    "color": $hexGray,
+);
+
+$form-cn-form-field: (
+    "borderRight": #e6e6e6,
+);
+
+
+// cruise form
+$form-cruise-search: (
+    "borderTop": #e6e6e6,
+);
+
+$form-package-search: (
+    "borderTop": #e6e6e6,
+);
+
+// category-singer-icon-h2
+$category-singer-icon-h2: (
+    "transform": uppercase,  
+);
+
+$category-singer-p: (
+    "color": #ededed,
+);
+
+
+$sales-item-home-sales-places: (
+    "color": #999999,
+);
+
+$sales-item-home-sales-places-a: (
+    "color": #999999,
+);
+
+
+$sales-item-price: (
+    "color": #999999,
+);
+
+$sales-item-price-special-price: (
+    "color": #25ab4b,
+);
+
+$sales-item-price-special-price-small: (
+    "color": #999999,
+);
+
+// destinations 
+$destinations: (
+    "primary-backgroundColor": #f1f1f1,
+);
+
+$destinations-cn-filter-li: (
+    "color": #999999,
+);
+
+$destinations-cn-destinations-grid: (
+    "backgroundColor":  #f1f1f1,
+);
+
+$destinations-items-properties-nb: (
+    "color": #777777,
+);
+
+
+// thumbnail colors
+$thumnail: (
+    "borderColor": #59c45a,
+);
+
+
+$thumnail-item-span: (
+    "color": #666,
+);
+
+// subscribe
+$subscribe-subscribe-form: (
+    "color": #dedede,
+);
+
+$subscribe-subscribe-form-input: (
+    "color": #999999,
+);
+
+// hotel
+
+$hotel-list-item-hotel-service: (
+    "borderColor": #f0f0f0,
+);
+
+// package-item
+
+$package-item-package-star: (
+    "color": #5ac65c,
+);
+
+
+$package-item-package-rating: (
+    "color": #111,
+);
+
+
+$package-item-package-text-p: (
+    "color": #666,
+);
+
+
+$package-item-package-text-p-a: (
+    "color": #111,
+);
+
+$package-item-price-box-price: (
+    "color": #666,
+);
+
+$package-item-price-box-ins: (
+    "color": #333,
+);
+
+$package-item-price-small: (
+    "color": #999,
+);
+
+$package-item-price-box-together-ins: (
+    "color": #25ab4b,
+);
+
+
+// cruise-deal
+$cruise-deal-cruise-name-a: (
+    "color": #111,
+);
+
+$cruise-deal-cruise-name-a-hover: (
+    "color": #59c45a,
+);
+
+$cruise-deal-item-cruise-night: (
+    "color": #666,
+);
+
+$cruise-deal-item-cruise-night-span: (
+    "color": #333,
+);
+

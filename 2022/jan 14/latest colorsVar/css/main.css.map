@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AGoCA,sBAAsB",
+    "sources": [
+        "../main.scss",
+        "../button-colors.scss",
+        "../border.scss",
+        "../global.scss",
+        "../mixins.scss",
+        "../colors.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
