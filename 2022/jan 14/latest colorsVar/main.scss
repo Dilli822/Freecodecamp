@@ -664,731 +664,1024 @@ $.detail-cn > .row > [class*="col-"]:last-child: (
 );
 
 
-$head-detail.bg-gray
+$head-detail.bg-gray: (
+    );
+
+$head-detail h1: (
+    );
+
+$head-detail .start-address .star : (
+    );
+
+$head-detail .start-address .address : (
+    );
+
+$head-detail ul li: (
+    );
+
+$price-book: (
+    );
+
+$price-book span: (
+    );
+
+$support: (
+    );
+
+$support small: (
+    );
+
+$head-detail .see-other-room: ( 
+    );
+
+$head-detail .see-other-room:hover: (
+    );
+
+$detail-footer .detail-footer-cn .review-more a: ( 
+    );
 
 
-$head-detail h1
-
-$head-detail .start-address .star 
-
-$head-detail .start-address .address 
-
-$head-detail ul li
-
-$price-book
-
-$price-book span
-
-$support
-
-$support small
-
-$head-detail .see-other-room 
-
-$head-detail .see-other-room:hover
-
-$detail-footer .detail-footer-cn .review-more a 
+$detail-footer .detail-footer-cn .review-more a:hover: (
+    );
 
 
-$detail-footer .detail-footer-cn .review-more a:hover
+$detail-slider .slide-room-sm: ( 
+    );
+
+$detail-slider .slide-room-sm #slide-room-sm .owl-item:after: (
+    );
+
+$detail-slider .slide-room-sm #slide-room-sm .prev-next-room: ( 
+    );
 
 
-$detail-slider .slide-room-sm 
+$detail-sidebar .scroll-heading h2: (
+    );
 
-$detail-slider .slide-room-sm #slide-room-sm .owl-item:after
+$detail-sidebar .scroll-heading a: (
+    );
 
-$detail-slider .slide-room-sm #slide-room-sm .prev-next-room 
+$detail-sidebar .scroll-heading a:hover: ( 
+    );
 
-
-$detail-sidebar .scroll-heading h2
-
-$detail-sidebar .scroll-heading a
-
-$detail-sidebar .scroll-heading a:hover 
-
-$detail-sidebar .hight-light h2 
+$detail-sidebar .hight-light h2: ( 
+    );
 
 
-$detail-sidebar .hight-light .vote-text p 
+$detail-sidebar .hight-light .vote-text p: ( 
+    );
 
 
-$detail-sidebar .hight-light .vote-text small
+$detail-sidebar .hight-light .vote-text small: (
+    );
 
-$detail-sidebar .hight-light .vote-text a 
+$detail-sidebar .hight-light .vote-text a: ( 
+    );
 
-$detail-sidebar .hight-light .vote-text a:hover
+$detail-sidebar .hight-light .vote-text a:hover: (
+    );
 
-$hotel-content:after
-
-
-$hl-customer-like h2 
-
-$hl-customer-like .customer-like .cs-like-label
-
-$hl-customer-like .customer-like ul li
-
-$hl-customer-like .customer-like ul li:before
+$hotel-content:after: (
+    );
 
 
-$check-rates 
+$hl-customer-like h2: ( 
+    );
 
-$check-rates .check-rates-cn 
+$hl-customer-like .customer-like .cs-like-label: (
+    );
 
-$check-rates-form h3 
+$hl-customer-like .customer-like ul li: (
+    );
 
-$check-rates-form .form-search
-
-$check-rates-form .form-search .form-field 
-
-
-$service-check-rate h2
-
-
-$service-check-rate .tb-service-check-rate thead 
+$hl-customer-like .customer-like ul li:before: (
+    );
 
 
-$service-check-rate .tb-service-check-rate thead th
+$check-rates: ( 
+    );
 
-$service-check-rate .tb-service-check-rate td
+$check-rates .check-rates-cn: ( 
+    );
 
-$hl-availability .table-availability th 
+$check-rates-form h3 : (
+    );
 
-$hl-availability .table-availability th span
+$check-rates-form .form-search: (
+    );
 
-$hl-availability .table-availability .avai-td-text h3
-
-$hl-availability .table-availability .avai-td-text p 
-
-$hl-availability .table-availability .avai-td-text a
-
-$hl-availability .table-availability .avai-td-text a:hover
-
-
-$hl-availability .table-availability .avai-td-price .price 
+$check-rates-form .form-search .form-field: ( 
+    );
 
 
-$hl-availability .table-availability .avai-td-price .price small
-
-$hl-availability .table-availability .avai-td-room .select
-
-$hl-availability .table-availability .avai-td-room .select span 
+$service-check-rate h2: (
+    );
 
 
+$service-check-rate .tb-service-check-rate thead: ( 
+    );
 
-$hl-availability .table-availability .avai-td-room .select span:after
+$service-check-rate .tb-service-check-rate thead th: (
+    );
+
+$service-check-rate .tb-service-check-rate td: (
+    );
+
+$hl-availability .table-availability th: ( 
+    );
+
+$hl-availability .table-availability th span: (
+    );
+
+$hl-availability .table-availability .avai-td-text h3: (
+    );
+
+$hl-availability .table-availability .avai-td-text p: ( 
+    );
+
+$hl-availability .table-availability .avai-td-text a: (
+    );
+
+$hl-availability .table-availability .avai-td-text a:hover: (
+    );
+
+
+$hl-availability .table-availability .avai-td-price .price: ( 
+    );
+
+
+$hl-availability .table-availability .avai-td-price .price small: (
+    );
+
+$hl-availability .table-availability .avai-td-room .select: (
+    );
+
+$hl-availability .table-availability .avai-td-room .select span: ( 
+    );
+
+
+
+$hl-availability .table-availability .avai-td-room .select span:after: (
+    );
 
 /* Hotel Featured */
-$hl-features .hl-features-cn
+$hl-features .hl-features-cn: (
 
-$featured-service h3 
-
-
-
-$featured-service .service-list li figure .icon-service 
-
-$featured-service .service-list li figure .icon-service:after 
+$featured-service h3: ( 
+    );
 
 
-$featured-service .service-list li figure figcaption
 
-$featured-service .service-spoken li
+$featured-service .service-list li figure .icon-service: ( 
+    );
+
+$featured-service .service-list li figure .icon-service:after: (
+    ); 
+
+
+$featured-service .service-list li figure figcaption: (
+    );
+
+$featured-service .service-spoken li: (
+    );
 
 /* Detail & Policies */
-$details-policies .details-policies-cn
+$details-policies .details-policies-cn: (
+    );
 
-$policies-item h3 
+$policies-item h3: ( 
+    );
 
-.policies-item p 
+$policies-item p: ( 
+    );
 
-.hotel-detail-map p
-
-
-.hotel-detail-map p .fa
-
-
-.about-area-text h2 
+$hotel-detail-map p: (
+    );
 
 
-.about-area-text p
+$hotel-detail-map p .fa: (
+    );
 
-.about-area-text p a
+
+$about-area-text h2: ( 
+    );
+
+
+$about-area-text p: (
+    );
+
+$about-area-text p a: (
+    );
 
 
 /* Reviews */
 
-.review-tabs .tabs-head li a
+$review-tabs .tabs-head li a: (
+    );
 
 
-.review-st .lable-st 
+$review-st .lable-st: ( 
+    );
 
 
-.review-st .progress-rv:after 
+$review-st .progress-rv:after: ( 
+    );
 
-.review-st .progress-rv div
+$review-st .progress-rv div: (
+    );
 
-.review-st .progress-rv div span
-
-
-.review-st .rule-point span 
-
-.review-vote
-
-.review-vote h3 
-
-.review-vote .vote-score
-
-.review-vote .vote-number
+$review-st .progress-rv div span: (
+    );
 
 
-.review-vote p 
+$review-st .rule-point span: ( 
+    );
 
-.review-vote p span
+$review-vote: (
+    );
 
-.review-h 
+$review-vote h3: ( 
+    );
 
-.review-item .review-header 
+$review-vote .vote-score: (
+    );
 
-.review-item h4 
+$review-vote .vote-number: (
+    );
 
-.review-item h4 span 
 
-.review-item .btn 
+$review-vote p: ( 
+    );
 
-.review-item .btn:hover
+$review-vote p span: (
+    );
 
-.review-item .review-number ins
+$review-h: ( 
+    );
 
-.review-item .review-number ins:after 
+$review-item .review-header: ( 
+    );
 
-.review-item .review-number span 
+$review-item h4: ( 
+    );
 
-.review-item .review-number small 
+$review-item h4 span: ( 
+    );
 
-.review-item .review-text ul li 
+$review-item .btn: ( 
+    );
 
-.review-item .review-text ul li .icon 
+$review-item .btn:hover: (
+    );
 
-.review-item .review-text ul li .icon.icon-minus
+$review-item .review-number ins: (
+    );
 
-.review-item .review-text p
+$review-item .review-number ins:after: ( 
+    );
+
+$review-item .review-number span: ( 
+    );
+
+$review-item .review-number small: ( 
+    );
+
+$review-item .review-text ul li: ( 
+    );
+
+$review-item .review-text ul li .icon: ( 
+    );
+
+$review-item .review-text ul li .icon.icon-minus: (
+    );
+
+$review-item .review-text p: (
+    );
 
 /* End Reviews */
 /*============== End Hotel Detail =========*/
 /*============== Cruise Detail =========*/
-.title-detail 
+$title-detail: ( 
+    );
+
+$cruise-itinerary-cn .table-itinerary: ( 
+    );
 
 
-.cruise-itinerary-cn .table-itinerary 
+$date-availability: (
+    );
+
+$date-availability-cn: (
+    );
+
+$date-availability-cn .tabs-availability: ( 
+    );
+
+$date-availability-cn .tabs-availability li: (
+    );
 
 
-.date-availability
+$date-availability-cn .tabs-availability li:after: (
+    );
+
+$date-availability-cn .tabs-availability li a: (
+    );
+
+$date-availability-cn .tabs-availability li.active: ( 
+    );
+
+$date-availability-cn .cruise-dates-table td.td-radio label:after: ( 
+    );
+
+$date-availability-cn .cruise-dates-table td.td-date: (
+    );
+
+$date-availability-cn .cruise-dates-table td.td-price .price-box .price ins: (
+    );
 
 
-.date-availability-cn
-
-.date-availability-cn .tabs-availability 
-
-date-availability-cn .tabs-availability li
+$date-availability-cn .cruise-dates-table td.td-price .price-box .price.night: (
+    
+    );
 
 
-.date-availability-cn .tabs-availability li:after
-
-.date-availability-cn .tabs-availability li a
-
-.date-availability-cn .tabs-availability li.active 
-
-.date-availability-cn .cruise-dates-table td.td-radio label:after 
-
-date-availability-cn .cruise-dates-table td.td-date
-
-.date-availability-cn .cruise-dates-table td.td-price .price-box .price ins
+$date-availability-cn .cruise-dates-table td.td-price .price-box .price.night small: (
+    );
 
 
-.date-availability-cn .cruise-dates-table td.td-price .price-box .price.night
+$popup-room: (
+    );
 
 
-.date-availability-cn .cruise-dates-table td.td-price .price-box .price.night small
+$popup-room h1: (
+    );
+
+$popup-room-desc p: (
+    );
 
 
-.popup-room
+$popup-room-desc ul li:before: (
+    );
 
 
-.popup-room h1
+$popup-room-desc ul li a( 
+    );
 
-.popup-room-desc p
+$popup-room-desc ul li:hover::before: ( 
+    );
 
-
-.popup-room-desc ul li:before
-
-
-.popup-room-desc ul li a
-
-.popup-room-desc ul li:hover::before 
-
-.popup-room-desc ul li a:hover
+$popup-room-desc ul li a:hover: (
+    );
 
 
-.cabin-type-cn 
+$cabin-type-cn: ( 
+    );
 
-.cabin-type-cn .cabin-type-tabel th 
+$cabin-type-cn .cabin-type-tabel th: ( 
+    );
 
-.cabin-type-cn .cabin-type-tabel td.td-radio label:after 
+$cabin-type-cn .cabin-type-tabel td.td-radio label:after: ( 
+    );
 
-.cabin-type-cn .cabin-type-tabel td.td-room h2
+$cabin-type-cn .cabin-type-tabel td.td-room h2: (
+    );
 
-.cabin-type-cn .cabin-type-tabel td.td-room p
+$cabin-type-cn .cabin-type-tabel td.td-room p: (
+    );
 
-.cabin-type-cn .cabin-type-tabel td.t-price:before 
+$cabin-type-cn .cabin-type-tabel td.t-price:before: ( 
+    );
 
-.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price
+$cabin-type-cn .cabin-type-tabel td.t-price .price-box .price: (
+    );
 
-.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price ins
+$cabin-type-cn .cabin-type-tabel td.t-price .price-box .price ins: (
+    );
 
-.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night
+$cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night: (
+    );
 
-.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night small
+$cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night small: (
+    );
 
-.balcony-desk .caption-desk 
+$balcony-desk .caption-desk: ( 
+    );
 
-.balcony-desk .caption-desk span 
+$balcony-desk .caption-desk span: ( 
+    );
 
-.balcony-desk .ul-desk li label
+$balcony-desk .ul-desk li label: (
+    );
 
-.stateroom-cat .panel-group .panel-body
+$stateroom-cat .panel-group .panel-body: (
+    );
 
-.available-cabins .available-cabins-table th 
+$available-cabins .available-cabins-table th: ( 
+    );
 
-.available-cabins .available-cabins-table td.td-select span 
+$available-cabins .available-cabins-table td.td-select span: ( 
+    );
 
-.available-cabins .available-cabins-table td.td-select select
+$available-cabins .available-cabins-table td.td-select select: (
+    );
 
 
-.cruise-overview-item .text 
+$cruise-overview-item .text: ( 
+    );
 
-.ship-highlight-list li:before
+$ship-highlight-list li:before: (
+    );
 
-.cruise-overview-book:before 
+$cruise-overview-book:before: (
+    ); 
 
 /* Text */
-.tour-detail-text 
+$tour-detail-text: ( 
+    );
 
-.tour-overview .tour-overview-cn 
+$tour-overview .tour-overview-cn: ( 
+    );
 
 /* Optional Activities */
 
-.optional-acitivites .optional-acitivites-cn 
+$optional-acitivites .optional-acitivites-cn: ( 
+    );
 
-.optional-list h4 
+$optional-list h4: ( 
+    );
 
-.optional-list p 
+$optional-list p: ( 
+    );
 
-.optional-list p span 
+$optional-list p span: ( 
+    );
 
 /* Accomodation */
 
-.accomodation .accomodation-cn 
+$accomodation .accomodation-cn: ( 
+    );
 
 /* Meals */
 
 
-.tour-meals .tour-meals-cn 
+$tour-meals .tour-meals-cn: ( 
+    );
 
 
 /* Room Detail */
   
-.room-detail .featured-service h2 
+$room-detail .featured-service h2: (
+    ); 
 
-.room-detail .room-desc p
-
-
-.date-picker-price .date-head 
-
-.date-picker-price a:hover 
-
-.date-picker-price .data-price thead
-
-.date-picker-price .data-price td
-
-.date-picker-price .data-price td.other-month
-
-.date-picker-price .data-price td.date-select 
+$room-detail .room-desc p: (
+    );
 
 
-.date-picker-price .data-price td.date-select .price 
+$date-picker-price .date-head: (
+    );
+
+$date-picker-price a:hover: (
+    );
+
+$date-picker-price .data-price thead: (
+    );
+
+$date-picker-price .data-price td: (
+    );
+
+$date-picker-price .data-price td.other-month: (
+    );
+
+$date-picker-price .data-price td.date-select: ( 
+    );
+
+
+$date-picker-price .data-price td.date-select .price: ( 
+    );
 
 /*============= End Tour Detail ===========*/
-.search-blog .search-blog-input 
+$search-blog .search-blog-input: ( 
+    );
 
 
-.search-blog .search-blog-input:-moz-placeholder 
+$search-blog .search-blog-input:-moz-placeholder: (
+    ); 
 
 
 
-.search-blog .search-blog-input:-ms-input-placeholder
+$search-blog .search-blog-input:-ms-input-placeholder: (
+    );
 
-.search-blog .search-blog-input::-webkit-input-placeholder
+$search-blog .search-blog-input::-webkit-input-placeholder: (
+    );
 
-.search-blog .btn-search-blog
+$search-blog .btn-search-blog: (
+    );
 
-.search-blog .btn-search-blog:after 
+$search-blog .btn-search-blog:after: ( 
+    );
 
-.widget .title-sidebar 
+$widget .title-sidebar: ( 
+    );
 
-.widget_recent_entries ul li a
+$widget_recent_entries ul li a: (
+    );
 
-.widget_recent_entries ul li a:hover 
+$widget_recent_entries ul li a:hover: ( 
+    );
 
-.widget_recent_entries ul li span
+$widget_recent_entries ul li span: (
+    );
 
-.widget_tag_cloud .tagcloud a 
+$widget_tag_cloud .tagcloud a: ( 
+    );
 
-.widget_tag_cloud .tagcloud a:hover 
+$widget_tag_cloud .tagcloud a:hover: (
+    ); 
 
-.author-date a 
+$author-date a: ( 
+    );
 
-.author-date a:hover 
+$author-date a:hover: ( 
+    );
 
-.author-date span 
+$author-date span: ( 
+    );
 
-.post-meta li:before
+$post-meta li:before: (
+    );
 
-.post-meta li a 
+$post-meta li a: (
+    );
 
-.post-meta li a span 
+$post-meta li a span: ( 
+    );
 
-.post .post-text h2
+$post .post-text h2: (
+    );
 
-.post .post-text h2 a 
+$post .post-text h2 a: (
+    ); 
 
-.post .post-text h2 a:hover
+$post .post-text h2 a:hover: (
+    );
 
-.post .post-text p
+$post .post-text p: (
+    );
 
-.post .post-text p a 
+$post .post-text p a: (
+    ); 
 
 
-.post .post-text p a:hover
+$post .post-text p a:hover: (
+    );
 
 
 /* Post Single */
 
-.post-single .post-content 
+$post-single .post-content: (
+    ); 
 
-.post-single .post-content .title-single-content
+$post-single .post-content .title-single-content: (
+    );
 
-.post-single .author-about h4
+$post-single .author-about h4: (
+    );
 
-.post-single .author-about .author-info h5
+$post-single .author-about .author-info h5: (
+    );
 
-.post-single .author-about .author-info .author-social a 
+$post-single .author-about .author-info .author-social a: (
+    ); 
 
-.post-single .author-about .author-info p 
+$post-single .author-about .author-info p: (
+    ); 
 
 
 /*Comment */
 
-.title-comment 
+$title-comment: (
+    ); 
 
-.title-comment span
+$title-comment span: (
+    );
 
-.commentlist .comment .comment-author img
+$commentlist .comment .comment-author img: (
+    );
 
-.commentlist .comment .comment-body cite a
+$commentlist .comment .comment-body cite a: (
+    );
 
-.commentlist .comment .comment-body p
+$commentlist .comment .comment-body p: (
+    );
 
-.commentlist .comment .comment-body .edit 
+$commentlist .comment .comment-body .edit: (
+    ); 
 
-.commentlist .comment .comment-body .edit a 
+$commentlist .comment .comment-body .edit a: ( 
+    );
 
-.commentlist .comment .comment-body .edit a:hover
+$commentlist .comment .comment-body .edit a:hover: (
+    );
 
 
 /* Live Form */
 
-.leave-comment .reply-title
+$leave-comment .reply-title: (
+
+    );
 
 /* 15. About Page 
  --------------------------------------------------------------------------------*/
-.about-cn .about-searved
+$about-cn .about-searved: (
+    );
 
-.about-cn .about-searved:after 
+$about-cn .about-searved:after: (
+    ); 
 
-.about-cn .about-searved:before
+$about-cn .about-searved:before: (
+    );
 
-.about-cn .about-text h1
+$about-cn .about-text h1: (
+    );
 
-.about-cn .about-text .about-description 
+$about-cn .about-text .about-description: (
+    ); 
 
-.team .team-head h2 
+$team .team-head h2: (
+    ); 
 
-.team .team-head p 
+$team .team-head p: (
+    ); 
 
-.team .team-item h3 
+$team .team-item h3: (
+    ); 
 
-.team .team-item span 
+$team .team-item span: (
+    ); 
 
-.twitter .twitter-cn .icon 
+$twitter .twitter-cn .icon: (
+    ); 
 
-.twitter .twitter-item p
+$twitter .twitter-item p: (
+    );
 
-.twitter .twitter-item ul li 
+$twitter .twitter-item ul li: (
+    ); 
 
 
 /* 16. Contact Page 
 --------------------------------------------------------------------------------*/
-$contact-cn 
+$contact-cn : (
+    );
+$contact-cn h3: (
+    );
 
-$contact-cn h3
+$contact-cn ul li: (
+    ); 
 
-$contact-cn ul li 
-
-$contact-cn ul li a
+$contact-cn ul li a: (
+    );
 
 
 /* 17. Payment Page 
  --------------------------------------------------------------------------------*/
-$payment-step:before
+$payment-step:before: (
 
-$payment-step li.step-select:after,
-$payment-step li.step-select:before
+$payment-step li.step-select:after: (,
+$payment-step li.step-select:before: (
+    );
 
-$payment-step li.step-done:before 
-
-
-$payment-step li.step-done:after 
-
-
-$payment-step li.step-part:after
+$payment-step li.step-done:before: (
+    ); 
 
 
-$payment-step li:after,
-$payment-step li:before
-
-$payment-step li span
-
-$payment-step li p 
-
-$payment-room .payment-info h2 
+$payment-step li.step-done:after: (
+    ); 
 
 
-$payment-room .payment-info .star-room
-
-$payment-room .payment-info ul li
-
-$payment-room .payment-price
-
-$payment-room .payment-price .total-trip span
-
-$payment-room .payment-price .total-trip span small
-
-$payment-room .payment-price .total-trip p
-
-$payment-room .payment-price .total-trip p ins 
+$payment-step li.step-part:after: (
+    );
 
 
-$payment-room .payment-price .total-trip p i
+$payment-step li:after,: (
+$payment-step li:before: (
+    );
+
+$payment-step li span: (
+    );
+
+$payment-step li p: (
+    ); 
+
+$payment-room .payment-info h2: (
+    );
 
 
-$payment-form h2 
+$payment-room .payment-info .star-room: (
+    );
 
-$payment-form span 
+$payment-room .payment-info ul li: (
+    );
 
-$payment-form .form-field .field-input
+$payment-room .payment-price: (
+    );
 
-$payment-form .form-field .field-input:-moz-placeholder
+$payment-room .payment-price .total-trip span: (
+    );
 
-$payment-form .form-field .field-input:-ms-input-placeholder
+$payment-room .payment-price .total-trip span small: (
+    );
 
-$payment-form .form-field .field-input::-webkit-input-placeholder 
+$payment-room .payment-price .total-trip p: (
+    );
 
-$payment-form ul li .radio-checkbox label
+$payment-room .payment-price .total-trip p ins: (
+    ); 
 
-$payment-form .expiry-date:before 
+
+$payment-room .payment-price .total-trip p i: (
+    );
+
+
+$payment-form h2: (
+    ); 
+
+$payment-form span: (
+    ); 
+
+$payment-form .form-field .field-input: (
+    );
+
+$payment-form .form-field .field-input:-moz-placeholder: (
+    );
+
+$payment-form .form-field .field-input:-ms-input-placeholder: (
+    );
+
+$payment-form .form-field .field-input::-webkit-input-placeholder: (
+    ); 
+
+$payment-form ul li .radio-checkbox label: (
+    );
+
+$payment-form .expiry-date:before : (
+    );
 
 
 /* 18. Cart 
  --------------------------------------------------------------------------------*/
 
-$cart-cn .tb-cart thead th
+$cart-cn .tb-cart thead th: (
+    );
  
-$cart-cn .tb-cart .date 
+$cart-cn .tb-cart .date: (
+    ); 
 
-$cart-cn .tb-cart .date small
+$cart-cn .tb-cart .date small: (
+    );
 
-$cart-cn .tb-cart .price
+$cart-cn .tb-cart .price: (
+    );
 
-$cart-cn .tb-cart .price small
+$cart-cn .tb-cart .price small: (
+    );
 
-$cart-cn .tb-cart .select
+$cart-cn .tb-cart .select: (
+    );
 
-$cart-cn .tb-cart .sub-total-price 
+$cart-cn .tb-cart .sub-total-price: (
+    ); 
 
-$cart-room .star-room 
+$cart-room .star-room: (
+    ); 
 
-$cart-room ul li 
+$cart-room ul li: (
+    ); 
 
-$cart-flight .airline span 
-
-
-$cart-flight .stop-cn label
-
-$cart-flight .stop-cn .stops
-
-$cart-flight .stop-cn .stop 
-
-
-$cart-flight .group-time:before
-
-$cart-flight .group-time p 
-
-$cart-flight .group-time p span
-
-$cart-flight .group-time p + p:before
+$cart-flight .airline span: (
+    ); 
 
 
-$cart-car h2 
+$cart-flight .stop-cn label: (
+    );
 
-$cart-car p
+$cart-flight .stop-cn .stops: (
+    );
 
-$cart-car ul li,
-$cart-cruise ul li 
+$cart-flight .stop-cn .stop: (
+    ); 
 
 
-$cart-cn .tb-cart tfoot td 
+$cart-flight .group-time:before: (
+    );
+
+$cart-flight .group-time p: (
+    ); 
+
+$cart-flight .group-time p span: (
+    );
+
+$cart-flight .group-time p + p:before: (
+    );
+
+
+$cart-car h2: (
+    );
+
+$cart-car p: (
+    );
+
+$cart-car ul li,: (
+$cart-cruise ul li: ( 
+    );
+
+
+$cart-cn .tb-cart tfoot td: (
+    );
 
 
 /* 19. Element Page 
  --------------------------------------------------------------------------------*/
-$element-sc
+$element-sc: (
+    );
 
 
-$element-sc .element-cn h2 
+$element-sc .element-cn h2: ( 
+    );
 
 
-$element-sc .element-cn .tab-pane
+$element-sc .element-cn .tab-pane: (
+    );
 
 
 /* 20. 404 
 --------------------------------------------------------------------------------*/
 $page-comingsoon .page-body .item-content h4,
 $page-comingsoon .page-body .item-content p,
-$page-not-found .page-body .item-content * 
+$page-not-found .page-body .item-content *: (
+    ); 
 
 
-$page-slide .owl-pagination .owl-page span 
+$page-slide .owl-pagination .owl-page span: (
+    );
 
 
-$page-slide .owl-pagination .owl-page.active span
+$page-slide .owl-pagination .owl-page.active span: (
+    );
 
 
 
 /* 21. Comingsoon 
 --------------------------------------------------------------------------------*/
 
-$countdown-wrapper
+$countdown-wrapper: (
+    );
 
-$countdown .item 
+$countdown .item: (
+    );
 
-$countdown .item .count:after
+$countdown .item .count:after: (
+    );
 
 /* 22. User Profile 
  --------------------------------------------------------------------------------*/
 
-$user-profile__header
+$user-profile__header: (
+    );
 
-$user-profile__navigation
+$user-profile__navigation: (
+    );
 
-$user-profile__navigation li a 
-
-
-$user-profile__navigation li:hover,
-$user-profile__navigation li.current
-
-
-$user-profile .user-profile__title 
+$user-profile__navigation li a: (
+    );
 
 
-$user-profile .user-profile__count-number span
-
-$user-profile .user-profile__total li 
-
-$user-profile .user-profile__total li.has-number
-
-$user-profile .user-profile__total li span
+$user-profile__navigation li:hover,: (
+$user-profile__navigation li.current: (
+    );
 
 
-$user-profile__my-booking
-
-$user-profile__my-booking .table thead th 
-
-$user-profile__my-booking .table td
-
-$user-profile__my-booking .table td .icon
+$user-profile .user-profile__title: (
+    );
 
 
-$user-profile__my-booking .table td a
+$user-profile .user-profile__count-number span: (
+    );
 
-$user-profile__my-booking .table td a:hover
+$user-profile .user-profile__total li: (
+    );
 
-$my-profile .my-profile__title
+$user-profile .user-profile__total li.has-number: (
+    );
 
-$my-profile ul li
+$user-profile .user-profile__total li span: (
+    );
 
-$my-profile ul li span
 
-$my-profile p
+$user-profile__my-booking: (
+    );
 
-$user-profile .check-box label
+$user-profile__my-booking .table thead th: (
+    );
 
-$user-profile .check-box label:before
+$user-profile__my-booking .table td: (
+    );
 
-$my-profile .btn
+$user-profile__my-booking .table td .icon: (
+    );
 
-$my-profile .btn:hover
 
-$user-form h3
+$user-profile__my-booking .table td a: (
+    );
 
-$user-form .field-input .input-text
+$user-profile__my-booking .table td a:hover: (
+    );
 
-$user-form p
+$my-profile .my-profile__title: (
+    );
 
-$user-form a
+$my-profile ul li: (
+    );
 
-$user-signup:after
+$my-profile ul li span: (
+    );
+
+$my-profile p: (
+    );
+
+$user-profile .check-box label: (
+    );
+
+$user-profile .check-box label:before: (
+    );
+
+$my-profile .btn: (
+    );
+
+$my-profile .btn:hover: (
+    );
+
+$user-form h3: (
+    );
+
+$user-form .field-input .input-text: (
+    );
+
+$user-form p: (
+    );
+
+$user-form a: (
+    );
+
+$user-signup:after: (
+    );
 
 /* 23. Footer 
  --------------------------------------------------------------------------------*/
 
-$footer
+$footer: (
+    );
 
 
-$footer .currency-lang-bottom .dropdown-head 
+$footer .currency-lang-bottom .dropdown-head : (
+    );
 
 
-$footer .currency-lang-bottom .dropdown-head span 
+$footer .currency-lang-bottom .dropdown-head span: ( 
+    );
 
-$footer .currency-lang-bottom ul
+$footer .currency-lang-bottom ul: (
+    );
 
-$footer .currency-lang-bottom ul li a 
+$footer .currency-lang-bottom ul li a: ( 
+    );
 
-$footer .currency-lang-bottom ul li a:hover
+$footer .currency-lang-bottom ul li a:hover: (
+    );
 
-$footer .copyright 
+$footer .copyright: ( 
+    );
 
 
 /** Patch CSS Works 
 -----------------------------------------------------------------------------------*/
 /* updated on sept 23 2021 **/
-$footer
+$footer: (
+    );
 
-$header
+$header: (
+    );
 
-$cart-btn
+$cart-btn: (
+    );
 
 
-$select2-container--default .select2-selection--single .select2-selection__placeholder
+$select2-container--default .select2-selection--single .select2-selection__placeholder: (
+    );
 
-$error 
+$error: (
+    );
 
-$select2-selection__rendered:after
+$select2-selection__rendered:after: (
+    );
