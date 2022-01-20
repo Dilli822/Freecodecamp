@@ -1,0 +1,58 @@
+
+
+// border-radius
+$border-radius: (
+    "50%": 50%,
+    "5px": 5px,
+);
+
+// border-types
+$border-dashed: dashed;
+$border-solid: solid;
+$border-dotted: dotted;
+
+
+// tabs
+
+$tabs-head: (
+    "border-bottomColor": #999999,
+);
+
+$tabs-head-tabs-one: (
+    "P-backgroundColor": #f6f6f6,
+);
+
+$tabs-head-tabs-one-li: (
+    "border-rightColor": #999,
+);
+
+$nav-tabs-one: (
+    "P-backgroundColor": #f6f6f6,
+);
+
+$tabs-head-tabs-one-li-active: (
+    "border-topColor": #999,
+);
+
+
+$alert-box: (
+    "borderColor": #d3d3d3,
+);
+
+$alert-box-alert-attention: (
+    "borderColor" : #f0e2c1,
+);
+
+$alert-box-alert-success: (
+    "borderColor":  #d6f2de,
+);
+
+$ui-datepicker: (
+    "borderColor": #dedede,
+);
+
+$ui-datepicker-calendar-td-a: (
+    "borderColor": #aeaeb3,
+    "color": #333333,
+);
+

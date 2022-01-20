@@ -1,0 +1,79 @@
+
+
+scss for
+
+-----Variables-----
+---> text color
+---> primary, secondary, tertiary color
+
+
+--> border color
+----> primary, secondary, tertiary color
+
+--> button color
+----> primary, secondary, tertiary color
+
+--> background color
+----> primary, secondary, tertiary color
+
+----- color -- transparent
+
+---------- Variables for font ----- 
+-->  font-size
+---> heading, sub-heading
+
+--> font-family
+
+--> font-weight
+
+------ variables text- position---- 
+---- center----
+----left---
+---right----
+---- justify ---
+
+
+---- mixins for ----
+
+--- display flex---
+---- display block with margin center auto-----
+
+--- border radius zero ------
+
+---- border (solid, dashed, dotted )
+
+
+--- pointer --- cursor,load ---- 
+
+
+-- left , right, top, bottom all zero with position absolute and centered
+
+
+-- left , right, top, bottom all zero with position absolute 
+
+
+--- visibility hidden or visible
+
+---border radius
+
+
+-- overflow -- hidden auto 
+
+font-style
+
+
+--- text-transform like uppercase lowercase
+
+
+-- background-repeat 
+-- background-size
+--- background-position
+---
+
+
+
+
+
+
+
+

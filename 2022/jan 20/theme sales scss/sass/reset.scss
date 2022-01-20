@@ -1,0 +1,47 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul , li, ol{
+    list-style: none;
+}
+
+a,
+select,
+input,
+button,
+a:focus,
+select:focus,
+input:focus,
+button:focus {
+    outline: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

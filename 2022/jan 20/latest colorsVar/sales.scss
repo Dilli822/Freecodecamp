@@ -4309,58 +4309,58 @@ font-size: 34px;
     font-family: 'Georgia';
     font-style: italic;
     font-size: 16px;
-    color: #666666;
+    color: map-get($, );
 }
 
 .user-form a {
-    color: #26aa44;
+    color: map-get($, );
     text-decoration: underline;
 }
 
 .user-signup:after {
-    border-left: 1px solid #f1f1f1;
+    border-left: 1px solid map-get($, );
     content: '';
 }
 /* 23. Footer 
  --------------------------------------------------------------------------------*/
 
 footer {
-    background-color: #000000;
+    background-color: map-get($, );
     font-family: 'Open Sans';
     font-size: 14px;
 }
 
 footer .currency-lang-bottom .dropdown-head {
     text-transform: inherit;
-    color: #fff;
-    border: 1px solid #3d3d3d;
+    color:map-get($, );
+    border: 1px solid map-get($, );
     cursor: pointer;
 }
 
 footer .currency-lang-bottom .dropdown-head span {
-    color: #59c45a;
+    color: map-get($, );
 }
 
 footer .currency-lang-bottom ul {
-    background-color: #fff;
+    background-color: map-get($, );
     list-style: none;
 }
 
 footer .currency-lang-bottom ul li a {
-    color: #333;
+    color: map-get($, );
     text-decoration: none;
 }
 
 footer .currency-lang-bottom ul li a:hover {
-    background-color: #25ab4b;
-    color: #fff;
+    background-color: map-get($, );
+    color: map-get($, );
 }
 
 
 footer .copyright {
-    color: #fff;
-    background: #11111111;
-    color: white;
+    color: map-get($, );
+    background: map-get($, );
+    color: map-get($, );
     font-weight: 300;
 }
 /* 24. Responsive
@@ -4375,15 +4375,15 @@ footer{
 }
 
 #header{
-    background-color: #000!important;
+    background-color: map-get($, );
 }
 
 .cart-btn{
-    color: #fff!important;
+    color: map-get($, );
 }
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #25ab4b;
+    color: map-get($, );
     font-weight: 600;
 }
 /**landing page*/
@@ -4395,7 +4395,9 @@ footer{
     content: '\f107';
     font-family: 'FontAwesome';
     font-size: 24px;
-    color: #b9b9b9;
+    color: map-get($, );
     font-weight: normal;
 }
+
+
 

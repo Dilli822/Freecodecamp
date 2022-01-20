@@ -1,0 +1,30 @@
+
+@import "./button-colors.scss";
+@import "./border.scss";
+@import "./global.scss";
+@import  "./mixins.scss";
+
+$font-style: (
+    "italic": italic,
+);
+
+$font-family: (
+    "Georgia": Georgia,
+    "font-awesome": FontAwesome,
+    "normal": normal,
+);
+
+$font-size: (
+);
+
+
+$font-weights: (
+    "bold": 600,
+    "medium": 500,
+    "lighter": 300,
+    "normal": normal,
+);
+
+
+$font-fontAwesome: 'FontAwesome';
+$font-weight-normal: normal;

@@ -1,0 +1,1398 @@
+
+@import "./button-colors.scss";
+@import "./border.scss";
+@import "./global.scss";
+@import  "./mixins.scss";
+@import "./colors.scss";
+
+
+// breadcrumb 
+
+$breadcrum: (
+    "li-Pcolor": #888888,
+    "li-a-Pcolor": #888888,
+
+    "li-active-Pcolor": #59c45a,
+    "li-active-Pcolor-a": #59c45a,
+);
+
+
+// panel-title
+$panel-title-num: (
+    "color": #343434,
+    "backgroundColor": #dfdfdf,
+);
+
+$panel-title-num1: (
+    "color": #fff,
+    "backgroundColor": #dec001,
+);
+
+$panel-title-num2: (
+    "color": #fff,
+    "backgroundColor": #b55b24,
+);
+
+
+$panel-title-num3: (
+    "color": #fff,
+    "backgroundColor": #447498,
+);
+
+$panel-title-num4: (
+    "color": #fff,
+    "backgroundColor": #b3af91,
+);
+
+$panel-title-num5: (
+    "color": #fff,
+    "backgroundColor": #94b4c5,
+);
+
+$panel-body: (
+    "color": #555555,
+);
+
+// Alert Box
+$alert-box: (
+    "backgroundColor": #fff,
+);
+
+$alert-box-span: (
+    "color" : #333,
+);
+
+$alert-box-alert-attention: (
+    "backgroundColor": #f7eed8,
+);
+
+
+$alert-box-alert-attention-h6: (
+    "color": #be7c0b,
+);
+
+
+$alert-box-alert-success: (
+    "background-color": #eefff3,
+    "border-color": #d6f2de,
+);
+
+
+$alert-box-alert-success-h6: (
+    "color": #25ab4b,
+);
+
+
+$alert-box-alert-error: (
+    "backgroundColor": #fff2ea,
+    "borderColor": #f2dbdc,
+);
+
+$alert-box-alert-error-h6:(
+    "color": #c7170f,
+);
+
+
+// ui-datepicker
+$ui-datepicker-title: (
+    "color": #333333,
+);
+
+$ui-datepicker-today: (
+    "backgroundColor": #59c45a,
+);
+
+$ui-datepicker-current-day-a: (
+    "backgroundColor": #7da9f8,
+);
+
+$ui-datepicker-other-month-a: (
+    "color": #999999,
+);
+
+// blackquote
+
+$blockquote-p: (
+    "color": #666666,
+);
+
+$blockquote-p-span-b: (
+    "color": #111111,
+);
+
+
+$travel-title-h2: (
+    "color": #111111,
+);
+
+$travel-title-span: (
+    "color": #666666,
+    "font-weight": 300,
+);
+
+
+// title-wrap
+
+$travel-title-select: (
+    "border-bottom": #4da981,
+);
+
+$travel-title-select-span: (
+    "color": #25ab4b,
+);
+
+$travel-title-select-span-after: (
+    "color": #b9b9b9,
+);
+
+
+// sort view
+$sort-view-sort-by-sort-select-after: (
+    "backgroundColor": #f2f2f2,
+);
+
+$sort-select-span: (
+    "borderBottom": #d7d7d7,
+);
+
+$sort-select-span-after: (
+    "color": #888888,
+);
+
+$view-by-ul: (
+    "borderColor": #e6e6e6,
+);
+
+$view-by-ul-li-a: (
+    "borderLeftColor": #e6e6e6,
+);
+
+$narrow-form: (
+    "borderColor": #dedede,
+    "color": #dedede,
+);
+
+// widget-sidebar
+$widget-sidebar: (
+    "color": #111111,
+    "borderBottom": #dedede,
+    "p-color": #555555,
+);
+
+
+$title-sidebar-span: (
+    "color": #555555,
+    "borderBottom": #dedede,
+);
+
+$widget-rate: (
+    "color": #999999,
+);
+
+
+// price slider
+
+$ui-slider-range: (
+    "backgroundColor": #141414,
+);
+
+$slider-sidebar-label: (
+    "color": #999999,
+);
+
+// form radio
+$form-radio: (
+    "p-color": #25ab4b,
+    "primary-bgColor": #25ab4b,
+);
+
+$form-field-input: (
+    "primaryColor": #545454,
+    "border-bottomColor": #545454,
+);
+
+$form-field-label: (
+    "color": #bcbcbc,
+);
+
+$form-field-field-select-span: (
+    "border-bottomColor": #4da981,
+);
+
+$form-field-field-select-span-after: (
+    "color":  #b9b9b9,
+);
+
+$form-field-field-select-select: (
+    "color":  #545454,
+);
+
+
+// post-share
+
+$post-share-a: (
+    "color": #cccccc,
+);
+
+
+// Form Contact
+
+$form-field-label: (
+    "color": #333333,
+    "supColor": #b10e0f,
+);
+
+$form-field-label-field-input: (
+    "borderColor": #dfdfdf,
+);
+
+// Radio Check
+$radio-checkbox-after: (
+    "backgroundColor": #555,
+);
+
+$radio-checkbox-label: (
+    "color": #555,
+);
+
+$radio-checkbox-before: (
+    "backgroundColor": #f2f2f2,
+    "borderColor": #d8d8d8,
+);
+
+// follow
+$follow-group-a: (
+    // insert colors here
+    "color": #555, 
+    "borderColor": #dedede,
+);
+
+
+
+// header 
+
+$header: (
+    "backgroundColor": $white-color,
+);
+
+
+$header-bars: (
+    "borderColor": #59c35c,
+);
+
+$header-bars-after-before: (
+    "backgroundColor": #59c35c,
+);
+
+// Navigation
+$nav-desktop-ul-li-hover: (
+    "backgroundColor": #59c45a,
+    "borderColor": #59c45a,
+);
+
+$nav-desktop-ul-li-li: (
+    "backgroundColor": #f1f1f1,
+);
+
+$nav-desktop-ul-ul-li-a: (
+    "transform:" uppercase,
+);
+
+$nav-desktop-ul-ul-li-span: (
+    "color": #333,
+);
+
+$nav-desktop-menu-parent-a: (
+    "borderTopColor": $hexGray,
+);
+
+$nav-desktop-menu-parent-a-after: (
+    "borderTopColor": $hexGray,
+);
+
+// $nav-nav-inner: (
+//     "backgroundColor": rgba(14, 34, 64, 0.9),
+// );
+
+
+// Banner
+
+$banner-video-control: (
+    "color": #59c45a,
+);
+
+// form cn
+$form-cn: (
+    "backgroundColor": rgba(255, 255, 255, 0.85),
+);
+
+$form-cn-h2: (
+    "color": $hexGray,
+);
+
+$form-cn-form-field: (
+    "borderRight": #e6e6e6,
+);
+
+
+// cruise form
+$form-cruise-search: (
+    "borderTop": #e6e6e6,
+);
+
+$form-package-search: (
+    "borderTop": #e6e6e6,
+);
+
+// category-singer-icon-h2
+$category-singer-icon-h2: (
+    "transform": uppercase,  
+);
+
+$category-singer-p: (
+    "color": #ededed,
+);
+
+
+$sales-item-home-sales-places: (
+    "color": #999999,
+);
+
+$sales-item-home-sales-places-a: (
+    "color": #999999,
+);
+
+
+$sales-item-price: (
+    "color": #999999,
+);
+
+$sales-item-price-special-price: (
+    "color": #25ab4b,
+);
+
+$sales-item-price-special-price-small: (
+    "color": #999999,
+);
+
+// destinations 
+$destinations: (
+    "primary-backgroundColor": #f1f1f1,
+);
+
+$destinations-cn-filter-li: (
+    "color": #999999,
+);
+
+$destinations-cn-destinations-grid: (
+    "backgroundColor":  #f1f1f1,
+);
+
+$destinations-items-properties-nb: (
+    "color": #777777,
+);
+
+
+// thumbnail colors
+$thumnail: (
+    "borderColor": #59c45a,
+);
+
+
+$thumnail-item-span: (
+    "color": #666,
+);
+
+// subscribe
+$subscribe-subscribe-form: (
+    "color": #dedede,
+);
+
+$subscribe-subscribe-form-input: (
+    "color": #999999,
+);
+
+// hotel
+
+$hotel-list-item-hotel-service: (
+    "borderColor": #f0f0f0,
+);
+
+// package-item
+
+$package-item-package-star: (
+    "color": #5ac65c,
+);
+
+
+$package-item-package-rating: (
+    "color": #111,
+);
+
+
+$package-item-package-text-p: (
+    "color": #666,
+);
+
+
+$package-item-package-text-p-a: (
+    "color": #111,
+);
+
+$package-item-price-box-price: (
+    "color": #666,
+);
+
+$package-item-price-box-ins: (
+    "color": #333,
+);
+
+$package-item-price-small: (
+    "color": #999,
+);
+
+$package-item-price-box-together-ins: (
+    "color": #25ab4b,
+);
+
+
+// cruise-deal
+$cruise-deal-cruise-name-a: (
+    "color": #111,
+);
+
+$cruise-deal-cruise-name-a-hover: (
+    "color": #59c45a,
+);
+
+$cruise-deal-item-cruise-night: (
+    "color": #666,
+);
+
+$cruise-deal-item-cruise-night-span: (
+    "color": #333,
+);
+
+$cruise-deal-item-price: (
+    "color": #999,
+);
+
+$cruise-deal-item-special-price: (
+    "color": $darkCyanLimeGreen,
+);
+
+$cruise-item-name-a: (
+    "color": $veryDarkGray,
+);
+
+$cruise-item-name-a-hover: (
+    "color": $darkCyanLimeGreen,
+);
+
+$cruise-item-ship-port-li-label: (
+    "color": $hexGray,
+);
+
+$cruise-item-cruise-text-price-box-price: (
+    "color": $gray40,
+);
+
+$cruise-item-cruise-text-price-box-ins: (
+    "color": $darkCyanLimeGreen,
+);
+
+$cruise-item-cruise-text-price-box-price-small: (
+    "color": $gray60,
+);
+
+$cruise-item-cruise-text-price-box-price-night: (
+    "color": $gray87,
+);
+
+$flight-deal-item-flight-name-a: (
+    "color": $veryDarkGray,
+);
+
+$flight-deal-item-flight-name-a-hover: (
+    "color": $moderateLimeGreen,
+);
+
+
+$flight-deal-item-flight-price: (
+    "color": $gray40,
+);
+
+$flight-deal-item-flight-price-price: (
+    "color": #49bf4c,
+);
+
+$calendar-charts-chart-scale: (
+    "backgroundColor": $veryLightGray2,
+);
+
+$chart-p: (
+    "color": $veryDarkGray,
+);
+
+$chart-bar-cl-fill: (
+    "backgroundColor": $forestMaid,
+    "borderTopColor": $verseGreen,
+);
+
+$chart-li-active-date-day: (
+    "borderColor": $forestMaid,
+);
+
+$chart-li-bar-cl-hover-fill: (
+    "backgroundColor": $forestMaid,,
+    "borderTopColor": $verseGreen,
+);
+
+$chart-li-bar-cl-fill: (
+    "backgroundColor": $magnesiaBay:,
+    "borderTopColor": $bluePaisley,
+);
+
+$chart-ul-bar-li-date-day: (
+    "borderTopColor": $veryLightGray2,
+);
+
+
+$chart-ul-bar-li-date-day-date: (
+    "color": $hexGray,
+);
+
+
+$chart-ul-bar-li-date-day-short-day : (
+    "color": $gray40,
+);
+
+
+$chart-ul-bar-li-month-wrap: (
+    "borderColor": $gray40,
+);
+
+$chart-ul-bar-li-month-wrap-span: (
+    "color": $silverColor,
+);
+
+$chart-ul-bar-li-month-wrap-span-hover: (
+    "color": $candidBlur,
+);
+
+$flight-statis-item-before: (
+    "borderColor": $veryLightGray2,
+);
+
+$flight-statis-icon: (
+    "color": $gravelFintColor,
+);
+
+
+$flight-statis-h5: (
+    "color": $hexGray,
+);
+
+$flight-statis-p: (
+    "color": $gray40,
+);
+
+$flight-statis-p-ins: (
+    "color": $veryDarkGray,
+);
+
+$flight-statis-p-span: (
+    "color": $hexGray,
+);
+
+$flight-list-head: (
+    "background": #f7f7f7,
+);
+
+$flight-list-head-h3: (
+    "color": $veryDarkGray,
+);
+
+$flight-list-head-p: (
+    "color": $veryDarkGray,
+);
+
+$flight-list-cn-flight-table-th: (
+    "color": $gray40,
+);
+
+$flight-list-cn-flight-table-td-before: (
+    "borderColor": $veryLightGray2,
+);
+
+$flight-list-cn-flight-table-td-td-airline: (
+    "color": $gray40,
+)
+
+$flight-list-cn-flight-table-td-td-time-p: (
+    "color": $veryDarkGray,
+);
+
+$flight-list-cn-flight-table-td-td-time-p-span: (
+    "color": $gray40,
+);
+
+$flight-list-cn-flight-table-td-td-stop-stop-cn-label: (
+    "color": $hexGray,
+);
+
+$flight-list-cn-flight-table-td-td-stop-stop-cn-stops: (
+    "backgroundColor": $sootyColor, 
+);
+
+$flight-list-cn-flight-table-td-td-stop-stop-cn-stops-stop: (
+    "borderColor": $dryHighlighterGreen,
+    "backgroundColor": $white-color,
+);
+
+$flight-list-cn-flight-table-td-td-price-span: (
+    "color": $gray40,
+);
+
+
+$flight-list-cn-flight-table-td-td-price-span-ins: (
+    "color": $darkCyanLimeGreen,
+);
+
+$.detail-cn > .row > [class*="col-"]:last-child: (
+
+);
+
+
+head-detail.bg-gray
+
+
+head-detail h1
+
+.head-detail .start-address .star 
+
+.head-detail .start-address .address 
+
+.head-detail ul li
+
+.price-book
+
+price-book span
+
+.support
+
+.support small
+
+.head-detail .see-other-room 
+
+.head-detail .see-other-room:hover
+
+.detail-footer .detail-footer-cn .review-more a 
+
+
+.detail-footer .detail-footer-cn .review-more a:hover
+
+
+.detail-slider .slide-room-sm 
+
+.detail-slider .slide-room-sm #slide-room-sm .owl-item:after
+
+.detail-slider .slide-room-sm #slide-room-sm .prev-next-room 
+
+
+detail-sidebar .scroll-heading h2
+
+.detail-sidebar .scroll-heading a
+
+
+.detail-sidebar .scroll-heading a:hover 
+
+detail-sidebar .hight-light h2 
+
+
+.detail-sidebar .hight-light .vote-text p 
+
+
+.detail-sidebar .hight-light .vote-text small
+
+.detail-sidebar .hight-light .vote-text a 
+
+.detail-sidebar .hight-light .vote-text a:hover
+
+.hotel-content:after
+
+
+.hl-customer-like h2 
+
+.hl-customer-like .customer-like .cs-like-label
+
+hl-customer-like .customer-like ul li
+
+.hl-customer-like .customer-like ul li:before
+
+
+.check-rates 
+
+.check-rates .check-rates-cn 
+
+.check-rates-form h3 
+
+.check-rates-form .form-search
+
+
+.check-rates-form .form-search .form-field 
+
+
+.service-check-rate h2
+
+
+.service-check-rate .tb-service-check-rate thead 
+
+
+.service-check-rate .tb-service-check-rate thead th
+
+.service-check-rate .tb-service-check-rate td
+
+.hl-availability .table-availability th 
+
+.hl-availability .table-availability th span
+
+.hl-availability .table-availability .avai-td-text h3
+
+.hl-availability .table-availability .avai-td-text p 
+
+.hl-availability .table-availability .avai-td-text a
+
+hl-availability .table-availability .avai-td-text a:hover
+
+
+.hl-availability .table-availability .avai-td-price .price 
+
+
+.hl-availability .table-availability .avai-td-price .price small
+
+.hl-availability .table-availability .avai-td-room .select
+
+.hl-availability .table-availability .avai-td-room .select span 
+
+
+
+.hl-availability .table-availability .avai-td-room .select span:after
+
+/* Hotel Featured */
+.hl-features .hl-features-cn
+
+.featured-service h3 
+
+
+
+.featured-service .service-list li figure .icon-service 
+
+.featured-service .service-list li figure .icon-service:after 
+
+
+.featured-service .service-list li figure figcaption
+
+.featured-service .service-spoken li
+
+/* Detail & Policies */
+.details-policies .details-policies-cn
+
+.policies-item h3 
+
+.policies-item p 
+
+.hotel-detail-map p
+
+
+.hotel-detail-map p .fa
+
+
+.about-area-text h2 
+
+
+.about-area-text p
+
+.about-area-text p a
+
+
+/* Reviews */
+
+.review-tabs .tabs-head li a
+
+
+.review-st .lable-st 
+
+
+.review-st .progress-rv:after 
+
+.review-st .progress-rv div
+
+.review-st .progress-rv div span
+
+
+.review-st .rule-point span 
+
+.review-vote
+
+.review-vote h3 
+
+.review-vote .vote-score
+
+.review-vote .vote-number
+
+
+.review-vote p 
+
+.review-vote p span
+
+.review-h 
+
+.review-item .review-header 
+
+.review-item h4 
+
+.review-item h4 span 
+
+.review-item .btn 
+
+.review-item .btn:hover
+
+.review-item .review-number ins
+
+.review-item .review-number ins:after 
+
+.review-item .review-number span 
+
+.review-item .review-number small 
+
+.review-item .review-text ul li 
+
+.review-item .review-text ul li .icon 
+
+.review-item .review-text ul li .icon.icon-minus
+
+.review-item .review-text p
+
+/* End Reviews */
+/*============== End Hotel Detail =========*/
+/*============== Cruise Detail =========*/
+.title-detail 
+
+
+.cruise-itinerary-cn .table-itinerary 
+
+
+.date-availability
+
+
+.date-availability-cn
+
+.date-availability-cn .tabs-availability 
+
+date-availability-cn .tabs-availability li
+
+
+.date-availability-cn .tabs-availability li:after
+
+.date-availability-cn .tabs-availability li a
+
+.date-availability-cn .tabs-availability li.active 
+
+.date-availability-cn .cruise-dates-table td.td-radio label:after 
+
+date-availability-cn .cruise-dates-table td.td-date
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price ins
+
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price.night
+
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price.night small
+
+
+.popup-room
+
+
+.popup-room h1
+
+.popup-room-desc p
+
+
+.popup-room-desc ul li:before
+
+
+.popup-room-desc ul li a
+
+.popup-room-desc ul li:hover::before 
+
+.popup-room-desc ul li a:hover
+
+
+.cabin-type-cn 
+
+.cabin-type-cn .cabin-type-tabel th 
+
+.cabin-type-cn .cabin-type-tabel td.td-radio label:after 
+
+.cabin-type-cn .cabin-type-tabel td.td-room h2
+
+.cabin-type-cn .cabin-type-tabel td.td-room p
+
+.cabin-type-cn .cabin-type-tabel td.t-price:before 
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price ins
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night small
+
+.balcony-desk .caption-desk 
+
+.balcony-desk .caption-desk span 
+
+.balcony-desk .ul-desk li label
+
+.stateroom-cat .panel-group .panel-body
+
+.available-cabins .available-cabins-table th 
+
+.available-cabins .available-cabins-table td.td-select span 
+
+.available-cabins .available-cabins-table td.td-select select
+
+
+.cruise-overview-item .text 
+
+.ship-highlight-list li:before
+
+.cruise-overview-book:before 
+
+/* Text */
+.tour-detail-text 
+
+.tour-overview .tour-overview-cn 
+
+/* Optional Activities */
+
+.optional-acitivites .optional-acitivites-cn 
+
+.optional-list h4 
+
+.optional-list p 
+
+.optional-list p span 
+
+/* Accomodation */
+
+.accomodation .accomodation-cn 
+
+/* Meals */
+
+
+.tour-meals .tour-meals-cn 
+
+
+/* Room Detail */
+  
+.room-detail .featured-service h2 
+
+.room-detail .room-desc p
+
+
+.date-picker-price .date-head 
+
+.date-picker-price a:hover 
+
+.date-picker-price .data-price thead
+
+.date-picker-price .data-price td
+
+.date-picker-price .data-price td.other-month
+
+.date-picker-price .data-price td.date-select 
+
+
+.date-picker-price .data-price td.date-select .price 
+
+/*============= End Tour Detail ===========*/
+.search-blog .search-blog-input 
+
+
+.search-blog .search-blog-input:-moz-placeholder 
+
+
+
+.search-blog .search-blog-input:-ms-input-placeholder
+
+.search-blog .search-blog-input::-webkit-input-placeholder
+
+.search-blog .btn-search-blog
+
+.search-blog .btn-search-blog:after 
+
+.widget .title-sidebar 
+
+.widget_recent_entries ul li a
+
+.widget_recent_entries ul li a:hover 
+
+.widget_recent_entries ul li span
+
+.widget_tag_cloud .tagcloud a 
+
+.widget_tag_cloud .tagcloud a:hover 
+
+.author-date a 
+
+.author-date a:hover 
+
+.author-date span 
+
+.post-meta li:before
+
+.post-meta li a 
+
+.post-meta li a span 
+
+.post .post-text h2
+
+.post .post-text h2 a 
+
+.post .post-text h2 a:hover
+
+.post .post-text p
+
+.post .post-text p a 
+
+
+.post .post-text p a:hover
+
+
+/* Post Single */
+
+.post-single .post-content 
+
+.post-single .post-content .title-single-content
+
+.post-single .author-about h4
+
+.post-single .author-about .author-info h5
+
+.post-single .author-about .author-info .author-social a 
+
+.post-single .author-about .author-info p 
+
+
+/*Comment */
+
+.title-comment 
+
+.title-comment span
+
+.commentlist .comment .comment-author img
+
+.commentlist .comment .comment-body cite a
+
+.commentlist .comment .comment-body p
+
+.commentlist .comment .comment-body .edit 
+
+.commentlist .comment .comment-body .edit a 
+
+.commentlist .comment .comment-body .edit a:hover
+
+
+/* Live Form */
+
+.leave-comment .reply-title
+
+/* 15. About Page 
+ --------------------------------------------------------------------------------*/
+.about-cn .about-searved
+
+.about-cn .about-searved:after 
+
+.about-cn .about-searved:before
+
+.about-cn .about-text h1
+
+.about-cn .about-text .about-description 
+
+.team .team-head h2 
+
+.team .team-head p 
+
+.team .team-item h3 
+
+.team .team-item span 
+
+.twitter .twitter-cn .icon 
+
+.twitter .twitter-item p
+
+.twitter .twitter-item ul li 
+
+
+/* 16. Contact Page 
+--------------------------------------------------------------------------------*/
+.contact-cn 
+
+.contact-cn h3
+
+.contact-cn ul li 
+
+.contact-cn ul li a
+
+
+/* 17. Payment Page 
+ --------------------------------------------------------------------------------*/
+.payment-step:before
+
+
+.payment-step li.step-select:after,
+.payment-step li.step-select:before
+
+.payment-step li.step-done:before 
+
+
+.payment-step li.step-done:after 
+
+
+.payment-step li.step-part:after
+
+
+.payment-step li:after,
+.payment-step li:before
+
+.payment-step li span
+
+.payment-step li p 
+
+.payment-room .payment-info h2 
+
+
+.payment-room .payment-info .star-room
+
+.payment-room .payment-info ul li
+
+.payment-room .payment-price
+
+.payment-room .payment-price .total-trip span
+
+.payment-room .payment-price .total-trip span small
+
+.payment-room .payment-price .total-trip p
+
+.payment-room .payment-price .total-trip p ins 
+
+
+.payment-room .payment-price .total-trip p i
+
+
+.payment-form h2 
+
+.payment-form span 
+
+.payment-form .form-field .field-input
+
+.payment-form .form-field .field-input:-moz-placeholder
+
+.payment-form .form-field .field-input:-ms-input-placeholder
+
+.payment-form .form-field .field-input::-webkit-input-placeholder 
+
+
+.payment-form ul li .radio-checkbox label
+
+.payment-form .expiry-date:before 
+
+
+/* 18. Cart 
+ --------------------------------------------------------------------------------*/
+
+.cart-cn .tb-cart thead th
+ 
+.cart-cn .tb-cart .date 
+
+.cart-cn .tb-cart .date small
+
+.cart-cn .tb-cart .price
+
+.cart-cn .tb-cart .price small
+
+.cart-cn .tb-cart .select
+
+.cart-cn .tb-cart .sub-total-price 
+
+.cart-room .star-room 
+
+.cart-room ul li 
+
+.cart-flight .airline span 
+
+
+.cart-flight .stop-cn label
+
+.cart-flight .stop-cn .stops
+
+.cart-flight .stop-cn .stop 
+
+
+.cart-flight .group-time:before
+
+.cart-flight .group-time p 
+
+.cart-flight .group-time p span
+
+.cart-flight .group-time p + p:before
+
+
+.cart-car h2 
+
+.cart-car p
+
+.cart-car ul li,
+.cart-cruise ul li 
+
+
+.cart-cn .tb-cart tfoot td 
+
+
+/* 19. Element Page 
+ --------------------------------------------------------------------------------*/
+.element-sc
+
+
+.element-sc .element-cn h2 
+
+
+.element-sc .element-cn .tab-pane
+
+
+/* 20. 404 
+--------------------------------------------------------------------------------*/
+.page-comingsoon .page-body .item-content h4,
+.page-comingsoon .page-body .item-content p,
+.page-not-found .page-body .item-content * 
+
+
+.page-slide .owl-pagination .owl-page span 
+
+
+.page-slide .owl-pagination .owl-page.active span
+
+
+
+/* 21. Comingsoon 
+--------------------------------------------------------------------------------*/
+
+.countdown-wrapper
+
+#countdown .item 
+
+#countdown .item .count:after
+
+/* 22. User Profile 
+ --------------------------------------------------------------------------------*/
+
+.user-profile__header
+
+.user-profile__navigation
+
+.user-profile__navigation li a 
+
+
+.user-profile__navigation li:hover,
+.user-profile__navigation li.current
+
+
+.user-profile .user-profile__title 
+
+
+.user-profile .user-profile__count-number span
+
+.user-profile .user-profile__total li 
+
+.user-profile .user-profile__total li.has-number
+
+.user-profile .user-profile__total li span
+
+
+.user-profile__my-booking
+
+.user-profile__my-booking .table thead th 
+
+.user-profile__my-booking .table td
+
+.user-profile__my-booking .table td .icon
+
+
+.user-profile__my-booking .table td a
+
+.user-profile__my-booking .table td a:hover
+
+.my-profile .my-profile__title
+
+.my-profile ul li
+
+.my-profile ul li span
+
+.my-profile p
+
+.user-profile .check-box label
+
+.user-profile .check-box label:before
+
+.my-profile .btn
+
+.my-profile .btn:hover
+
+.user-form h3
+
+.user-form .field-input .input-text
+
+.user-form p
+
+.user-form a
+
+.user-signup:after
+
+/* 23. Footer 
+ --------------------------------------------------------------------------------*/
+
+footer
+
+
+footer .currency-lang-bottom .dropdown-head 
+
+
+footer .currency-lang-bottom .dropdown-head span 
+
+footer .currency-lang-bottom ul
+
+footer .currency-lang-bottom ul li a 
+
+footer .currency-lang-bottom ul li a:hover
+
+footer .copyright 
+
+
+/** Patch CSS Works 
+-----------------------------------------------------------------------------------*/
+/* updated on sept 23 2021 **/
+footer
+
+#header
+
+.cart-btn
+
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder
+
+.error 
+
+.select2-selection__rendered:after
