@@ -1,0 +1,2 @@
+* sales style.css location
+---> C:\inetpub\wwwroot\NexGen\Test\Sales\DIY\Content\assets\jaunt2\css

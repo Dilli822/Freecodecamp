@@ -1,0 +1,2135 @@
+
+@import "./button-colors.scss";
+@import "./border.scss";
+@import "./global.scss";
+@import  "./mixins.scss";
+@import "./colors.scss";
+
+
+// EDA | Nepal Pvt.Ltd
+// Created by Dilli Hang Rai
+// Email: dillihangrae@gmail.com
+// On Jan 14 2022
+
+/*  Welcome to Colors Variables section
+====== Please Donot Try to Modify the existing the Colors Hex Code
+====== If you need to modify then you can add colors with hex code and name
+===== These are all standard colors with hex code and name
+***/
+
+// breadcrumb 
+
+$breadcrum: (
+    "li-Pcolor": #888888,
+    "li-a-Pcolor": #888888,
+    "li-active-Pcolor": #59c45a,
+    "li-active-Pcolor-a": #59c45a,
+);
+
+
+// panel-title
+$panel-title-num: (
+    "color": #343434,
+    "backgroundColor": #dfdfdf,
+);
+
+$panel-title-num1: (
+    "color": #fff,
+    "backgroundColor": #dec001,
+);
+
+$panel-title-num2: (
+    "color": #fff,
+    "backgroundColor": #b55b24,
+);
+
+
+$panel-title-num3: (
+    "color": #fff,
+    "backgroundColor": #447498,
+);
+
+$panel-title-num4: (
+    "color": #fff,
+    "backgroundColor": #b3af91,
+);
+
+$panel-title-num5: (
+    "color": #fff,
+    "backgroundColor": #94b4c5,
+);
+
+$panel-body: (
+    "color": #555555,
+);
+
+// Alert Box
+$alert-box: (
+    "backgroundColor": #fff,
+);
+
+$alert-box-span: (
+    "color" : #333,
+);
+
+$alert-box-alert-attention: (
+    "backgroundColor": #f7eed8,
+);
+
+
+$alert-box-alert-attention-h6: (
+    "color": #be7c0b,
+);
+
+
+$alert-box-alert-success: (
+    "background-color": #eefff3,
+    "border-color": #d6f2de,
+);
+
+
+$alert-box-alert-success-h6: (
+    "color": #25ab4b,
+);
+
+
+$alert-box-alert-error: (
+    "backgroundColor": #fff2ea,
+    "borderColor": #f2dbdc,
+);
+
+$alert-box-alert-error-h6:(
+    "color": #c7170f,
+);
+
+
+// ui-datepicker
+$ui-datepicker-title: (
+    "color": #333333,
+);
+
+$ui-datepicker-today: (
+    "backgroundColor": #59c45a,
+);
+
+$ui-datepicker-current-day-a: (
+    "backgroundColor": #7da9f8,
+);
+
+$ui-datepicker-other-month-a: (
+    "color": #999999,
+);
+
+// blackquote
+
+$blockquote-p: (
+    "color": #666666,
+);
+
+$blockquote-p-span-b: (
+    "color": #111111,
+);
+
+
+$travel-title-h2: (
+    "color": #111111,
+);
+
+$travel-title-span: (
+    "color": #666666,
+    "font-weight": 300,
+);
+
+
+// title-wrap
+
+$travel-title-select: (
+    "border-bottom": #4da981,
+);
+
+$travel-title-select-span: (
+    "color": #25ab4b,
+);
+
+$travel-title-select-span-after: (
+    "color": #b9b9b9,
+);
+
+
+// sort view
+$sort-view-sort-by-sort-select-after: (
+    "backgroundColor": #f2f2f2,
+);
+
+$sort-select-span: (
+    "borderBottom": #d7d7d7,
+);
+
+$sort-select-span-after: (
+    "color": #888888,
+);
+
+$view-by-ul: (
+    "borderColor": #e6e6e6,
+);
+
+$view-by-ul-li-a: (
+    "borderLeftColor": #e6e6e6,
+);
+
+$narrow-form: (
+    "borderColor": #dedede,
+    "color": #dedede,
+);
+
+// widget-sidebar
+$widget-sidebar: (
+    "color": #111111,
+    "borderBottom": #dedede,
+    "p-color": #555555,
+);
+
+
+$title-sidebar-span: (
+    "color": #555555,
+    "borderBottom": #dedede,
+);
+
+$widget-rate: (
+    "color": #999999,
+);
+
+
+// price slider
+
+$ui-slider-range: (
+    "backgroundColor": #141414,
+);
+
+$slider-sidebar-label: (
+    "color": #999999,
+);
+
+// form radio
+$form-radio: (
+    "p-color": #25ab4b,
+    "primary-bgColor": #25ab4b,
+);
+
+$form-field-input: (
+    "primaryColor": #545454,
+    "border-bottomColor": #545454,
+);
+
+$form-field-label: (
+    "color": #bcbcbc,
+);
+
+$form-field-field-select-span: (
+    "border-bottomColor": #4da981,
+);
+
+$form-field-field-select-span-after: (
+    "color":  #b9b9b9,
+);
+
+$form-field-field-select-select: (
+    "color":  #545454,
+);
+
+
+// post-share
+
+$post-share-a: (
+    "color": #cccccc,
+);
+
+
+// Form Contact
+
+$form-field-label: (
+    "color": #333333,
+    "supColor": #b10e0f,
+);
+
+$form-field-label-field-input: (
+    "borderColor": #dfdfdf,
+);
+
+// Radio Check
+$radio-checkbox-after: (
+    "backgroundColor": #555,
+);
+
+$radio-checkbox-label: (
+    "color": #555,
+);
+
+$radio-checkbox-before: (
+    "backgroundColor": #f2f2f2,
+    "borderColor": #d8d8d8,
+);
+
+// follow
+$follow-group-a: (
+    // insert colors here
+    "color": #555, 
+    "borderColor": #dedede,
+);
+
+
+
+// header 
+
+$header: (
+    "backgroundColor": $white-color,
+);
+
+
+$header-bars: (
+    "borderColor": #59c35c,
+);
+
+$header-bars-after-before: (
+    "backgroundColor": #59c35c,
+);
+
+// Navigation
+$nav-desktop-ul-li-hover: (
+    "backgroundColor": #59c45a,
+    "borderColor": #59c45a,
+);
+
+$nav-desktop-ul-li-li: (
+    "backgroundColor": #f1f1f1,
+);
+
+$nav-desktop-ul-ul-li-a: (
+    "transform:" uppercase,
+);
+
+$nav-desktop-ul-ul-li-span: (
+    "color": #333,
+);
+
+$nav-desktop-menu-parent-a: (
+    "borderTopColor": $hexGray,
+);
+
+$nav-desktop-menu-parent-a-after: (
+    "borderTopColor": $hexGray,
+);
+
+// $nav-nav-inner: (
+//     "backgroundColor": rgba(14, 34, 64, 0.9),
+// );
+
+
+// Banner
+
+$banner-video-control: (
+    "color": #59c45a,
+);
+
+// form cn
+$form-cn: (
+    "backgroundColor": rgba(255, 255, 255, 0.85),
+);
+
+$form-cn-h2: (
+    "color": $hexGray,
+);
+
+$form-cn-form-field: (
+    "borderRight": #e6e6e6,
+);
+
+
+// cruise form
+$form-cruise-search: (
+    "borderTop": #e6e6e6,
+);
+
+$form-package-search: (
+    "borderTop": #e6e6e6,
+);
+
+// category-singer-icon-h2
+$category-singer-icon-h2: (
+    "transform": uppercase,  
+);
+
+$category-singer-p: (
+    "color": #ededed,
+);
+
+
+$sales-item-home-sales-places: (
+    "color": #999999,
+);
+
+$sales-item-home-sales-places-a: (
+    "color": #999999,
+);
+
+
+$sales-item-price: (
+    "color": #999999,
+);
+
+$sales-item-price-special-price: (
+    "color": #25ab4b,
+);
+
+$sales-item-price-special-price-small: (
+    "color": #999999,
+);
+
+// destinations 
+$destinations: (
+    "primary-backgroundColor": #f1f1f1,
+);
+
+$destinations-cn-filter-li: (
+    "color": #999999,
+);
+
+$destinations-cn-destinations-grid: (
+    "backgroundColor":  #f1f1f1,
+);
+
+$destinations-items-properties-nb: (
+    "color": #777777,
+);
+
+
+// thumbnail colors
+$thumnail: (
+    "borderColor": #59c45a,
+);
+
+
+$thumnail-item-span: (
+    "color": #666,
+);
+
+// subscribe
+$subscribe-subscribe-form: (
+    "color": #dedede,
+);
+
+$subscribe-subscribe-form-input: (
+    "color": #999999,
+);
+
+// hotel
+
+$hotel-list-item-hotel-service: (
+    "borderColor": #f0f0f0,
+);
+
+// package-item
+
+$package-item-package-star: (
+    "color": #5ac65c,
+);
+
+
+$package-item-package-rating: (
+    "color": #111,
+);
+
+
+$package-item-package-text-p: (
+    "color": #666,
+);
+
+
+$package-item-package-text-p-a: (
+    "color": #111,
+);
+
+$package-item-price-box-price: (
+    "color": #666,
+);
+
+$package-item-price-box-ins: (
+    "color": #333,
+);
+
+$package-item-price-small: (
+    "color": #999,
+);
+
+$package-item-price-box-together-ins: (
+    "color": #25ab4b,
+);
+
+
+// cruise-deal
+$cruise-deal-cruise-name-a: (
+    "color": #111,
+);
+
+$cruise-deal-cruise-name-a-hover: (
+    "color": #59c45a,
+);
+
+$cruise-deal-item-cruise-night: (
+    "color": #666,
+);
+
+$cruise-deal-item-cruise-night-span: (
+    "color": #333,
+);
+
+$cruise-deal-item-price: (
+    "color": #999,
+);
+
+$cruise-deal-item-special-price: (
+    "color": $darkCyanLimeGreen,
+);
+
+$cruise-item-name-a: (
+    "color": $veryDarkGray,
+);
+
+$cruise-item-name-a-hover: (
+    "color": $darkCyanLimeGreen,
+);
+
+$cruise-item-ship-port-li-label: (
+    "color": $hexGray,
+);
+
+$cruise-item-cruise-text-price-box-price: (
+    "color": $gray40,
+);
+
+$cruise-item-cruise-text-price-box-ins: (
+    "color": $darkCyanLimeGreen,
+);
+
+$cruise-item-cruise-text-price-box-price-small: (
+    "color": $gray60,
+);
+
+$cruise-item-cruise-text-price-box-price-night: (
+    "color": $gray87,
+);
+
+$flight-deal-item-flight-name-a: (
+    "color": $veryDarkGray,
+);
+
+$flight-deal-item-flight-name-a-hover: (
+    "color": $moderateLimeGreen,
+);
+
+
+$flight-deal-item-flight-price: (
+    "color": $gray40,
+);
+
+$flight-deal-item-flight-price-price: (
+    "color": #49bf4c,
+);
+
+$flight-deal-item-flight-text-flight-price: (
+    "color": #666666,
+);
+
+$flight-deal-item-flight-text-flight-price-price: (
+    "color": #49bf4c,
+);
+
+$calendar-charts-chart-scale: (
+    "backgroundColor": $veryLightGray2,
+);
+
+$chart-p: (
+    "color": $veryDarkGray,
+);
+
+$chart-bar-cl-fill: (
+    "backgroundColor": $forestMaid,
+    "borderTopColor": $verseGreen,
+);
+
+$chart-li-active-date-day: (
+    "borderColor": $forestMaid,
+);
+
+$chart-li-bar-cl-hover-fill: (
+    "backgroundColor": $forestMaid,
+    "borderTopColor": $verseGreen,
+);
+
+$chart-li-bar-cl-fill: (
+    "backgroundColor": $magnesiaBay,
+    "borderTopColor": $bluePaisley,
+);
+
+$chart-ul-bar-li-date-day: (
+    "borderTopColor": $veryLightGray2,
+);
+
+
+$chart-ul-bar-li-date-day-date: (
+    "color": $hexGray,
+);
+
+
+$chart-ul-bar-li-date-day-short-day : (
+    "color": $gray40,
+);
+
+
+$chart-ul-bar-li-month-wrap: (
+    "borderColor": $gray40,
+);
+
+$chart-ul-bar-li-month-wrap-span: (
+    "color": $silverColor,
+);
+
+$chart-chart-bar-chart-nav-span: (
+    "color": #c0c0c0,
+);
+
+$chart-ul-bar-li-month-wrap-span-hover: (
+    "color": $candidBlur,
+);
+
+$flight-statis-item-before: (
+    "borderLeftColor": $veryLightGray2,
+);
+
+$flight-statis-icon: (
+    "color": $gravelFintColor,
+);
+
+
+$flight-statis-h5: (
+    "color": $hexGray,
+);
+
+$flight-statis-p: (
+    "color": $gray40,
+);
+
+$flight-statis-p-ins: (
+    "color": $veryDarkGray,
+);
+
+$flight-statis-p-span: (
+    "color": $hexGray,
+);
+
+$flight-list-head: (
+    "background": #f7f7f7,
+);
+
+$flight-list-head-h3: (
+    "color": $veryDarkGray,
+);
+
+$flight-list-head-p: (
+    "color": $veryDarkGray,
+);
+
+$flight-list-cn-flight-table-th: (
+    "color": $gray40,
+);
+
+$flight-list-cn-flight-table-td-before: (
+    "borderLeftColor": $veryLightGray2,
+);
+
+$flight-list-cn-flight-table-td-td-airline: (
+    "color": $gray40,
+);
+
+$flight-list-cn-flight-table-td-td-time-p: (
+    "color": #111,
+);
+
+$flight-list-cn-flight-table-td-td-time-p-span: (
+    "color": $gray40,
+);
+
+$flight-list-cn-flight-table-td-td-stop-stop-cn-label: (
+    "color": $hexGray,
+);
+
+$flight-list-cn-flight-table-td-td-stop-stop-cn-stops: (
+    "backgroundColor": $sootyColor, 
+);
+
+$flight-list-cn-flight-table-td-td-stop-stop-cn-stops-stop: (
+    "borderColor": $dryHighlighterGreen,
+    "backgroundColor": $white-color,
+);
+
+$flight-list-cn-flight-table-td-td-price-span: (
+    "color": $gray40,
+);
+
+
+$flight-list-cn-flight-table-td-td-price-span-ins: (
+    "color": $darkCyanLimeGreen,
+);
+
+
+.detail-cn > .row > [class*="col-"]:last-child {
+    border-left: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+
+$head-detail-bg-gray: (
+    "color": $whiteSmoke,
+    "borderBottomColor": $Plaster, 
+    );
+
+$head-detail-h1: (
+    "color": $veryDarkGray,
+    );
+
+$head-detail-start-address-star: (
+    "color": $emeraldCory,
+    );
+
+$head-detail-start-address-address: (
+    "color": $hexGray,
+    );
+
+$head-detail-ul-li: (
+    "color": $gray40,
+    );
+
+$price-book: (
+    "color": $gray60,
+    );
+
+$price-book-span: (
+    "color": $darkCyanLimeGreen,
+    );
+
+$support: (
+    "color": $hexGray,
+    );
+
+$support-small: (
+    "color": $gray60,
+    );
+
+$head-detail-see-other-room: (
+    "color": $hexGray,
+    );
+
+$head-detail-see-other-room-hover: (
+    "color": $darkCyanLimeGreen,
+    );
+
+$detail-footer-detail-footer-cn-review-more-a: (
+    "color": $hexGray,
+    );
+
+
+$detail-footer-detail-footer-cn-review-more-a-hover: (
+    "color": $moderateLimeGreen,
+    );
+
+$detail-slider-slide-room-sm: ( 
+    "backgroundColor":  rgba(0, 0, 0, 0.6),
+    );
+
+$detail-slider-slide-room-sm-slide-room-sm-owl-item-after: (
+    "backgroundColor":  rgba(0, 0, 0, 0.6),
+    );
+
+$detail-slider-slide-room-sm-slide-room-sm-prev-next-room: ( 
+    "backgroundColor": $black-color,
+    );
+
+
+$detail-sidebar-scroll-heading-h2: (
+    "color": $hexGray,
+    );
+
+$detail-sidebar-scroll-heading-a: (
+    "color": $hexGray,
+    );
+
+$detail-sidebar-scroll-heading-a-hover: ( 
+    "color": $darkCyanLimeGreen,
+    );
+
+$detail-sidebar-hight-light-h2: ( 
+    "color": $trueGreen,
+    "borderLeftColor":  $trueGreen,
+    );
+
+
+$detail-sidebar-hight-light-vote-text-p: ( 
+    "color": $veryDarkGray,
+    );
+
+
+$detail-sidebar-hight-light-vote-text-small: (
+    "color": $blackMana,
+    );
+
+$detail-sidebar-hight-light-vote-text-a: ( 
+    "color": $trueGreen,
+    );
+
+$detail-sidebar-hight-light-vote-text-a-hover: (
+    "color": $blackMana,
+    );
+
+$hotel-content-after: (
+    "backgroundColor": $whiteoutColor,
+    "borderLeftColor": $Plaster,
+    );
+
+
+$hl-customer-like-h2: ( 
+    "color": $veryDarkGray,
+    );
+
+$hl-customer-like-customer-like-cs-like-label: (
+    "color": $hexGray,
+    );
+
+$hl-customer-like-customer-like-ul-li: (
+    "color": $gray40,
+    );
+
+$hl-customer-like-customer-like-ul-li-before: (
+    "color": $gray60,
+    );
+
+
+$check-rates: ( 
+    "borderTopColor": $Plaster,
+    );
+
+$check-rates-check-rates-cn: ( 
+    "borderBottomColor": $Plaster,
+    );
+
+$check-rates-form-h3: (
+    "color": $veryDarkGray,
+    );
+
+$check-rates-form-form-search: (
+    "borderColor": $veryLightGray2,
+    );
+
+$check-rates-form-form-search-form-field: ( 
+    "borderRightColor": $veryLightGray2,
+    );
+
+
+$service-check-rate-h2: (
+    "color": $hexGray,
+    );
+
+
+$service-check-rate-tb-service-check-rate-thead: ( 
+    "borderColor": $gray87,
+    );
+
+$service-check-rate-tb-service-check-rate-thead-th: (
+    "color": $hexGray,
+    );
+
+$service-check-rate-tb-service-check-rate-td: (
+    "borderColor": $gray87,
+    );
+
+$hl-availability-table-availability-th: ( 
+    "color": $hexGray,
+    );
+
+$hl-availability-table-availability-th-span: (
+    "color": $gray60,
+    );
+
+$hl-availability-table-availability-td: (
+    "background": url('../images/bg-border-v.png') repeat-x top left,
+);
+
+$hl-availability-table-availability-avai-td-text-h3: (
+    "color": $veryDarkGray,
+    );
+
+$hl-availability-table-availability-avai-td-text-p: ( 
+    "color": $gray40,
+    );
+
+$hl-availability-table-availability-avai-td-text-a: (
+    "color": $hexGray,
+    );
+
+$hl-availability-table-availability-avai-td-text-a-hover: (
+    "color": $rangeLand,
+    );
+
+
+$hl-availability-table-availability-avai-td-price-price: ( 
+    "color": $veryDarkGray,
+    );
+
+
+$hl-availability-table-availability-avai-td-price-price-small: (
+    "color": $gray60,
+    );
+
+$hl-availability-table-availability-avai-td-room-select: (
+    "borderBottomColor": $Palladium,
+    );
+
+$hl-availability-table-availability-avai-td-room-select-span: ( 
+    "color": $gray40,
+    );
+
+
+
+$hl-availability-table-availability-avai-td-room-select-span-after: (
+    "color": $babyTalkGrey,
+    );
+
+/* Hotel Featured */
+$hl-features-hl-features-cn: (
+    "borderBottomColor": $Plaster,
+   );
+
+$featured-service-h3: ( 
+    "color": $veryDarkGray,
+    "background": url('../images/bg-border-v.png') repeat-x bottom left,
+
+    );
+
+
+
+$featured-service-service-list-li-figure-icon-service: ( 
+    "borderColor": $superSilver,
+    );
+
+$featured-service-service-list-li-figure-icon-service-after: (
+    "background": url('../images/icon-check.png') no-repeat top left,
+    ); 
+
+
+$featured-service-service-list-li-figure-figcaption: (
+    "color": $hexGray,
+    );
+
+$featured-service-service-spoken-li: (
+    "color": $hexGray,
+    );
+
+/* Detail & Policies */
+$details-policies-details-policies-cn: (
+    "borderBottomColor": $Plaster,
+    );
+
+$policies-item-h3: ( 
+    "color": $veryDarkGray,
+    "background": url('../images/bg-border-v.png') repeat-x bottom left,
+    );
+
+$policies-item-p: ( 
+    "color": $hexGray,
+    );
+
+$hotel-detail-map-p: (
+    "color": $white-color,
+    "backgroundColor": $hexGray,
+    );
+
+
+$hotel-detail-map-p-fa: (
+    "color": $leapfrog,
+    );
+
+
+$about-area-text-h2: ( 
+    "color": $veryDarkGray,
+    );
+
+
+$about-area-text-p: (
+    "color": $hexGray,
+    );
+
+$about-area-text-p-a: (
+    "color": $trueGreen,
+    );
+
+
+/* Reviews */
+
+$review-tabs-tabs-head-li-a: (
+    "color": $black-color,
+    );
+
+
+$review-st-lable-st: ( 
+    "color": $hexGray,
+    );
+
+
+$review-st-progress-rv-after: ( 
+    "backgroundColor": $TitaniumWhite,
+    );
+
+$review-st-progress-rv-div: (
+    "backgroundColor": $moderateLimeGreen,
+    );
+
+$review-st-progress-rv-div-span: (
+    "color": $white-color,
+    "backgroundColor": $moderateLimeGreen,
+    );
+
+
+$review-st-rule-point-span: ( 
+    "color": $gray60,
+    );
+
+$review-vote: (
+    "background": url('../images/bg-border-h.png') repeat-y top left,
+    );
+
+$review-vote-h3: ( 
+    "color": $trueGreen,
+    );
+
+$review-vote-vote-score: (
+    "color": $darkCyanLimeGreen,
+    );
+
+$review-vote-vote-number: (
+    "color": $gray40,
+    );
+
+
+$review-vote-p: ( 
+    "color": $hexGray,
+    "background": url('../images/bg-border-v.png') repeat-x top left,
+    );
+
+$review-vote-p-span: (
+    "color": $veryDarkGray,
+    );
+
+$review-h: ( 
+    "color": $hexGray,
+    "background": url('../images/bg-border-v.png') repeat-x bottom left,
+    );
+
+$review-item-before: (
+    "background": url('../images/bg-border-v.png') repeat-x bottom left,
+);
+    
+$review-item-after: (
+    "background": url('../images/bg-border-h.png') repeat-y top left,
+);
+
+$review-item-review-header: ( 
+    "backgroundColor": $white-color,
+    );
+
+$review-item-h4: ( 
+    "color": $veryDarkGray,
+    );
+
+$review-item-h4-span: ( 
+    "color": $rangeLand,
+    );
+
+$review-item-btn: ( 
+    "color": $rangeLand,
+    "backgroundColor":  $rangeLand,
+    "background": #fbfbfb url('../images/icon-arrow-blue.png') no-repeat 90% 50%,
+    );
+
+$review-item-btn-hover: (
+    "backgroundColor": $darkCyanLimeGreen,
+    );
+
+$review-item-review-number-ins: (
+    "color": $hexGray,
+    "backgroundColor": $KinglyCloud,
+        );
+
+$review-item-review-number-ins-after: (
+    "borderColor": $KinglyCloud, 
+    );
+
+$review-item-review-number-span: ( 
+    "color": $veryDarkGray,
+    );
+
+$review-item-review-number-small: ( 
+    "color": $gray40,
+    );
+
+$review-item-review-text-ul-li: ( 
+    "color": $hexGray,
+    );
+
+$review-item-review-text-ul-li-icon: ( 
+    "color": $darkCyanLimeGreen,
+    "borderColor": $darkCyanLimeGreen,
+    );
+
+$review-item-review-text-ul-li-icon-icon-minus: (
+    "color": $metroidRed,
+    "borderColor": $metroidRed,
+    );
+
+$review-item-review-text-p: (
+    "color": $gray40,
+    );
+
+/* End Reviews */
+/*============== End Hotel Detail =========*/
+/*============== Cruise Detail =========*/
+$title-detail: ( 
+    "color": $veryDarkGray,
+    );
+$cruise-deal-item-cruise-text-cruise-name-a: (
+    "color": #111111,
+);
+
+$cruise-deal-item-cruise-text-cruise-name-a-hover: (
+    "color": #59c45a,
+);
+
+$cruise-item-cruise-text-ship-port-li: (
+    "color": #666666,
+    );
+
+$cruise-item-cruise-text-ship-port-li-label : (
+    "color": #333333,
+    );
+
+$cruise-item-cruise-text-price-box-price: (
+    "color": #666666,
+    );
+
+
+$cruise-item-cruise-text-price-box-price-ins: (
+    "color": #25ab4b,
+    );
+
+$cruise-item-cruise-text-price-box-price-small: (
+    "color": #999999,
+    );
+
+$cruise-item-cruise-text-price-box-price-night: (
+    "borderTopColor":  #dedede,
+    );
+
+$cruise-item-cruise-text-price-box-price-night-ins: (
+    "color": #333333,
+);
+
+$cruise-itinerary-detail-sidebar-title-detail-after: (
+    "background": url('../images/bg-border-v.png') repeat-x bottom left,
+);
+
+$cruise-itinerary-cn-table-itinerary: ( 
+    "color": $hexGray,
+    );
+$cruise-deal-item-cruise-text-price-box-price: (
+    "color": #999999,
+);
+
+$cruise-deal-item-cruise-text-price-box-price-special-price: (
+    "color": #25ab4b,
+);
+
+$date-availability: (
+    "borderTopColor": $Plaster,
+    );
+
+$date-availability-cn: (
+    "borderBottomColor": $Plaster,
+    );
+
+$date-availability-cn-tabs-availability: ( 
+    "backgroundColor": $whiteSmoke,
+    "borderColor": $veryLightGray2,
+    );
+
+$date-availability-cn-tabs-availability-li: (
+    "borderRightColor": $veryLightGray2,
+    );
+
+
+$date-availability-cn-tabs-availability-li-after: (
+    "borderBottomColor": $whiteSmoke,
+    );
+
+$date-availability-cn-tabs-availability-li-a: (
+    "color": $gray40,
+    );
+
+$date-availability-cn-tabs-availability-li-active: (
+    "backgroundColor": $white-color,
+    );
+
+$date-availability-cn-cruise-dates-table-td-td-date: ( 
+    "backgroundColor": #58c05a,
+    );
+
+$date-availability-cn-cruise-dates-table-td-td-date: (
+    "color": $veryDarkGray,
+    );
+
+$date-availability-cn-cruise-dates-table-td-td-price-price-box-price: (
+    "color": $gray60,
+);
+
+$date-availability-cn-cruise-dates-table-td-td-price-price-box-price-ins: (
+    "color": $darkCyanLimeGreen,
+    );
+
+
+$date-availability-cn-cruise-dates-table-td-td-price-price-box-price-night: (
+    "color": $gray40,
+    "borderTopColor": $veryLightGray2,
+    );
+
+
+$date-availability-cn-cruise-dates-table-td-td-price-price-box-price-night-small: (
+    "color": $gray60,
+    );
+
+
+$popup-room: (
+    "backgroundColor": $white-color,
+    );
+
+
+$popup-room-h1: (
+    "color": $veryDarkGray,
+    "borderBottomColor":  $veryLightGray2,
+    );
+
+$popup-room-desc-p: (
+    "color": $hexGray,
+    );
+
+
+$popup-room-desc-ul-li-before: (
+    "backgroundColor": $hexGray ,
+    );
+
+
+$popup-room-desc-ul-li-a: ( 
+    "color": $hexGray,
+    );
+
+$popup-room-desc-ul-li-hover-before: ( 
+    "backgroundColor": #59c45b,
+    );
+
+$popup-room-desc-ul-li-a-hover: (
+    "color": #59c45b,
+    );
+
+
+$cabin-type-cn: ( 
+    "borderBottomColor":  $Plaster,
+    );
+
+$cabin-type-cn-cabin-type-tabel-th: ( 
+    "color": $hexGray,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-td-radio-label-after: ( 
+    "backgroundColor": #58c05a,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-td-room-h2: (
+    "color": $veryDarkGray,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-td-room-p: (
+    "color": $gray40,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-t-price-before: ( 
+    "borderLeftColor":  $veryLightGray2,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price: (
+    "color": $gray60,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-ins: (
+    "color": $darkCyanLimeGreen,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-night: (
+    "color": $gray40,
+    "borderTopColor": $veryLightGray2,
+    );
+
+$cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-night-small: (
+    "color": $gray60,
+    );
+
+$balcony-desk-caption-desk: ( 
+    "color": $veryDarkGray,
+    );
+
+$balcony-desk-caption-desk-span: ( 
+    "color": $trueGreen,
+    );
+
+$balcony-desk-ul-desk-li-label: (
+    "color": $hexGray,
+    );
+
+$stateroom-cat-panel-group-panel-body: (
+    "color": $gray40,
+    );
+
+$available-cabins-available-cabins-table-th: ( 
+    "color": $hexGray,
+    );
+
+$available-cabins-available-cabins-table-td-td-select-span: ( 
+    "color": $hexGray,
+    );
+
+$available-cabins-available-cabins-table-td-td-select-select: (
+    "color": $hexGray,
+    );
+
+
+$cruise-overview-item-text: ( 
+    "color": $hexGray,
+    );
+
+$ship-highlight-list-li-before: (
+    "color": $veryDarkGray,
+    );
+
+$cruise-overview-book-before: (
+    "borderTopColor": $Plaster,
+    ); 
+
+/* Text */
+$tour-detail-text: ( 
+    "color": $hexGray,
+    );
+
+$tour-overview-tour-overview-cn: ( 
+    "borderBottomColor": $Plaster,
+    );
+
+/* Optional Activities */
+
+$optional-acitivites-optional-acitivites-cn: ( 
+    "borderBottomColor": $Plaster,
+    );
+
+$optional-list-h4: ( 
+    "color": $hexGray,
+    );
+
+$optional-list-p: ( 
+    "color": #555,
+    );
+
+$optional-list-p-span: ( 
+    "color": $hexGray,
+    );
+
+/* Accomodation */
+
+$accomodation-accomodation-cn: ( 
+    "borderBottomColor": $Plaster,
+    );
+
+/* Meals */
+
+
+$tour-meals-tour-meals-cn: ( 
+    "borderBottomColor": $Plaster,
+    );
+
+
+/* Room Detail */
+  
+$room-detail-featured-service-h2: (
+    "color": $hexGray,
+    ); 
+
+$room-detail-room-desc-p: (
+    "color": $hexGray,
+    );
+
+
+$date-picker-price-date-head: (
+    "color": $hexGray,
+    "borderColor": $gray87,
+    );
+
+$date-picker-price-a-hover: (
+    "backgroundColor": #f1f1f1,
+    );
+
+$date-picker-price-data-price-thead: (
+    "backgroundColor": #f1f1f1,
+    "borderColor": $gray87,
+    );
+
+$date-picker-price-data-price-td: (
+    "color": $hexGray,
+    "borderColor": $gray87,
+    );
+
+$date-picker-price-data-price-td-other-month: (
+    "color": $gray60,
+    );
+
+$date-picker-price-data-price-td-date-select: ( 
+    "backgroundColor": $brokenBlue,
+    );
+
+
+$date-picker-price-data-price-td-date-select-price: ( 
+    "color": $white-color,
+    );
+
+/*============= End Tour Detail ===========*/
+$search-blog-search-blog-input: ( 
+    "color": $gray40,
+    "backgroundColor": transparent,
+    );
+
+
+$search-blog-search-blog-input-placeholder: (
+    "color": $gray40,
+    ); 
+
+
+
+$search-blog-btn-search-blog: (
+    "backgroundColor": $white-color,
+    );
+
+$search-blog-btn-search-blog-after: ( 
+    "color": $gray60,
+    );
+
+$widget-title-sidebar: ( 
+    "color": $veryDarkGray,
+    );
+
+$widget_recent_entries-ul-li-a: (
+    "color": $hexGray,
+    );
+
+$widget_recent_entries-ul-li-a-hover: ( 
+    "color": $trueGreen,
+    );
+
+$widget_recent_entries-ul-li-span: (
+    "color": $argentColor,
+    );
+
+$widget_tag_cloud-tagcloud-a: ( 
+    "color": $hexGray,
+    "borderColor": $gray87,
+    );
+
+$widget_tag_cloud-tagcloud-a-hover: (
+    "color": $trueGreen,
+    "borderColor": $trueGreen,
+    ); 
+
+$author-date-a: ( 
+    "color": $trueGreen,
+    );
+
+$author-date-a-hover: (
+    "borderBottomColor": $trueGreen,
+    );
+
+$author-date-span: ( 
+    "color": $gray60,
+    );
+
+$post-meta-li-before: (
+    "color": $gray60,
+    );
+
+$post-meta-li-a: (
+    "color": $gray60,
+    );
+
+$post-meta-li-a-span: ( 
+    "color": $gray60,
+    );
+
+$post-post-text-h2: (
+    "borderBottomColor": $gray87,
+    );
+
+$post-post-text-h2-a: (
+    "color": $veryDarkGray,
+    ); 
+
+$post-post-text-h2-a-hover: (
+    "color": $trueGreen,
+    );
+
+$post-post-text-p: (
+    "color": $hexGray,
+    );
+
+$post-post-text-p-a: (
+    "color": #888,
+    "borderBottomColor": transparent,
+    ); 
+
+
+$post-post-text-p-a-hover: (
+    "borderColor": #888,
+    );
+
+
+/* Post Single */
+
+$post-single-post-content: (
+    "color": $hexGray,
+    ); 
+
+$post-single-post-content-title-single-content: (
+    "color": $nero,
+    );
+
+$post-single-author-about-h4: (
+    "color": $veryDarkGray,
+    );
+
+$post-single-author-about-author-info-h5: (
+    "color": $hexGray,
+    );
+
+$post-single-author-about-author-info-author-social-a: (
+    "color": $moderateLimeGreen,
+    ); 
+
+$post-single-author-about-author-info-p: (
+    "color": $hexGray,
+    ); 
+
+
+/*Comment */
+
+$title-comment: (
+    "color": $veryDarkGray,
+    ); 
+
+$title-comment-span: (
+    "color": $gray40,
+    );
+
+$commentlist-comment-comment-author-img: (
+    "borderColor": $superSilver,
+    );
+
+$commentlist-comment-comment-body-cite-a: (
+    "color": $lead,
+    );
+
+$commentlist-comment-comment-body-small: (
+    "borderLeftColor": $gray60,
+);
+
+$commentlist-comment-comment-body-p: (
+    "color": $hexGray,
+    );
+
+$commentlist-comment-comment-body-edit: (
+    "color": $gray60,
+    ); 
+
+$commentlist-comment-comment-body-edit-a: ( 
+    "color": $gray60,
+    );
+
+$commentlist-comment-comment-body-edit-a-hover: (
+    "color": #59c45b,
+    );
+
+
+/* Live Form */
+
+$leave-comment-reply-title: (
+    "color": $veryDarkGray,
+
+    );
+
+/* 15. About Page 
+ --------------------------------------------------------------------------------*/
+$about-cn-about-searved: (
+    "color": $hexGray,
+    );
+
+$about-cn-about-searved-after: (
+    "borderColor": $moderateLimeGreen,
+    ); 
+
+$about-cn-about-searved-before: (
+    "borderColor": $moderateLimeGreen,
+    );
+
+$about-cn-about-text-h1: (
+    "color": $veryDarkGray,
+    );
+
+$about-cn-about-text-about-description: (
+    "color": $hexGray,
+    ); 
+
+$team-team-head-h2: (
+    "color": $veryDarkGray,
+    ); 
+
+$team-team-head-p: (
+    "color": $hexGray,
+    ); 
+
+$team-team-item-h3: (
+    "color": $lead,
+    ); 
+
+$team-team-item-span: (
+    "color": $DimGrayColor,
+    ); 
+
+$twitter-twitter-cn-icon: (
+    "color": $white-color,
+    ); 
+
+$twitter-twitter-item-p: (
+    "color": $WhiteAsHeavenColor,
+    );
+
+$twitter-twitter-item-ul-li: (
+    "color": $white-color,
+    ); 
+$twitter-twitter-item-ul-li-span: ( 
+    "border-bottom": rgba(255, 255, 255, 0.3),
+);
+
+/* 16. Contact Page 
+--------------------------------------------------------------------------------*/
+$contact-cn : (
+    "backgroundColor": $white-color,
+    );
+
+$contact-cn-h3: (
+    "color": $veryDarkGray,
+    );
+
+$contact-cn-ul-li: (
+    "color": $gray40,
+    ); 
+
+$contact-cn-ul-li-a: (
+    "color": $gray40,
+    );
+
+
+/* 17. Payment Page 
+ --------------------------------------------------------------------------------*/
+$payment-step-before: (
+    "borderTopColor":  $Plaster,
+);
+
+$payment-step-li-step-select-after: (
+    "backgroundColor": $RoyalGrammaPurple ,
+);
+
+$payment-step-li-step-select-before: (
+    "backgroundColor": $RoyalGrammaPurple ,
+    );
+
+$payment-step-li-step-done-before: (
+    "backgroundColor": $RoyalGrammaPurple,
+    ); 
+
+
+$payment-step-li-step-done-after: (
+    "background": url('../images/icon-check-payment.png') no-repeat 50% 50%,
+    ); 
+
+
+$payment-step-li-step-part-after: (
+    "backgroundColor": $moderateLimeGreen,
+    );
+
+
+$payment-step-li-after: (
+    "backgroundColor": $ancestralWaterColor,
+    "borderTopColor": #f5f5f5,
+    "borderBottomColor": #f5f5f5,
+);
+
+$payment-step-li-before: (
+    "backgroundColor": $ancestralWaterColor,
+    "borderTopColor": #f5f5f5,
+    "borderBottomColor": #f5f5f5,
+    );
+
+$payment-step-li-span: (
+    "color": $veryDarkGray,
+    "backgroundColor": $white-color,
+    "borderColor": $superSilver,
+    );
+
+$payment-step-li-p: (
+    "color": $veryDarkGray,
+    ); 
+
+$payment-room-payment-info-h2: (
+    "color": $veryDarkGray,
+    );
+
+
+$payment-room-payment-info-star-room: (
+    "color": $moderateLimeGreen ,
+    );
+
+$payment-room-payment-info-ul-li: (
+    "color": $hexGray,
+    );
+
+$payment-room-payment-price: (
+    "backgroundColor": $whiteoutColor,
+    "borderColor": $unicornSilverColor,
+    );
+
+$payment-room-payment-price-total-trip-span: (
+    "color": $hexGray,
+    );
+
+$payment-room-payment-price-total-trip-span-small: (
+    "color": $gray40,
+    );
+
+$payment-room-payment-price-total-trip-p: (
+    "borderTopColor":  $unicornSilverColor,
+    );
+
+$payment-room-payment-price-total-trip-p-ins: (
+    "color": $darkCyanLimeGreen,
+    ); 
+
+
+$payment-room-payment-price-total-trip-p-i: (
+    "color": $gray40,
+    );
+
+
+$payment-form-h2: (
+    "color": $veryDarkGray,
+    ); 
+
+$payment-form-span: (
+    "color": $hexGray,
+    ); 
+
+$payment-form-form-field-field-input: (
+    "color": $hexGray,
+    "borderColor": $gray87,
+    );
+
+$payment-form-form-field-field-input-placeholder: (
+    "color": $hexGray,
+    );
+
+
+$payment-form-ul-li-radio-checkbox-label: (
+    "color": $hexGray,
+    );
+
+$payment-form-expiry-date-before: (
+    "color": $gray40,
+    );
+
+
+/* 18. Cart 
+ --------------------------------------------------------------------------------*/
+
+$cart-cn-tb-cart-thead-th: (
+    "color": $veryDarkGray,
+    "borderBottomColor": $gray87,
+    );
+ 
+$cart-cn-tb-cart-date: (
+    "color": $hexGray,
+    ); 
+
+$cart-cn-tb-cart-date-small: (
+    "color": $rangeLand,
+    );
+
+$cart-cn-tb-car-price: (
+    "color": $hexGray,
+    );
+
+$cart-cn-tb-cart-price-small: (
+    "color": $gray60,
+    );
+
+$cart-cn-tb-cart-select: (
+    "borderBottomColor": $Palladium,
+    );
+
+$cart-cn-tb-cart-sub-total-price: (
+    "color": $darkCyanLimeGreen,
+    ); 
+
+$cart-room-star-room: (
+    "color": $emeraldCory,
+    ); 
+
+$cart-room-ul-li: (
+    "color": $hexGray,
+    ); 
+
+$cart-flight-airline-span: (
+    "color": $gray40,
+    ); 
+
+
+$cart-flight-stop-cn-label: (
+    "color": $hexGray,
+    );
+
+$cart-flight-stop-cn-stops: (
+    "backgroundColor": $sootyColor,
+    );
+
+$cart-flight-stop-cn-stop: (
+    "backgroundColor": $white-color,
+    "borderColor": $dryHighlighterGreen,
+    ); 
+
+
+$cart-flight-group-time-before: (
+    "backgroundColor": $veryLightGray2,
+    );
+
+$cart-flight-group-time-p: (
+    "color": $veryDarkGray,
+    ); 
+
+$cart-flight-group-time-p-span: (
+    "color": $gray40,
+    );
+
+$cart-flight-group-time-p-p-before: (
+    "color": $gray40,
+    );
+
+
+$cart-car-h2: (
+    "color": $veryDarkGray,
+    );
+
+$cart-car-p: (
+    "color": $hexGray,
+    );
+
+$cart-car-ul-li: (
+    "color": $hexGray,
+);
+
+$cart-cruise-ul-li: ( 
+    "color": $hexGray,
+    );
+
+$cart-cn-tb-cart-tfoot-td: (
+    "borderTopColor": $gray87,
+    );
+
+
+/* 19. Element Page 
+ --------------------------------------------------------------------------------*/
+$element-sc: (
+    "backgroundColor": $white-color,
+    );
+
+
+$element-sc-element-cn-h2: ( 
+    "color": $veryDarkGray,
+    );
+
+
+$element-sc-element-cn-tab-pane: (
+    "color": $hexGray,
+    );
+
+
+/* 20. 404 
+--------------------------------------------------------------------------------*/
+$page-comingsoon-page-body-item-content-h4: (
+    "color": $white-color,
+    ); 
+$page-comingsoon-page-body-item-content-p: (
+    "color": $white-color,
+    ); 
+$page-not-found-page-body-item-content: (
+    "color": $white-color,
+    ); 
+
+
+$page-slide-owl-pagination-owl-page-span: (
+    "backgroundColor": $white-color,
+    );
+
+
+$page-slide-owl-pagination-owl-page-active-span: (
+    "backgroundColor": #59c35c,
+    );
+
+
+
+/* 21. Comingsoon 
+--------------------------------------------------------------------------------*/
+
+$countdown-wrapper: (
+    "borderTopColor": $white-color,
+    "borderBottomColor": $white-color,
+    );
+
+$countdown-item: (
+    "color": $white-color,
+    );
+
+$countdown-item-count-after: (
+    "content": '',
+    );
+
+/* 22. User Profile 
+ --------------------------------------------------------------------------------*/
+
+$user-profile__header: (
+    "color": $white-color,
+    "backgroundColor": $realTeal,
+    );
+
+$user-profile__navigation: (
+    "backgroundColor": $f2f2f2,
+    );
+
+$user-profile__navigation-li-a: (
+    "color": $hexGray,
+    );
+
+
+$user-profile__navigation-li-hover: (
+    "backgroundColor": $white-color,
+);
+
+$user-profile__navigation-li-current: (
+    "backgroundColor": $white-color,
+    );
+
+
+$user-profile-user-profile__title: (
+    "color": $veryDarkGray,
+    );
+
+
+$user-profile-user-profile__count-number-span: (
+    "color": $hexGray,
+    );
+
+$user-profile-user-profile__total-li: (
+    "color": $gray40,
+    "borderLeftColor": $gray87,
+    );
+
+$user-profile-user-profile__total-li-has-number: (
+    "color": $hexGray,
+    );
+
+$user-profile-user-profile__total-li-span: (
+    "color": $darkCyanLimeGreen,
+    );
+
+
+$user-profile__my-booking: (
+    "borderTopColor": $plasterColor,
+    );
+
+$user-profile__my-booking-table-thead-th: (
+    "color": $gray60,
+    "backgroundColor": $whiteoutColor,
+    );
+
+$user-profile__my-booking-table-td: (
+    "color": $hexGray,
+    "borderBottomColor": $gray60,
+    );
+
+$user-profile__my-booking-table-td-icon: (
+    "borderColor": $cerebralGreyColor,
+    );
+
+
+$user-profile__my-booking-table-td-a: (
+    "color": $gray40,
+    "backgroundColor": $whiteoutColor,
+    "borderColor": $plasterColor,
+    );
+
+$user-profile__my-booking-table-td-a-hover: (
+    "backgroundColor": #f2f2f2,
+    );
+
+$my-profile-my-profile__title: (
+    "color": $veryDarkGray,
+    );
+
+$my-profile-ul-li: (
+    "color": $hexGray,
+    );
+
+$my-profile-ul-li-span: (
+    "color": $gray60,
+    );
+
+$my-profile-p: (
+    "color": $hexGray,
+    );
+
+$user-profile-check-box-label: (
+    "color": $hexGray,
+   
+    );
+
+$user-profile-check-box-label-before: (
+    "color": $hexGray,
+    "backgroundColor": #f2f2f2,
+    "borderColor": $stonewallGreyColor,
+    );
+
+$my-profile-btn: (
+    "color": $spandexGreen,
+    "backgroundColor": #fbfbfb,
+    "borderColor": $gray87,
+    );
+
+$my-profile-btn-hover: (
+    "color": $white-color,
+    "backgroundColor": $spandexGreen,
+    "borderColor": $spandexGreen,
+    );
+
+$user-form-h3: (
+    "color": $veryDarkGray,
+    );
+
+$user-form-field-input-input-text: (
+    "color": $hexGray,
+    "backgroundColor": transparent,
+    "borderColor": $gray87,
+    );
+
+$user-form-p: (
+    "color": $gray40,
+    );
+
+$user-form-a: (
+    "color": $Vitalize,
+    );
+
+$user-signup-after: (
+    "borderLeftColor": #f1f1f1,
+    );
+
+/* 23. Footer 
+ --------------------------------------------------------------------------------*/
+
+$footer: (
+    "backgroundColor": $black-color,
+    );
+
+
+$footer-currency-lang-bottom-dropdown-head: (
+    "color": $white-color,
+    "borderColor": $ravenBlackColor,
+    );
+
+
+$footer-currency-lang-bottom-dropdown-head-span: ( 
+    "color": $moderateLimeGreen,
+    );
+
+$footer-currency-lang-bottom-ul: (
+    "backgroundColor": $white-color,
+    );
+
+$footer-currency-lang-bottom-ul-li-a: ( 
+    "color": $hexGray,
+    );
+
+$footer-currency-lang-bottom-ul-li-a-hover: (
+    "color": $white-color,
+    "backgroundColor": $darkCyanLimeGreen,
+    );
+
+$footer-currency-lang-bottom-hover-dropdown-head: (
+    "borderColor": $darkCyanLimeGreen,
+);
+
+$footer-copyright: ( 
+    "color": $white-color,
+    "backgroundColor": $veryDarkGray,
+    );
+
+
+/** Patch CSS Works 
+-----------------------------------------------------------------------------------*/
+/* updated on sept 23 2021 **/
+
+$header: (
+    "backgroundColor": $black-color,
+    );
+
+$cart-btn: (
+    "color": $white-color,
+    );
+
+
+$select2-container--default-select2-selection--single-select2-selection__placeholder: (
+    "color": $darkCyanLimeGreen,
+    );
+
+$error: (
+    "color": $metroidRed,
+    );
+
+$select2-selection__rendered-after: (
+    "color": #b9b9b9,
+    );

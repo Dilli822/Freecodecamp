@@ -1,0 +1,4394 @@
+/*------------------------------------------------------------------------
+# Bookawesome
+# ------------------------------------------------------------------------
+# Designed by MegaDrupal
+# Websites:  http://www.megadrupal.com -  Email: info@megadrupal.com
+--------------------------------------------------------------------------
+
+    1.   Setting
+    2.   ShortCode
+    3.   Header
+    4.   Navigation
+    5.   Banner
+    6.   Home Page
+    7.   Hotel Page
+    8.   Car Page
+    9.   Tour
+    10.  Package Deals Page
+    11.  Cruise Page
+    12.  Flight Page
+    13.  Detail Page
+    14.  Blog Page
+    15.  About Page
+    16.  Contact Page
+    17.  Payment Page
+    18.  Cart
+    19.  Element Page
+    20.  404
+    21.  Comingsoon
+    22.  User Profile
+    23.  Footer
+    24.  Responsive
+
+--------------------------------------------------------------------------------*/
+
+
+@import "./button-colors.scss";
+@import "./border.scss";
+@import "./global.scss";
+@import  "./mixins.scss";
+@import  "./fonts.scss";
+@import "./main.scss";
+@import "./colors.scss";
+
+
+
+/* 01. Setting 
+ --------------------------------------------------------------------------------*/
+ .georgia-italic {
+    font-family: map-get($font-family, Georgia);
+    font-style: map-get($font-style, italic);
+}
+
+body {
+    font-family: 'Lato', Arial, Verdana;
+    font-size: 14px;
+    background-color: $bodyP-backgroundColor;
+}
+
+#preloader {
+    text-align: map-get($text-position, center);
+    background-color: $white-color;
+
+  & p {
+    text-align: map-get($text-position, center);
+    text-transform: uppercase;
+    color: $black-color;
+    font-size: 12px;
+    overflow: hidden;
+   }
+}
+
+#page-loading div {
+    border-right: 3px $border-solid map-get($page-loader-color, border-rightColor);
+    border-bottom: 3px $border-solid $colorTransparent;
+}
+
+
+.bg-scroll {
+    @include absoluteNullTRBL();
+}
+
+
+.bg-fixed {
+    @include absoluteNullTRBL();
+    background-size: map-get($backgroundSize, cover);
+}
+
+.bg-parallax {
+    @include absoluteNullTRBL();
+    background-size: map-get($backgroundSize, cover);
+}
+
+
+.overlay {
+    @include absoluteNullTRBL();
+    background-color: $overlayP-backgroundColor;
+}
+
+.bg-white {
+    background-color: $white-color;
+}
+
+.bg-1 {
+    background-image: url('../images/background/bg-1.jpg');
+}
+
+.bg-2 {
+    background-image: url('../images/background/bg-2.jpg');
+}
+
+.bg-3 {
+    background-image: url('../images/background/bg-3.jpg');
+}
+
+.bg-4 {
+    background-image: url('../images/background/bg-4.jpg');
+}
+
+.bg-5 {
+    background-image: url('../images/background/bg-5.jpg');
+}
+
+.bg-6 {
+    background-image: url('../images/background/bg-6.jpg');
+}
+
+.bg-7 {
+    background-image: url('../images/background/bg-7.jpg');
+}
+
+.bg-8 {
+    background-image: url('../images/background/bg-8.png');
+}
+
+.bg-9 {
+    background-image: url('../images/background/bg-9.png');
+}
+
+.bg-10 {
+    background-image: url('../images/background/bg-10.png');
+}
+
+
+.hr {
+    background-color: $hrP-backgroundColor;
+}
+
+.breakcrumb-sc {
+    background-color: $white-color;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.table-radio tbody tr {
+    cursor: map-get($cursor-types, pointer);
+}
+
+.table-radio tbody tr:hover {
+    background-color: rgba(255, 250, 223, 0.4);
+}
+
+/* 02. ShortCode 
+ --------------------------------------------------------------------------------*/
+/*Button*/
+.awe-btn {
+    background-color: $colorTransparent;
+    border: 1px solid #dedede;
+    color: #333333;
+    font-weight: map-get($font-weights, bold);
+}
+
+button.quit-btn.awe-btn.awe-btn-1.awe-btn-small.join-event-btn.btn-danger {
+    background-color: map-get($btn-danger, backgroundColor);
+    border-color: map-get($btn-danger, borderColor);
+}
+
+.awe-btn.arrow-right {
+    background-image: url('../images/icon-arrow-blue.png');
+
+    &:hover {
+        background-position: right 10px center;
+    }
+
+    &.arrow-white {
+        background-image: url('../images/icon-arrow-white.png');
+
+        &:hover {
+            background-image: url('../images/icon-arrow-white.png');
+        }
+    }
+}
+
+
+.awe-btn{
+  & .awe-search {
+    background-color: #59c45b;
+    color: $white-color;
+    border-color: #4db74f;
+    background-image: url('../images/icon-search.png');
+   }
+
+   &.awe-btn.arrow-left {
+    background-image: url('../images/icon-arrow-left-blue.png');
+   }
+}
+
+
+.awe-btn.arrow-left.arrow-white {
+    background-image: url('../images/icon-arrow-left-white.png');
+}
+
+.awe-btn .awe-btn-1 {
+    color: $white-color;
+    background-color: map-get($awe-btn-1-Color, backgroundColor);
+    border-color: map-get($awe-btn-1-Color, borderColor);
+}
+
+.awe-btn .awe-btn-1:hover {
+    background-color: map-get($awe-btn-1HoverColor, backgroundColor);
+    color: map-get($awe-btn-1HoverColor, color);
+}
+
+.awe-btn .awe-btn-2 {
+    background-color: map-get($awe-btn-2-Color, backgroundColor);
+    color: $white-color;
+    border-color: map-get($awe-btn-2-Color, borderColor);
+}
+
+.awe-btn.awe-btn-2:hover {
+    background-color: map-get($awe-btn-2HoverColor, backgroundColor);
+    border-color: map-get($awe-btn-2HoverColor, borderColor);
+}
+    
+.awe-btn.awe-btn-3 {
+    color: $white-color;
+    background-color: map-get($awe-btn-3-Color, backgroundColor);
+    border-color:  map-get($awe-btn-3-Color, borderColor);
+}
+
+.awe-btn.awe-btn-3:hover {
+    color: map-get($awe-btn-3HoverColor, color);
+    background-color: map-get($awe-btn-3HoverColor, backgroundColor);
+}
+
+.awe-btn.awe-btn-4 {
+    color: map-get($awe-btn-4-Color, color);
+    background-color: map-get($awe-btn-4-Color, backgroundColor);
+}
+
+.awe-btn.awe-btn-4:hover {
+    background-color: map-get($awe-btn-4HoverColor, backgroundColor);
+}
+  
+.awe-btn.awe-btn-5 {
+    color: map-get($awe-btn-5-Color, color);
+    background-color: map-get($awe-btn-5-Color, backgroundColor);
+    font-family: 'Lato';
+    font-weight: map-get($font-weights, normal);
+}
+
+.awe-btn.awe-btn-5:hover {
+    background-color: map-get($awe-btn-5HoverColor, backgroundColor);
+    color:  map-get($awe-btn-5HoverColor, color);
+}   
+
+/*End Button*/
+
+
+/*Breadcrumb*/
+
+.breadcrumb {
+    background-color: $colorTransparent;
+    font-family: map-get($font-family, Georgia);
+    font-style: map-get($font-style, italic);
+}
+
+.breadcrumb li {
+    font-size: 14px;
+    color: map-get($breadcrum, li-Pcolor);
+}
+
+        .breadcrumb li a {
+            color: map-get($breadcrum, li-a-Pcolor);
+            font-size: 14px;
+        }
+
+    .breadcrumb.arrow > li + li:before {
+        content: '\f105';
+        font-family: map-get($font-family, font-awesome);
+    }
+
+    .breadcrumb li.active,
+    .breadcrumb li.active a {
+        color: map-get($font-family, li-active-Pcolor);
+    }
+
+/* End Breadcrumb */
+
+/* Tabs */
+.tabs-head {
+    border-bottom: 1px $border-dotted map-get($tabs-head, border-bottomColor);
+}
+
+.tabs-head li {
+    font-size: 14px;
+}
+
+.tabs-head li a {
+    color: $black-color;
+    font-size: 18px;
+}
+
+.tabs-head.nav-tabs-one {
+    background-color: map-get($nav-tabs-one, P-backgroundColor);
+}
+
+
+.tabs-head.nav-tabs-one {
+    background-color: map-get($nav-tabs-one, P-backgroundColor);
+}
+
+
+.tabs-head.nav-tabs-one li {
+    margin-bottom: -1px;
+    border-right: 1px $border-dotted map-get($tabs-head-tabs-one, P-backgroundColor);
+}
+
+
+.tabs-head.nav-tabs-one li:last-child {
+    border-right-color: $colorTransparent;
+}
+
+
+.tabs-head.nav-tabs-one li:last-child.active {
+    border-right-color: map-get($tabs-head-tabs-one-li, border-rightColor);
+}
+
+
+.tabs-head.nav-tabs-one li:first-child {
+    border-left: 1px $border-dotted $colorTransparent;
+}
+
+
+.tabs-head.nav-tabs-one li:first-child.active {
+    border-left-color: map-get($tabs-head-tabs-one-li, border-rightColor);
+}
+
+.tabs-head.nav-tabs-one li.active {
+    background-color: $white-color;
+    border-top: 1px $border-dotted map-get($tabs-head-tabs-one-li-active, border-topColor);
+}
+
+.tabs-head.nav-tabs-two li.active {
+    border-bottom: 3px solid $black-color;
+} 
+             
+/* End Tabs */
+
+/* Accordiong */
+
+.panel-group.no-margin .panel .panel-heading .panel-title a .icon {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+.panel-group .panel {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.panel-group .panel .panel-heading {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.panel-group .panel .panel-heading .panel-title {
+    font-family: 'Open-sans';
+}
+
+.panel-group .panel .panel-heading .panel-title a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.panel-group .panel .panel-heading .panel-title a small {
+    font-size: 14px;
+    font-weight: map-get($font-weights, normal);
+}
+
+
+.panel-group .panel .panel-heading .panel-title a .icon {
+    font-size: 14px;
+    color: #333333;
+}
+
+.panel-group .panel .panel-heading .panel-title a .icon:before {
+    content: '\f106';
+}
+
+.panel-group .panel .panel-heading .panel-title a.collapsed .icon:before {
+    content: '\f107';
+}
+
+.panel-group .panel .panel-heading .panel-title .num {
+    text-align: center;
+    color: map-get($panel-title-num, color);
+    background-color: map-get($panel-title-num, backgroundColor);
+}
+
+.panel-group .panel .panel-heading .panel-title .num._1 {
+    color: $white-color;
+    background-color:  map-get($panel-title-num1, backgroundColor);
+}
+
+.panel-group .panel .panel-heading .panel-title .num._2 {
+    color: $white-color;
+    background-color:  map-get($panel-title-num2, backgroundColor);
+}
+
+.panel-group .panel .panel-heading .panel-title .num._3 {
+    color: $white-color;
+    background-color:  map-get($panel-title-num3, backgroundColor);
+}
+
+.panel-group .panel .panel-heading .panel-title .num._4 {
+    color: $white-color;
+    background-color:  map-get($panel-title-num4, backgroundColor);
+}
+
+.panel-group .panel .panel-heading .panel-title .num._5 {
+    color: $white-color;
+    background-color:  map-get($panel-title-num5, backgroundColor);
+}
+
+.panel-group .panel .panel-body {
+    font-family: 'Open-sans';
+    color: map-get($panel-body, color);
+}
+
+/* End Accordiong */
+
+/* Alert Box */
+.alert-box {
+    background-color: $white-color;
+    border: 1px solid map-get($alert-box, borderColor);
+}
+
+.alert-box h6 {
+    color: #333333;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: map-get($font-weights, bold);
+}
+
+.alert-box span {
+    font-family: 'Open Sans';
+    color: map-get($alert-box-span, color);
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.alert-box.alert-attention {
+    background-color: #f7eed8;
+    border-color: #f0e2c1;
+}
+
+.alert-box.alert-attention h6,
+.alert-box.alert-attention i {
+    color: map-get($alert-box-alert-attention-h6, color);
+}
+
+
+.alert-box.alert-success {
+    background-color: map-get($alert-box-alert-success, backgroundColor);
+    border-color: map-get($alert-box-alert-success, borderColor);
+}
+
+.alert-box.alert-success h6 {
+    color: map-get($alert-box-alert-success-h6, color);
+}
+
+.alert-box.alert-error {
+    background-color: map-get($alert-box-alert-error, backgroundColor);
+    border-color: map-get($alert-box-alert-error, borderColor);
+}
+
+.alert-box.alert-error h6 {
+    color: map-get($alert-box-alert-error-h6, color);
+}
+
+/* End Alert Box */
+
+/* DropDown */
+.dropdown-cn .dropdown-head {
+    cursor: map-get($cursor-types, cursor);
+}
+
+/* End DropDown */
+
+/* Calendar */
+.ui-datepicker {
+    background-color: $white-color;
+    border: 1px $border-solid map-get($ui-datepicker, borderColor);
+}
+
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: $colorTransparent;
+    border-bottom: 1px $border-solid map-get($ui-datepicker, borderColor);
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+    cursor: map-get($cursor-types, cursor);
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover {
+    background-color:  map-get($ui-datepicker, borderColor);
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+    background: url('../images/icon-arrow-left-blue.png') no-repeat 50% 50%;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+    background: url('../images/icon-arrow-blue.png') no-repeat 50% 50%;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+    color: map-get($ui-datepicker-title, color);
+    font-family: 'Open sans';
+    font-weight: map-get($font-weights, bold);
+    font-size: 18px;
+}
+
+.ui-datepicker .ui-datepicker-calendar th {
+    font-weight: map-get($font-weights, bold);
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+.ui-datepicker .ui-datepicker-calendar td {
+    text-align: map-get($text-position, center);
+}
+
+
+.ui-datepicker .ui-datepicker-calendar td a {
+    border: 1px $border-solid map-get($ui-datepicker-calendar-td-a, borderColor);
+    text-align: map-get($text-position, center);
+    color: map-get($ui-datepicker-calendar-td-a, color);
+    font-size: 14px;
+    font-weight: map-get($font-weights, lighter);
+    font-family: 'Open sans';
+    border-radius: map-get($border-radius, 50%);
+}
+
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today a,
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today.ui-datepicker-current-day a {
+    background-color:  map-get($ui-datepicker-today, backgroundColor);
+    color: $white-color;
+}
+
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-current-day a {
+    background-color: map-get($ui-datepicker-current-day-a, backgroundColor);
+    color: $white-color;
+}
+
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month a {
+    color: map-get($ui-datepicker-other-month-a, color);
+}
+
+/* End Calendar */
+
+/* Select */
+.select {
+    font-family: 'Open sans';
+}
+
+.select span {
+    cursor: $pointer-cursor;
+    overflow: hidden;
+}
+
+.select span:after {
+    content: '\f107';
+    font-family: $font-fontAwesome;   
+}
+
+.select select {
+    cursor: $pointer-cursor;
+}
+/*End Select*/
+
+/*Block Quote*/
+
+blockquote p {
+    color: #666666;
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+blockquote p span {
+    font-weight: map-get($font-weights, lighter);
+    font-style: italic;
+}
+
+blockquote p span b {
+    color: map-get($blockquote-p-span-b, color);
+}
+
+blockquote:before {
+    content: '“';
+    font-family: map-get($font-family, Georgia);
+    font-size: 66px;
+    color: map-get($blockquote-p-span-b, color);
+}
+
+/* End Block Quote */
+
+/*Title*/
+.title-wrap {
+    background-color: $white-color;
+}
+
+.title-wrap .travel-title h2 {
+    color: map-get($travel-title-h2, color);
+    font-size: 24px;
+}
+
+.title-wrap .travel-title span {
+    color: map-get($travel-title-span, color);
+    font-weight:  map-get($travel-title-span, font-weight);
+}
+
+.title-wrap .travel-title span.span-departure {
+    font-family: 'Open sans';
+    color: $hexGray;
+    font-size: 16px;
+    font-weight: $font-weight-normal;
+}
+
+
+.title-wrap .travel-title .select {
+    border-bottom: 1px $border-dashed map-get($travel-title-select, border-bottom);
+}
+
+.title-wrap .travel-title .select span {
+    font-weight: map-get($font-weights, bold);
+    color: map-get($travel-title-select-span, color);
+    font-size: 16px;
+}
+
+.title-wrap .travel-title .select span:after {
+    color: map-get($travel-title-select-span-after, color);
+    font-size: 20px;
+    font-weight: $font-weight-normal;
+}
+
+.title-wrap .travel-title .select select {
+    font-weight: map-get($font-weights, bold);
+    color:  map-get($travel-title-select-span, color);
+}
+
+/* End Title */
+
+/* Sort View */
+.sort-view .sort-by label {
+    color: $veryDarkGray;
+    font-weight: map-get($font-weights, bold);
+    font-family: 'Open sans';
+}
+
+.sort-view .sort-by .sort-select {
+    font-family: 'Open sans';
+}
+
+.sort-view .sort-by .sort-select:after {
+    content: '';
+    background-color: map-get($sort-view-sort-by-sort-select-after, backgroundColor);
+}
+
+
+.sort-view .sort-by .sort-select span {
+    border-bottom: 1px $border-dashed  map-get($sort-select-span, borderBottom);
+    color: $hexGray;
+}
+
+.sort-view .sort-by .sort-select span:after {
+    font-size: 18px;
+    color: map-get($sort-select-span-after, color);
+}
+
+.sort-view .view-by ul {
+    list-style: none;
+    border: 1px $border-solid  map-get($view-by-ul, borderColor);
+    overflow: $overflow-hidden;
+}
+
+.sort-view .view-by ul li a {
+    color: $hexGray;
+    font-family: 'Open sans';
+    font-weight: map-get($font-weights, bold);
+    font-size: 14px;
+    border-left: 1px $border-solid map-get($view-by-ul-li-a, borderLeftColor);
+}
+
+.sort-view .view-by ul li a:hover,
+.sort-view .view-by ul li a.current {
+    background-color: $veryLightGray;
+}
+
+/* End Sort View */
+
+/* Search Result */
+.search-result {
+    background-color: $veryDarkGray;
+}
+
+.search-result:after {
+    border: 8px $border-solid $colorTransparent;
+    content: '';
+    border-bottom: 8px $border-solid $white-color;
+    border-left: 8px $border-solid $white-color;
+}
+
+
+.search-result p {
+    color: $white-color;
+    font-size: 14px;
+    font-family: map-get($font-family, Georgia);
+    font-style: italic;
+}
+
+.search-result p ins {
+    font-size: 30px;
+    text-decoration: none;
+    color: $moderateLimeGreen;
+}
+
+.search-result p span {
+    font-size: 17px;
+}
+
+/* End Search Result */
+
+
+/* Narrow your results */
+.narrow-results h6 {
+    color: $veryDarkGray;
+    font-size: 24px;
+}
+
+.narrow-results .narrow-form {
+    border: 1px $border-solid map-get($narrow-form, borderColor);
+}
+
+.narrow-results .narrow-form:after {
+    content: '';
+    background-color: map-get($narrow-form, color);
+}
+
+.narrow-results .narrow-form .narrow-input {
+    color: $hexGray;
+    font-size: 14px;
+    background-color: $white-color;
+    outline: none;
+}
+
+.narrow-results .narrow-form .narrow-input:-moz-placeholder {
+    color: $hexGray;
+}
+
+.narrow-results .narrow-form .narrow-input:-ms-input-placeholder {
+    color: $hexGray;
+}
+
+.narrow-results .narrow-form .narrow-input::-webkit-input-placeholder {
+    color: $hexGray;
+}
+
+.narrow-results .narrow-form .submit-narrow {
+    background: url('../images/icon-arrow-blue.png') no-repeat 50% 50%;
+    outline: none;
+}
+
+/*End Narrow your results*/
+
+
+/* Widget Sidebar */
+
+.widget-sidebar .title-sidebar {
+    color: $veryDarkGray;
+    font-size: 20px;
+    border-bottom: 1px $border-solid map-get($widget-sidebar, borderBottom);
+}
+
+.widget-sidebar .title-sidebar span {
+    color: map-get($widget-sidebar, p-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.widget-rate li {
+    color: map-get($widget-sidebar, p-color);
+    font-family: 'Open sans';
+}
+
+
+.widget-rate li .group-star {
+    color: $moderateLimeGreen;
+    width: 80px;
+}
+
+.widget-rate li span {
+    color: map-get($widget-rate, color);
+}
+
+
+.widget-ul li span {
+    color: map-get($widget-rate, color);
+}
+
+/* End Widget Sidebar */
+
+
+
+/* Price Slider */
+
+.slider-sidebar {
+    background: #e7e7e7;
+    border: 1px solid #dcdcdc;
+}
+
+.slider-sidebar .ui-slider-handle {
+    background: url('../images/icon-hander.png') no-repeat center center;
+    border-radius: map-get($border-radius, 50%);
+    outline: none;
+    cursor: pointer;   
+}
+
+.slider-sidebar .ui-slider-handle label {
+    text-align: center;
+}
+
+.slider-sidebar .ui-slider-range {
+    background-color: map-get($ui-slider-range, backgroundColor);
+    border-radius:  map-get($border-radius, 5px);
+}       
+
+
+.slider-sidebar label {
+    color: map-get($slider-sidebar-label, color);
+    font-family: 'Open sans';
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* End Price Slider */
+
+/*Form Search*/
+.form-radio {
+    list-style: none;
+    overflow: hidden;
+    background-color: $white-color;
+}
+
+.form-radio li .radio:checked ~ label {
+    color: map-get($form-radio, p-color);
+}
+
+.form-radio li label:after {
+    background-color: map-get($form-radio, primary-bgColor);
+}
+
+.form-search .form-field {
+    position: relative;
+    font-size: 14px;
+    font-family: 'Open sans';
+    color: map-get($form-radio, p-color);
+}
+
+.form-search .form-field label {
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 14px;
+    color: map-get($form-field-label, color);
+}
+
+
+.form-search .form-field label span {
+    color: map-get($form-radio, p-color);
+    font-size: 16px;
+}
+
+
+.form-search .form-field .field-input {
+    outline: none;
+    color: map-get($form-field-input, primaryColor);
+    background-color: transparent;
+    font-weight: 600;
+    border-bottom: 1px $border-dashed map-get($form-field-input, border-bottomColor);
+}
+
+.form-search .form-field .field-input:-moz-placeholder {
+    color: map-get($form-radio, p-color);
+}
+
+.form-search .form-field .field-input:-ms-input-placeholder {
+    color: map-get($form-radio, p-color);
+}
+
+.form-search .form-field .field-input::-webkit-input-placeholder {
+    color: map-get($form-radio, p-color);
+}
+
+.form-search .form-field.field-date .field-input {
+    background: url('../images/icon-calendar.png') no-repeat right center;
+    padding-right: 20px;
+}
+
+.form-search .form-field.field-select .select span {
+    color: map-get($form-radio, p-color);
+    font-weight: 600;
+    border-bottom: 1px dashed map-get($form-field-field-select-span, border-bottomColor);
+}
+
+.form-search .form-field.field-select .select span:after {
+    font-size: 24px;
+    color: map-get($form-field-field-select-span-after, color);
+    font-weight: normal;
+}
+
+.form-search .form-field.field-select .select select {
+    font-weight: 600;
+    color: map-get($form-field-field-select-select, color);
+}
+
+/* End Form Search */
+
+
+/* Post Share*/
+.post-share a {
+    text-align: map-get($text-position, center);
+    border: 1px solid map-get($post-share-a, color);
+    color: map-get($post-share-a, color);
+    text-decoration: none;
+    border-radius: map-get($border-radius, 50%);
+}
+
+.post-share a:hover {
+    border: 1px $border-solid  $moderateLimeGreen;
+    color: $moderateLimeGreen;
+}
+
+/* End Post Share*/
+
+
+/* Form Contact */
+
+.form-contact .form-field label {
+    color: map-get($form-field-label, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+    font-weight: normal;
+}
+
+.form-contact .form-field label sup {
+    color: map-get($form-field-label, supColor);
+}
+
+.form-contact .form-field .field-input {
+    border: 1px solid map-get($form-field-label, borderColor);
+    outline: none;
+    font-family: 'Open sans';
+}
+
+
+/* End Form Contact */
+
+/* Radio Check Style */
+
+.radio-checkbox .radio ~ label:after {
+    content: '';
+    cursor: $pointer-cursor;
+    background-color:  map-get($radio-checkbox-after, backgroundColor);
+    border-radius: map-get($font-weights, 50%);
+}
+
+
+.radio-checkbox label {
+    font-family: 'Open sans';
+    color: map-get($radio-checkbox-label, color);
+    font-weight: normal;
+}
+
+.radio-checkbox label:before {
+    content: '';
+    cursor: $pointer-cursor;
+    background-color: map-get($radio-checkbox-before, backgroundColor);
+    border: 1px solid map-get($radio-checkbox-before, borderColor);
+}
+
+/* Radio Check Style */
+
+/* Follow */
+.follow-group a {
+    text-align: map-get($text-position, center);
+    border: 1px $border-solid map-get($follow-group-a, borderColor);
+    color: map-get($follow-group-a, color);
+    font-size: 20px;
+}
+
+.follow-group a:hover {
+    border-color: $moderateLimeGreen;
+    color: $moderateLimeGreen;
+    border-radius: map-get($border-radius, 50%);
+}
+   
+/* End Follow */
+
+
+
+/* 03. Header 
+ --------------------------------------------------------------------------------*/
+.header {
+    background-color: map-get($header, backgroundColor);
+}
+
+.header.header-stick {
+    background-color: $white-color!important;
+}
+
+.header.header-stick .bars {
+    border-color: map-get($header-bars, borderColor);
+}
+
+.header.header-stick .bars:after,
+.header.header-stick .bars:before {
+    background-color: map-get($header-bars-after-before, backgroundColor);
+}
+
+.header-cn .logo:after {
+    background-color: $white-color;
+    content: '';
+}
+
+.sign-in-up a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sign-in-up a:hover {
+    color: #59c35c;
+}
+
+.bars {
+    border-top:  2px $border-solid $white-color;
+    border-bottom: 2px $border-solid $white-color;
+}
+
+.bars:after {
+    height: 2px;
+    background-color: $white-color;
+    content: '';
+    cursor: $pointer-cursor;
+}
+
+/* 04. Navigation 
+ --------------------------------------------------------------------------------*/
+.nav-desktop ul > li:hover {
+    background-color: map-get($nav-desktop-ul-li-hover, backgroundColor);
+}
+
+.nav-desktop ul > li:hover > a,
+.nav-desktop ul > li:hover > span {
+    color: $white-color;
+}
+
+.nav-desktop ul > li > a {
+    color: $hexGray;
+    font-size: 14px;
+}
+
+.nav-desktop ul ul {
+    background-color: $white-color;
+}
+
+.nav-desktop ul ul li {
+    border: 1px $border-solid #f1f1f1;
+}
+
+.nav-desktop ul ul li:hover,
+.nav-desktop ul li.current-menu-parent,
+.nav-desktop ul ul li.current-menu-item {
+    background-color: map-get($nav-desktop-ul-li-hover, backgroundColor);
+    border-color:  map-get($nav-desktop-ul-li-hover, borderColor);
+}
+
+.nav-desktop ul ul li:hover > a:after,
+.nav-desktop ul li.menu-parent:hover > a:after,
+.nav-desktop ul li.current-menu-parent.menu-parent > a:after,
+.nav-desktop ul ul li.current-menu-item > a:after {
+    border-top-color: $white-color;
+}
+
+.nav-desktop ul li.current-menu-parent > a,
+.nav-desktop ul ul li.current-menu-item > a,
+.nav-desktop ul li.current-menu-parent > span,
+.nav-desktop ul ul li.current-menu-item > span {
+    color: $white-color;
+}
+
+.nav-desktop ul ul li:hover > a,
+.nav-desktop ul ul li:hover > span {
+    color: $white-color;
+}
+
+.nav-desktop ul ul li a {
+    text-transform: map-get($category-singer-icon-h2, transform);
+    color: $hexGray;
+}
+
+.nav-desktop ul ul li span {
+    font-size: 14px;
+    color: $hexGray;
+}
+
+.nav-desktop ul li.menu-parent > a:after {
+    content: '';
+    border: 4px $border-solid $colorTransparent;
+    border-top-color: $hexGray;
+}
+
+.nav .nav-inner {
+    background-color: $nav-nav-inner,
+}
+
+.nav ul li.current-menu-parent,
+.nav ul li.current-menu-item,
+.nav ul li.active,
+.nav > ul > li:hover {
+    background-color: rgba(14, 34, 64, 0.5);
+}
+
+.nav ul li a {
+    font-weight: 600;
+    color: $white-color;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.nav ul li.menu-parent > a:after {
+    content: '';
+    border: 4px $border-solid $colorTransparent;
+    border-top-color: $white-color;
+}
+
+
+.nav ul li ul {
+    background-color: rgba(255,255,255,.07);
+}
+
+
+.nav .bars-close:before,
+.nav .bars-close:after {
+    content: '';
+    background-color: $white-color;
+}
+
+/* 05. Banner 
+ --------------------------------------------------------------------------------*/
+/* Banner */
+
+.banner-slide .owl-item {
+    background-size: map-get($background-size, cover);
+}
+
+.banner-video-control {
+    color: map-get($banner-video-control, color);
+}
+
+
+.form-cn {
+    background-color: map-get($form-cn, backgroundColor);
+    border-top: 5px $border-solid $white-color;
+}
+
+.form-cn h2 {
+    color: map-get($form-cn-h2, color);
+    font-size: 32px;
+}
+
+.form-cn .form-search {
+    background-color: $white-color;
+}
+
+.form-cn .form-search .form-field {
+    border-right: 1px $border-solid $form-cn-form-field;
+    font-size: 18px;
+}
+
+/* Hotel Form */
+
+/* Car Form */
+
+/*Cruise Form*/
+
+.form-cruise .form-search {
+    border-top: 1px $border-solid $form-cruise-search;
+}
+
+// package form
+.form-package .form-search {
+    border-top: 1px $border-solid $form-package-search;
+}
+
+/*Tabs Cat*/
+.tabs-cat .cate-item:before {
+    content: '';
+    border: 17px solid transparent;
+    border-bottom-color: $white-color;
+}
+
+.tabs-cat .cate-item:after {
+    border-left: 1px solid $white-color;
+    content: '';
+}
+
+.tabs-cat .cate-item span {
+    color: $white-color;
+    text-transform: uppercase;
+}
+
+.category-singer {
+    border-bottom: 5px solid $moderateLimeGreen;
+}
+
+.category-singer:before {
+    border: 17px solid $colorTransparent;
+    border-bottom-color: $moderateLimeGreen;
+}
+
+.category-singer .cate-singer-icon h2 {
+    color: $white-color;
+    text-transform: map-get($category-singer-icon-h2, transform);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.category-singer p {
+    border-left: 1px solid $white-color;
+    color: map-get($category-singer-p, color);
+    font-size: 24px;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.category-singer p span {
+    color: $white-color;
+}
+/*Tabs Cat Form*/
+
+/* End Banner */
+
+/* 06. Home Page 
+ --------------------------------------------------------------------------------*/
+/*Host Sales*/
+.sales-cn .sales-item:after {
+    content: '';
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+/* Sales Item */
+
+.sales-item {
+    background-color: $white-color;
+}
+
+.sales-item .home-sales-img:after {
+    content: '';
+    border-bottom-color: $white-color;
+}
+
+.sales-item .home-sales-img figcaption {
+    color: $white-color;
+    font-size: 14px;
+    font-family: Georgia;
+    font-style: italic;
+    text-align: center;
+}
+
+.sales-item .home-sales-img figcaption:after {
+    background-color: $black-color;
+    content: '';
+}
+
+.sales-item .home-sales-text .home-sales-name-places .home-sales-name a {
+    font-size: 26px;
+    color: $hexGray;
+}
+
+.sales-item .home-sales-text .home-sales-name-places .home-sales-name a:hover {
+    color: $moderateLimeGreen;
+}
+
+.sales-item .home-sales-text .home-sales-name-places .home-sales-places {
+    color: map-get($sales-item-home-sales-places, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.sales-item .home-sales-text .home-sales-name-places .home-sales-places a {
+    color: map-get($sales-item-home-sales-places-a, color);
+}
+
+.sales-item .home-sales-text .home-sales-name-places .home-sales-places a:hover {
+    color: $veryDarkGray;
+}
+
+.sales-item .home-sales-text .price-box .price {
+    color: map-get($sales-item-price, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.sales-item .home-sales-text .price-box .price.special-price {
+    font-size: 30px;
+    color: map-get($sales-item-price-special-price, color);
+}
+
+.sales-item .home-sales-text .price-box .price.special-price small {
+    color: map-get($sales-item-price-special-price-small, color);
+    font-size: 14px;
+}
+
+/*End Sales Item*/
+
+/*End Host Sales*/
+
+/*Destinations*/
+
+.destinations-cn .intro-filter .intro p {
+    color: $white-color;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.destinations-cn .intro-filter .filter li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+.destinations-cn .intro-filter .filter li.active a,
+.destinations-cn .intro-filter .filter li:hover a {
+    background-color: $white-color;
+    color: map-get($destinations-cn-filter-li, color);
+}
+
+.destinations-cn .intro-filter .filter li a {
+    color: $white-color;
+    text-decoration: none;
+}
+
+.destinations-cn .destinations-grid {
+    background-color: map-get($destinations-cn-destinations-grid, backgroundColor);
+}
+
+.destinations-cn .destinations-grid .destinations-item:after {
+    content: '';
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+/*Destinations Item*/
+.destinations-item {
+    background-color: map-get($destinations, primary-backgroundColor);
+}
+
+.destinations-item .destinations-text .destinations-name a {
+    color: $hexGray;
+}
+
+.destinations-item .destinations-text .destinations-name a:hover {
+    color: $moderateLimeGreen;
+}
+
+.destinations-item .destinations-text .properties-nb {
+    color: map-get($destinations-items-properties-nb, color);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.destinations-item .destinations-text .properties-nb ins {
+    color: $hexGray;
+    text-decoration: none;
+}
+
+.destinations-item .destinations-img a:after {
+    border: 25px solid rgba(255, 255, 255, 0.6);
+}
+
+/*End Destinations Item*/
+
+/*End Destinations*/
+
+/*Magazine*/
+
+.magazine-cn {
+    background-color: $white-color;
+}
+
+/*Magazine Text*/
+
+.magazine-item .magazine-header h2 {
+    color: $veryDarkGray;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.magazine-item .magazine-header ul li {
+    font-size: 16px;
+    color: $hexGray;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.magazine-item .magazine-header ul li a {
+    color: $hexGray;
+    text-decoration: none;
+}
+
+.magazine-item .magazine-header ul li a:hover {
+    color: $moderateLimeGreen;
+}
+
+.magazine-item .magazine-body {
+    color: $hexGray;
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.magazine-item .magazine-footer {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+    overflow: hidden;
+}
+
+/* End Magazine Text*/
+
+/* Magazine Image */
+.thumnail-item {
+    cursor: $pointer-cursor;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.thumnail-item figure:before {
+    content: '';
+    border: 6px solid map-get($thumnail, borderColor);
+}
+
+.thumnail-item figure:after {
+    content: '';
+    border: 15px $border-solid $colorTransparent;
+    border-left-color: map-get($thumnail, borderColor);
+}
+
+.thumnail-item .thumnail-text h4 {
+    color: $veryDarkGray;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.thumnail-item .thumnail-text span {
+    color: map-get($thumnail-item-span, color);
+    font-size: 16px;
+    font-family: 'Georgia';
+    font-style: italic;
+}
+
+/* End Magazine Image */
+/* End Magazine */
+
+/*Confidence*/
+
+.confidence h3 {
+    color: $white-color;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.confidence ul li span {
+    text-align: center;
+    color: $white-color;
+    font-size: 16px;
+    font-family: 'Open sans';
+    font-weight: 300;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.confidence ul li span:after {
+    content: '';
+    border: 4px solid transparent;
+    border-bottom-color: $white-color;
+    border-right-color: $white-color;
+}
+
+
+.confidence ul li h5 {
+    color: $white-color;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.confidence ul li p {
+    font-size: 13px;
+    color: $white-color;
+    font-family: 'Open sans';
+}
+
+/* End Confidence */
+
+/*Subscribe*/
+
+.subscribe h3 {
+    color: $hexGray;
+    font-size: 24px;
+    border-bottom: 1px $border-solid $veryLightGray2;
+}
+
+.subscribe p {
+    color: $hexGray;
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+.subscribe .subscribe-form {
+    border: 1px $border-solid map-get($subscribe-subscribe-form, color);
+}
+
+
+.subscribe .subscribe-form .subscribe-input {
+    color: map-get($subscribe-subscribe-form-input, color);
+    font-size: 16px;
+    font-family: Georgia;
+    font-style: italic;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.subscribe .subscribe-form:after {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 35px;
+    content: '';
+    background-color: #dedede;
+    right: 170px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.subscribe .follow-us h4 {
+    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 0;
+}
+
+
+/* 07. Hotel Page 
+ --------------------------------------------------------------------------------*/
+ .hotel-page:before,
+ .package-page:before,
+ .cruise-page:before,
+ .car-page:before,
+ .tour-page:before,
+ .flight-page:before,
+ .hotel-maps:before {
+     background: url('../images/bg-border-h.png') repeat-y top left;
+ }
+
+
+ /*Hotel Item*/
+.hotel-item {
+    background-color: $white-color;
+}
+
+.hotel-item .hotel-img:after {
+    border: 14px solid $colorTransparent;
+    border-bottom-color: $white-color;
+}
+
+.hotel-item .hotel-img figcaption {
+    color: $white-color;
+}
+
+
+.hotel-item .hotel-img figcaption:after {
+    background-color: $black-color;
+}
+
+.hotel-item .hotel-text .hotel-name a {
+    color: $veryDarkGray;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.hotel-item .hotel-text .hotel-name a:hover {
+    color: $moderateLimeGreen;
+}
+
+.hotel-item .hotel-text .hotel-places {
+    color: $darkGrayishYellow9;
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.hotel-item .hotel-text .hotel-places a {
+    margin-top: 5px;
+    color: $darkGrayishYellow9;
+    text-decoration: none;
+}
+
+.hotel-item .hotel-text .hotel-places a:hover {
+    color: $veryDarkGray;
+}
+
+.hotel-item .hotel-text .price-box .price {
+    color: $darkGrayishYellow9;
+    font-size: 14px;
+    font-family: 'Open sans';
+    display: block;
+}
+
+.hotel-item .hotel-text .price-box .price.special-price {
+    font-size: 30px;
+    color: $darkCyanLimeGreen;
+}
+
+
+.hotel-item .hotel-text .price-box .price.special-price small {
+    color: $darkGrayishYellow9;
+    font-size: 14px;
+}
+/* End Hotel Item */
+
+/*  Hotel List Item */
+
+.hotel-list-item .hotel-text .hotel-name a {
+    color: $veryDarkGray;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.hotel-list-item .hotel-text .hotel-name a:hover {
+    color: $darkCyanLimeGreen;
+}
+
+.hotel-list-item .hotel-text .hotel-star-address .hotel-star {
+    color: $darkCyanLimeGreen;
+    font-size: 10px;
+}
+
+.hotel-list-item .hotel-text .hotel-star-address .rating {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: $veryDarkGray;
+}
+
+
+.hotel-list-item .hotel-text .hotel-star-address .hotel-address {
+    line-height: 32px;
+    color: $hexGray;
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+.hotel-list-item .hotel-text p {
+    color: $darkGrayishYellow9;
+    font-family: 'Open sans';
+    font-style: italic;
+    font-size: 13px;
+}
+
+.hotel-list-item .hotel-text p a {
+    color: $veryDarkGray;
+}
+
+
+.hotel-list-item .hotel-text .price-box .price {
+    color: $darkGrayishYellow9;
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.hotel-list-item .hotel-text .price-box .price.special-price {
+    color: $darkCyanLimeGreen;
+    font-size: 30px;
+}
+
+.hotel-list-item .hotel-text .price-box .price.special-price small {
+    font-size: 14px;
+    color: $darkGrayishYellow9;
+}
+
+.hotel-list-item .hotel-text .hotel-service {
+    margin-top: 25px;
+    padding: 5px;
+    border: 1px solid map-get($hotel-list-item-hotel-service, borderColor);
+}
+
+/*End Hotel List Item*/
+
+.hotel-list .hotel-grid-cn .hotel-item:after {
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+.hotel-list .hotel-list-cn .hotel-list-item:after {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.hotel-list .page-navigation-cn:before {
+    content: '';
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+/* SideBar*/
+/* End Sidebar*/
+
+/* Hotel Maps */
+
+.maps-item {
+    background-color: $white-color;
+}
+
+.maps-item .maps-text h2 a {
+    color: $veryDarkGray;
+}
+
+.maps-item .maps-text h2 a:hover {
+    color: $darkCyanLimeGreen;
+}
+
+.maps-item .maps-text span {
+    color: $darkCyanLimeGreen;
+    font-size: 10px;
+}
+
+.maps-item .maps-text address {
+    color: $hexGray;
+    font-family: 'Open sans';
+}
+
+.maps-item .maps-text p {
+    color: $darkGrayishYellow9;
+    font-size: 13px;
+    font-family: 'Open sans';
+    font-weight: 300;
+    font-style: italic;
+}
+
+.maps-item .maps-text p a {
+    color: $veryDarkGray;
+}
+
+.maps-item .maps-text p a:hover {
+    color: $darkCyanLimeGreen;
+}
+
+.maps-item .maps-text .price {
+    color: $darkGrayishYellow9;
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.maps-item .maps-text .price ins {
+    text-decoration: none;
+    color: $darkCyanLimeGreen;
+    font-size: 30px;
+    font-family: 'Lato';
+}
+
+.hl-maps-cn {
+    background-color: $white-color;
+}
+
+/* 08. Car Page 
+ --------------------------------------------------------------------------------*/
+/*List Car*/
+.top-list-car {
+    font-family: 'Open sans';
+}
+
+.top-list-car span {
+    color: $hexGray;
+}
+
+.top-list-car .navigation-car p {
+    color: $veryDarkGray;
+}
+
+.car-list-cn .car-list-table {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+
+.car-list-cn .car-list-table th {
+    text-align: center;
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.car-list-cn .car-list-table th:after {
+    content: '';
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+.car-list-cn .car-list-table td {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.car-list-cn .car-list-table td:after {
+    content: '';
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+.car-list-cn .car-list-table td.td-car figure figcaption {
+    color: $hexGray;
+    font-family: 'Open sans';
+}
+
+.car-list-cn .car-list-table td.td-car figure figcaption {
+    margin-top: 2px;
+    color: $hexGray;
+    font-family: 'Open sans';
+}
+
+.car-list-cn .car-list-table td.td-price .price-box .price {
+    color: $hexGray;
+    font-family: 'Open sans';
+}
+
+.car-list-cn .car-list-table td.td-price .price-box .price ins {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: $darkCyanLimeGreen;
+}
+
+.car-list-cn .car-list-table td.td-price .price-box .price small {
+    color: $darkGrayishYellow9;
+    font-size: 14px;
+}
+
+.car-list-cn .car-list-table td.td-price .price-box .price.night {
+    border-top: 1px solid $dedede;
+}
+
+/*End List Car*/
+
+/* 10. Package Deals Page
+ --------------------------------------------------------------------------------*/
+ .package-item .package-text .package-name a {
+    color: $veryDarkGray;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.package-item .package-text .package-name a:hover {
+    color: $moderateLimeGreen;
+}
+
+.package-item .package-text .package-star {
+    color: map-get($package-item-package-star, color);
+    font-size: 10px;
+}
+
+.package-item .package-text .package-rating {
+    color: map-get($package-item-package-rating, color);
+    font-size: 16px;
+}
+
+.package-item .package-text .package-address {
+    color: $hexGray;
+    font-family: 'Open sans';
+}
+
+
+.package-item .package-text p {
+    color: map-get($package-item-package-rating, color);
+    font-family: 'Open sans';
+    font-size: 13px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.package-item .package-text p a {
+    color: map-get($package-item-package-text-p-a, color);
+}
+
+.package-item .package-text .price-box {
+    background: url('../images/bg-border-h.png') repeat-y left top;
+}
+
+.package-item .package-text .price-box .price {
+    color: map-get($package-item-price-box-price, color);
+    font-family: 'Open sans';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.package-item .package-text .price-box .price ins {
+    color: map-get($package-item-price-box-ins, color);
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.package-item .package-text .price-box .price small {
+    color: map-get($package-item-price-small, color);
+    font-size: 14px;
+}
+
+.package-item .package-text .price-box .price.together ins {
+    color: map-get($package-item-price-box-together-ins, color);
+    font-family: 'Lato';
+    font-size: 30px;      
+}
+
+/* End Package Item*/
+
+.package-list .sort-view {
+    background: url('../images/bg-border-v.png') repeat-x left top;
+}
+
+.package-list .page-navigation-cn {
+    background: url('../images/bg-border-v.png') repeat-x left top;
+}
+
+.package-list-cn .package-item {
+    background: url('../images/bg-border-v.png') repeat-x left top;
+}
+
+/* 11. Cruise Page 
+--------------------------------------------------------------------------------*/
+
+/*Crurise Deal Item*/
+.cruise-deal-item {
+    background-color: $white-color
+}
+
+.cruise-deal-item .cruise-img:after {
+    content: '';
+    border: 14px solid transparent;
+    border-bottom-color: $white-color
+}
+
+.cruise-deal-item .cruise-img figcaption {
+    color: $white-color;
+    font-size: 14px;
+    font-family: Georgia;
+    font-style: italic;
+    text-align: center;
+}
+
+.cruise-deal-item .cruise-img figcaption:after {
+    background-color: $black-color;
+    content: '';
+}
+
+
+.cruise-deal-item .cruise-img figcaption:after {
+    background-color: $black-color;
+}
+
+.cruise-deal-item .cruise-text .cruise-name a {
+    font-size: 30px;
+    color: map-get($cruise-deal-cruise-name-a, color);
+    font-weight: 300;
+}
+
+.cruise-deal-item .cruise-text .cruise-name a:hover {
+    color: $moderateLimeGreen;
+}
+
+.cruise-deal-item .cruise-text .cruise-night {
+    color: map-get($cruise-deal-item-cruise-night, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.cruise-deal-item .cruise-text .cruise-night span {
+    color: map-get($cruise-deal-item-cruise-night-span, color);
+}
+
+.cruise-deal-item .cruise-text .price-box .price {
+    color: map-get($cruise-deal-item-cruise-text-price-box-price, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+    display: block;
+}
+
+
+.cruise-deal-item .cruise-text .price-box .price.special-price {
+    font-size: 30px;
+    color: map-get($cruise-deal-item-cruise-text-price-box-price-special-price, color);
+}
+
+
+.cruise-deals-cn .flight-deal-item:before {
+    background: url('../images/bg-border-h.png') repeat-y left top;
+}
+/*End Crurise Deal*/
+
+/* Crurise Item*/
+.cruise-item .cruise-text .cruise-name a {
+    color: map-get($cruise-deal-item-cruise-text-cruise-name-a, color);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+.cruise-item .cruise-text .cruise-name a:hover {
+    color: map-get($cruise-deal-item-cruise-text-cruise-name-a-hover, color);
+}
+
+
+.cruise-item .cruise-text .ship-port li {
+    color: map-get($cruise-item-cruise-text-ship-port-li, color);
+}
+
+.cruise-item .cruise-text .ship-port li .label {
+    font-weight: normal;
+    font-family: 'Open sans';
+    font-size: 13px;
+    color: map-get($cruise-item-cruise-text-ship-port-li-label , color);
+}
+
+.cruise-item .cruise-text .price-box {
+    background: url('../images/bg-border-h.png') repeat-y left top;
+}
+
+.cruise-item .cruise-text .price-box .price {
+    color:map-get($cruise-item-cruise-text-price-box-pric, color);
+    display: block;
+    line-height: 32px;
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.cruise-item .cruise-text .price-box .price ins {
+    color: map-get($cruise-item-cruise-text-price-box-price-ins, color);
+    font-size: 38px;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: 'Lato';
+}
+
+.cruise-item .cruise-text .price-box .price small {
+    color: map-get($cruise-item-cruise-text-price-box-price-smal, color);
+    font-size: 14px;
+}
+
+.cruise-item .cruise-text .price-box .price.night {
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: 1px solid map-get($cruise-item-cruise-text-price-box-price-night, borderTopColor);
+    line-height: 20px;
+}
+
+.cruise-item .cruise-text .price-box .price.night ins {
+    color: map-get($cruise-item-cruise-text-price-box-price-night-ins, color);
+    font-size: 18px;
+    font-family: 'Open sans';
+}
+/* End Crurise Item */
+
+.cruise-list .page-navigation-cn {
+    background: url('../images/bg-border-v.png') repeat-x left top;
+}
+
+.cruise-list-cn .cruise-item {
+    background: url('../images/bg-border-v.png') repeat-x left top;
+}
+/* 12. Flight Page 
+ --------------------------------------------------------------------------------*/
+/*Flight Deal Item*/
+.flight-deal-item {
+    background-color: $white-color;
+}
+
+.flight-deal-item .flight-img:after {
+    content: '';
+    border: 14px solid transparent;
+    border-bottom-color: $white-color;
+}
+
+.flight-deal-item .flight-img figcaption {
+    color: $white-color;
+    font-size: 14px;
+    font-family: Georgia;
+    font-style: italic;
+    text-align: center;
+}
+
+.flight-deal-item .flight-img figcaption:after {
+    background-color: $black-color;
+    content: '';
+}
+
+
+.flight-deal-item .flight-text .flight-name a {
+    font-size: 30px;
+    color: map-get($flight-deal-item-flight-name-a, color);
+    font-weight: 300;
+}
+
+.flight-deal-item .flight-text .flight-name a:hover {
+    color: map-get($flight-deal-item-flight-name-a-hover, color);
+}
+
+.flight-deal-item .flight-text .flight-price {
+    color: map-get($flight-deal-item-flight-text-flight-price, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.flight-deal-item .flight-text .flight-price .price {
+    font-size: 30px;
+    color: map-get($flight-deal-item-flight-text-flight-price-price, color);
+    font-family: 'Lato';
+}
+/*End Flight Deal Item*/
+
+/* Flight List */
+
+.calendar-charts .chart-scale {
+    background-color: map-get($calendar-charts-chart-scale, backgroundColor);
+}
+
+.calendar-charts .chart-scale span {
+    font-size: 11px;
+    font-family: 'Open sans';
+    background-color: $white-color;
+}
+
+.chart p {
+    color: map-get($chart-p, color);
+    font-size: 20px;
+    margin: 0;
+}
+
+.chart .chart-bar .ul-bar li.active .bar-cl .fill {
+    background-color: map-get($chart-bar-cl-fill, backgroundColor);
+    border-top-color: map-get($chart-bar-cl-fill, borderTopColor);
+}
+
+.chart .chart-bar .ul-bar li.active .date-day {
+    border-color: map-get($chart-li-active-date-day, borderColor);
+}
+
+.chart .chart-bar .ul-bar li.active .date-day .date,
+.chart .chart-bar .ul-bar li.active .date-day .short-day {
+    color: #57bf58;
+}
+
+.chart .chart-bar .ul-bar li .bar-cl:hover .fill {
+        background-color: map-get($chart-li-bar-cl-hover-fill, backgroundColor);
+        border-top-color: map-get($chart-li-bar-cl-hover-fill,borderTopColor);
+}
+
+.chart .chart-bar .ul-bar li .bar-cl .fill {
+    border-top: 5px solid map-get($chart-li-bar-cl-fill, borderTopColor);
+    background-color: map-get($chart-li-bar-cl-fill, backgroundColor);
+}
+
+.chart .chart-bar .ul-bar li .bar-cl .chart-info {
+    background-color: $white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.chart .chart-bar .ul-bar li .bar-cl .chart-info .date {
+    display: block;
+    background-color: $white-color;
+}
+
+.chart .chart-bar .ul-bar li .date-day {
+    margin-top: 2px;
+    border-top: 1px solid map-get($chart-ul-bar-li-date-day, borderTopColor);
+    font-family: 'Open sans';
+    font-size: 13px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.chart .chart-bar .ul-bar li .date-day .date {
+    display: block;
+    color: map-get($chart-ul-bar-li-date-day-date, color);
+}
+
+.chart .chart-bar .ul-bar li .date-day .short-day {
+    font-size: 11px;
+    color: map-get($chart-ul-bar-li-date-day-short-day, color);
+    text-transform: capitalize;
+}
+
+.chart .chart-bar .ul-month li .month-wrap {
+    text-align: center;
+    border: 2px solid map-get($chart-ul-bar-li-month-wrap, borderColor);
+    border-top: 0;
+    height: 11px;
+    display: block;
+}
+
+.chart .chart-bar .ul-month li .month-wrap span {
+    color: map-get($chart-ul-bar-li-month-wrap-span, color);
+    font-size: 13px;
+    font-family: 'Open sans';
+    font-weight: 600;
+    background-color: $white-color;
+}
+
+.chart .chart-bar .chart-nav span {
+    font-size: 20px;
+    color: map-get($chart-chart-bar-chart-nav-span, color);
+    cursor: pointer;
+}
+
+.chart .chart-bar .chart-nav span:hover {
+    color: map-get($chart-ul-bar-li-month-wrap-span-hover, color);
+}
+
+.flight-statis .flight-statis-item:before {
+    border-left: 1px solid map-get($flight-statis-item-before, borderLeftColor);
+    content: '';
+}
+
+.flight-statis .icon {
+    color: map-get($flight-statis-icon, color);
+    font-size: 24px;
+}
+
+.flight-statis h5 {
+    color: map-get($flight-statis-h5, color);
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flight-statis p {
+    color: map-get($flight-statis-p, color);
+}
+
+.flight-statis p ins {
+    text-decoration: none;
+    color: map-get($flight-statis-p-ins, color);
+    font-size: 24px;
+}
+
+.flight-statis p span {
+    color: map-get($flight-statis-p-span, color);
+}
+
+.flight-list-head {
+    background: #f7f7f7 url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.flight-list-head h3 {
+    color: map-get($flight-list-head-h3, color);
+    font-size: 24px;
+}
+
+.flight-list-head p {
+    color: map-get($flight-list-head-p, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.flight-list-cn .flight-table {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.flight-list-cn .flight-table th {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+    font-family: 'Open sans';
+    color: map-get($flight-list-cn-flight-table-th, color);
+    font-weight: normal;
+}
+
+.flight-list-cn .flight-table td {
+    font-family: 'Open sans';
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.flight-list-cn .flight-table td:before {
+    border-left: 1px solid map-get($flight-list-cn-flight-table-td-before, borderLeftColor);
+    content: '';
+}
+
+.flight-list-cn .flight-table td.td-airline {
+    color: map-get($flight-list-cn-flight-table-td-td-airline, color);
+}
+
+.flight-list-cn .flight-table td.td-time p {
+    font-size: 16px;
+    font-weight: 600;
+    color: map-get($flight-list-cn-flight-table-td-td-time-p, color);
+}
+
+.flight-list-cn .flight-table td.td-time p span {
+    color: map-get($flight-list-cn-flight-table-td-td-time-p-span, color);
+    font-size: 14px;
+    font-weight: normal;
+    float: right;
+}
+
+
+.flight-list-cn .flight-table td.td-stop .stop-cn label {
+    color: map-get($flight-list-cn-flight-table-td-td-stop-stop-cn-label, color);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.flight-list-cn .flight-table td.td-stop .stop-cn .stops {
+    background-color: map-get($flight-list-cn-flight-table-td-td-stop-stop-cn-stops, backgroundColor);
+}
+
+.flight-list-cn .flight-table td.td-stop .stop-cn .stops .stop {
+    border: 2px solid map-get($flight-list-cn-flight-table-td-td-stop-stop-cn-stops-stop, borderColor);
+    background-color: $white-color;
+    content: '';
+    border-radius: 50%;
+}
+
+.flight-list-cn .flight-table td.td-price span {
+    color: map-get($flight-list-cn-flight-table-td-td-price-span, color);
+    font-size: 11px;
+}
+
+.flight-list-cn .flight-table td.td-price span ins {
+    text-decoration: none;
+    font-size: 16px;
+    color: map-get($flight-list-cn-flight-table-td-td-price-span-ins, color);
+    font-weight: 600;
+}
+
+/* End Flight List */
+/* 13. Detail Page 
+ --------------------------------------------------------------------------------*/
+
+ .detail-cn > .row > [class*="col-"]:last-child {
+    border-left: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+/*============== Detail Head =========*/
+
+.head-detail.bg-gray {
+    background-color: map-get($head-detail-bg-gray, backgroundColor);
+    border-bottom: 1px solid map-get($head-detail-bg-gray, borderBottomColor);
+}
+
+.head-detail h1 {
+    color: map-get($head-detail-h1, color);
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.head-detail .start-address .star {
+    color: map-get($head-detail-start-address-star, color);
+    font-size: 12px;
+}
+
+.head-detail .start-address .address {
+    color: map-get($head-detail-start-address-address, color);
+    font-family: 'Open sans';
+}
+
+.head-detail ul li {
+    color: map-get($head-detail-ul-li, color);
+    font-family: 'Open sans';
+}
+
+
+.price-book {
+    color: map-get($price-book, color);
+    font-family: 'Open sans';
+}
+
+.price-book span {
+    color: map-get($price-book-span, color);
+    font-size: 34px;
+}
+
+
+.support {
+    color: map-get($support, color);
+    font-size: 16px;
+    font-family: 'Open sans';
+    right: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.support small {
+    font-family: Georgia;
+    font-style: italic;
+    color: map-get($support-small, color);
+    font-size: 14px;
+}
+
+.head-detail .see-other-room {
+    color: map-get($head-detail-see-other-room, color);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url('../images/icon-arrow-blue.png') no-repeat 100% 50%;
+}
+
+.head-detail .see-other-room:hover {
+    color: map-get($head-detail-see-other-room-hover, color);
+}
+/*============== End Detail Head =========*/
+
+/*============== Detail Footer ============*/
+.detail-footer .detail-footer-cn .review-more .icon {
+    background: url('../images/icon-arrow-down-blue.png') no-repeat top left;
+}
+
+.detail-footer .detail-footer-cn .review-more a {
+    color: map-get($detail-footer-detail-footer-cn-review-more-a, color);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Open sans';
+}
+
+.detail-footer .detail-footer-cn .review-more a:hover {
+    color: map-get($detail-footer-detail-footer-cn-review-more-a-hover, color);
+}
+/*============== End Detail Footer ============*/
+
+/*============== Slide Detail =========*/
+.detail-slider .slide-room-sm {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.detail-slider .slide-room-sm #slide-room-sm .owl-item:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.detail-slider .slide-room-sm #slide-room-sm .prev-next-room {
+    background-color: $black-color;
+}
+
+.detail-slider .slide-room-sm #slide-room-sm .prev-next-room.prev-room {
+    background-image: url('../images/icon-arrow-left-white.png');
+}
+
+.detail-slider .slide-room-sm #slide-room-sm .prev-next-room.next-room {
+    background-image: url('../images/icon-arrow-white.png');
+}
+
+/*============== End Slide Detail =========*/
+
+/*============== Sidebar Detail =========*/
+.detail-sidebar .scroll-heading h2 {
+    color: map-get($detail-sidebar-scroll-heading-h2, color);
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.detail-sidebar .scroll-heading a {
+    color: map-get($detail-sidebar-scroll-heading-a, color);
+    font-size: 24px;
+}
+
+.detail-sidebar .scroll-heading a:hover {
+    color: map-get($detail-sidebar-scroll-heading-a-hover, color);
+}
+
+.detail-sidebar .hight-light h2 {
+    color: map-get($detail-sidebar-hight-light-h2, color);
+    font-size: 38px;
+    text-align: center;
+    border-left: 10px solid map-get($detail-sidebar-hight-light-h2, borderLeftColor);
+    font-weight: 300;
+    position: relative;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+
+.detail-sidebar .hight-light .vote-text:first-child {
+    background: url('../images/bg-border-h.png') repeat-y top right;
+}
+
+.detail-sidebar .hight-light .vote-text p {
+    color: map-get($detail-sidebar-hight-light-vote-text-p, color);
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.detail-sidebar .hight-light .vote-text small {
+    color: map-get($detail-sidebar-hight-light-vote-text-small, color);
+    font-weight: 300;
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+.detail-sidebar .hight-light .vote-text a {
+    color: map-get($detail-sidebar-hight-light-vote-text-a, color);
+    font-size: 12px;
+    font-family: 'Open sans';
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.detail-sidebar .hight-light .vote-text a:hover {
+    color: map-get($detail-sidebar-hight-light-vote-text-a-hover, color);
+}
+
+/*============== End Sidebar Detail =========*/
+/*============== Hotel Detail =========*/
+.hotel-content:after {
+    content: '';
+    background-color: map-get($hotel-content-after, backgroundColor);
+    border-left: 1px solid map-get($hotel-content-after, borderLeftColor);
+}
+
+
+.hl-customer-like h2 {
+    color: map-get($hl-customer-like-h2, color);
+    font-size: 24px;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.hl-customer-like .customer-like .cs-like-label {
+    color: map-get($hl-customer-like-customer-like-cs-like-label, color);
+    font-family: 'Open sans';
+    font-weight: 600;
+}
+
+
+.hl-customer-like .customer-like ul li {
+    color: map-get($hl-customer-like-customer-like-ul-li, color);
+    font-family: 'Open sans';
+}
+
+.hl-customer-like .customer-like ul li:before {
+    content: '\f111';
+    font-size: 4px;
+    font-family: 'FontAwesome';
+    color: map-get($hl-customer-like-customer-like-ul-li-before, color);
+}
+/* End Hotel Content */
+
+/* Check Rates */
+.check-rates {
+    border-top: 1px solid map-get($check-rates, borderTopColor);
+}
+
+.check-rates .check-rates-cn {
+    border-bottom: 1px solid map-get($check-rates-check-rates-cn, borderBottomColor);
+}
+
+.check-rates-form h3 {
+    color: map-get($check-rates-form-h3, color);
+    font-size: 24px;
+}
+
+.check-rates-form .form-search {
+    border: 1px solid map-get($check-rates-form-form-search, borderColor);
+}
+
+.check-rates-form .form-search .form-field {
+    border-right: 1px solid map-get($check-rates-form-form-search-form-field, borderRightColor);
+    font-size: 18px;
+}
+
+.service-check-rate h2 {
+    color: map-get($service-check-rate-h2, color);
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.service-check-rate .tb-service-check-rate thead {
+    border: 1px solid map-get($service-check-rate-tb-service-check-rate-thead, borderColor);
+}
+
+.service-check-rate .tb-service-check-rate thead th {
+    font-weight: 600;
+    color: map-get($service-check-rate-tb-service-check-rate-thead-th, color);
+    font-family: 'Open Sans';
+}
+
+.service-check-rate .tb-service-check-rate td {
+    border: 1px solid map-get($service-check-rate-tb-service-check-rate-td, borderColor);
+    font-family: 'Open sans';
+}
+
+.hl-availability .table-availability th {
+    color: map-get($hl-availability-table-availability-th, color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hl-availability .table-availability th span {
+    color: map-get($hl-availability-table-availability-th-span, color);
+    font-weight: normal;
+}
+
+.hl-availability .table-availability td {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.hl-availability .table-availability .avai-td-text h3 {
+    color: map-get($hl-availability-table-availability-avai-td-text-h3, color);
+    font-size: 18px;
+}
+
+.hl-availability .table-availability .avai-td-text p {
+    color: map-get($hl-availability-table-availability-avai-td-text-p, color);
+    font-size: 13px;
+}
+
+.hl-availability .table-availability .avai-td-text a {
+    color: map-get($hl-availability-table-availability-avai-td-text-a, color);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.hl-availability .table-availability .avai-td-text a:hover {
+    color: map-get($hl-availability-table-availability-avai-td-text-a-hover, color);
+}
+
+.hl-availability .table-availability .avai-td-price {
+    text-align: right;
+}
+
+.hl-availability .table-availability .avai-td-price .price {
+    color: map-get($hl-availability-table-availability-avai-td-price-price, color);
+    font-size: 24px;
+}
+
+.hl-availability .table-availability .avai-td-price .price small {
+    color: map-get($hl-availability-table-availability-avai-td-price-price-small, color);
+    font-size: 13px;
+}
+
+.hl-availability .table-availability .avai-td-room .select {
+    border-bottom: 1px dashed map-get($hl-availability-table-availability-avai-td-room-select, borderBottomColor);
+}
+
+.hl-availability .table-availability .avai-td-room .select span {
+    color: map-get($hl-availability-table-availability-avai-td-room-select-span, color);
+    font-size: 13px;
+}
+
+.hl-availability .table-availability .avai-td-room .select span:after {
+    color: map-get($hl-availability-table-availability-avai-td-room-select-span-after, color);
+    font-size: 18px;
+}
+
+/* End Check Rates */
+/* Hotel Featured */
+
+.hl-features .hl-features-cn {
+    border-bottom: 1px solid map-get($hl-features-hl-features-cn, borderBottomColor);
+}
+
+
+.featured-service h3 {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+    color: map-get($featured-service-h3, color);
+    font-size: 24px;
+}
+
+.featured-service .service-list li figure .icon-service {
+    border: 1px solid map-get($featured-service-service-list-li-figure-icon-service, );
+    text-align: center;
+}
+
+.featured-service .service-list li figure .icon-service:after {
+    content: '';
+    background: url('../images/icon-check.png') no-repeat top left;
+}
+
+
+.featured-service .service-list li figure figcaption {
+    color: map-get($featured-service-service-list-li-figure-figcaption, color);
+    font-family: 'Open sans';
+}
+
+.featured-service .service-spoken li {
+    color: map-get($featured-service-service-spoken-li, color);
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+/* End Hotel Featured */
+
+/* Detail & Policies */
+.details-policies .details-policies-cn {
+    border-bottom: 1px solid map-get($details-policies-details-policies-cn, );
+}
+
+.policies-item h3 {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+    color: map-get($policies-item-h3, color);
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.policies-item p {
+    color: map-get($policies-item-p, color);
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+/* Detail & Policies */
+
+
+/* About Area */
+
+.hotel-detail-map p {
+    background-color: map-get($hotel-detail-map-p, backgroundColor);
+    color: $white-color;
+    font-family: 'Open sans';
+}
+
+.hotel-detail-map p .fa {
+    color: map-get($hotel-detail-map-p-fa, color);
+}
+
+.about-area-text h2 {
+    font-family: 'Lato';
+    color: map-get($about-area-text-h2, color);
+    font-size: 24px;
+}
+
+.about-area-text p {
+    color: map-get($about-area-text-p, color);
+    font-family: 'Open sans';
+}
+
+.about-area-text p a {
+    color: map-get($about-area-text-p-a, color);
+}
+/* End About Area */
+
+/* Reviews */
+
+.review-tabs .tabs-head li a {
+    color: $black-color;
+    font-family: 'Lato';
+    font-size: 24px;
+}
+
+.review-st .lable-st {
+    color: map-get($review-st-lable-st, color);
+    font-family: 'Open sans';
+    font-size: 14px;
+}
+
+.review-st .progress-rv:after {
+    content: '';
+    background-color: map-get($review-st-progress-rv-after, backgroundColor);
+}
+
+
+.review-st .progress-rv div {
+    background-color: map-get($review-st-progress-rv-div, backgroundColor);
+    border-radius: 5px;
+}
+
+.review-st .progress-rv div span {
+    background-color: map-get($review-st-progress-rv-div-span, backgroundColor);
+    text-align: center;
+    color: $white-color;
+    font-size: 12px;
+    font-family: 'Open sans';
+    font-weight: 300;
+    top: 50%;
+    right: -10px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+
+.review-st .rule-point span {
+    color: map-get($review-st-rule-point-span, color);
+    font-size: 12px;
+    font-family: 'Open sans';
+   
+}
+
+
+.review-vote {
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+.review-vote h3 {
+    color: map-get($review-vote-h3, color);
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.review-vote .vote-score {
+    color: map-get($review-vote-vote-score, color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.review-vote .vote-number {
+    color: map-get($review-vote-vote-number, color);
+    font-weight: 300;
+    font-family: 'Open sans';
+    font-size: 13px;
+    font-style: italic;
+}
+
+.review-vote p {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+    color: map-get($review-vote-p, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.review-vote p span {
+    font-family: 'Lato';
+    color: map-get($review-vote-p-span, color);
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.review-h {
+    color: map-get($review-h, color);
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 600;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+
+
+.review-item:before {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.review-item:after {
+    background: url('../images/bg-border-h.png') repeat-y top left;
+}
+
+.review-item .review-header {
+    background-color: $white-color;
+}
+
+.review-item h4 {
+    color: map-get($review-item-h4, color);
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: bold;
+}
+
+.review-item h4 span {
+    color: map-get($review-item-h4-span, color);
+    font-size: 13px;
+}
+
+.review-item .btn {
+    color: map-get($review-item-btn, color);
+    font-weight: 600;
+    font-family: 'Open sans';
+    font-size: 16px;
+    border: 1px solid map-get($review-item-btn, );
+    border-color: map-get($review-item-btn, );
+    background: #fbfbfb url('../images/icon-arrow-blue.png') no-repeat 90% 50%;
+}
+
+.review-item .btn:hover {
+    border-color: map-get($review-item-btn-hover, );
+}
+
+.review-item .review-number ins {
+    text-align: center;
+    text-decoration: none;
+    background-color: map-get($review-item-review-number-ins, backgroundColor);
+    color: map-get($review-item-review-number-ins, color);
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.review-item .review-number ins:after {
+    border: 1px solid map-get($review-item-review-number-ins-after, borderColor);
+    content: '';
+    border-radius: 50%;
+}
+
+.review-item .review-number span {
+    color: map-get($review-item-review-number-span, color);
+}
+
+.review-item .review-number small {
+    color: map-get($review-item-review-number-small, color);
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.review-item .review-text ul li {
+    color: map-get($review-item-review-text-ul-li, color);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.review-item .review-text ul li .icon {
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid map-get($review-item-review-text-ul-li-icon, borderColor);
+    color: map-get($review-item-review-text-ul-li-icon, color);
+    border-radius: 50%;
+}
+
+.review-item .review-text ul li .icon.icon-minus {
+    border-color: map-get($review-item-review-text-ul-li-icon-icon-minus, borderColor);
+    color: map-get($review-item-review-text-ul-li-icon-icon-minus, color);
+}
+
+.review-item .review-text p {
+    color: map-get($review-item-review-text-p, color);
+    font-size: 13px;
+}
+/* End Reviews */
+/*============== End Hotel Detail =========*/
+/*============== Cruise Detail =========*/
+.title-detail {
+    color: map-get($title-detail, color);
+    font-size: 24px;
+    font-weight: normal;
+}
+/* Cruise-itinerary */
+
+.cruise-itinerary .detail-sidebar .title-detail:after {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;  bottom: 0;
+    content: '';
+}
+
+
+.cruise-itinerary-cn .table-itinerary {
+    color: map-get($cruise-itinerary-cn-table-itinerary, color);
+    font-family: 'Open sans';
+}
+
+.cruise-itinerary-cn .table-itinerary th {
+    font-weight: 600;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+/* End Cruise-itinerary */
+
+/* Date Availability */
+.date-availability {
+    border-top: 1px solid map-get($date-availability, borderTopColor);
+}
+
+.date-availability-cn {
+    border-bottom: 1px solid map-get($date-availability-cn, borderBottomColor);
+}
+
+.date-availability-cn .tabs-availability {
+    background-color: map-get($date-availability-cn-tabs-availability, backgroundColor);
+    border: 1px solid map-get($date-availability-cn-tabs-availability, borderColor);
+}
+
+.date-availability-cn .tabs-availability li {
+    font-size: 16px;
+    height: 53px;
+    border-right: 1px solid map-get($date-availability-cn-tabs-availability-li, borderRightColor);
+}
+
+.date-availability-cn .tabs-availability li:after {
+    border-bottom: 1px solid $white-color;
+}
+
+.date-availability-cn .tabs-availability li a {
+    text-decoration: none;
+    color: map-get($date-availability-cn-tabs-availability-li-a, color);
+    text-transform: capitalize;
+}
+
+.date-availability-cn .tabs-availability li.active {
+    background-color: $white-color;
+}
+
+.date-availability-cn .cruise-dates-table td {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.date-availability-cn .cruise-dates-table td.td-radio label:after {
+    background-color: map-get($date-availability-cn-tabs-availability-li-after, backgroundColor);
+}
+
+.date-availability-cn .cruise-dates-table td.td-date {
+    color: map-get($date-availability-cn-cruise-dates-table-td-td-date, color);
+}
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price {
+    color: map-get($date-availability-cn-cruise-dates-table-td-td-price-price-box-price, color);
+    font-size: 13px;
+}
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price ins {
+    text-decoration: none;
+    color: map-get($date-availability-cn-cruise-dates-table-td-td-price-price-box-price-ins, color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price.night {
+    color: map-get($date-availability-cn-cruise-dates-table-td-td-price-price-box-price-night, color);
+    font-size: 14px;
+    border-top: 1px solid map-get($date-availability-cn-cruise-dates-table-td-td-price-price-box-price-night, borderTopColor);
+}
+
+.date-availability-cn .cruise-dates-table td.td-price .price-box .price.night small {
+    color: map-get($date-availability-cn-cruise-dates-table-td-td-price-price-box-price-night-small, color);
+    font-size: 13px;
+}
+
+.popup-room {
+    background-color: $white-color;
+}
+
+.popup-room h1 {
+    border-bottom: 1px solid map-get($popup-room-h1, borderBottomColor);
+    font-family: 'Lato';
+    font-size: 24px;
+    text-align: center;
+    color: map-get($popup-room-h1, color);
+}
+
+.popup-room-desc p {
+    font-family: 'Open sans';
+    color: map-get($popup-room-desc-p, color);
+}
+
+.popup-room-desc ul li:before {
+    content: '';
+    background-color: map-get($popup-room-desc-ul-li-before, backgroundColor);
+}
+
+.popup-room-desc ul li a {
+    color: map-get($popup-room-desc-ul-li-a, color);
+    text-decoration: none;
+}
+
+.popup-room-desc ul li:hover::before {
+    background-color: map-get($popup-room-desc-ul-li-hover-before, backgroundColor);
+}
+
+.popup-room-desc ul li a:hover {
+    color: map-get($popup-room-desc-ul-li-a-hover, color);
+}
+
+/* End Date Availability */
+/* Cabin Type */
+
+.cabin-type-cn {
+    border-bottom: 1px solid map-get($cabin-type-cn, borderBottomColor);
+}
+
+.cabin-type-cn .cabin-type-tabel th {
+    color: map-get($cabin-type-cn-cabin-type-tabel-th, color);
+    font-weight: 600;
+}
+
+.cabin-type-cn .cabin-type-tabel td {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.cabin-type-cn .cabin-type-tabel td.td-radio label:after {
+    background-color: map-get($cabin-type-cn-cabin-type-tabel-td-td-radio-label-after, backgroundColor);
+}
+
+.cabin-type-cn .cabin-type-tabel td.td-room h2 {
+    color: map-get($cabin-type-cn-cabin-type-tabel-td-td-room-h2, color);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cabin-type-cn .cabin-type-tabel td.td-room p {
+    color: map-get($cabin-type-cn-cabin-type-tabel-td-td-room-p, color);
+    font-size: 13px;
+}
+
+.cabin-type-cn .cabin-type-tabel td.t-price:before {
+    content: '';
+    border-left: 1px solid map-get($cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price, borderLeftColor);
+}
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price {
+    color: map-get($cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price, color);
+    font-size: 13px;
+}
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price ins {
+    color: map-get($cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-ins, color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night {
+    color: map-get($cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-night, color);
+    font-size: 14px;
+    border-top: 1px solid map-get(cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-nigh,borderTopColor);
+}
+
+.cabin-type-cn .cabin-type-tabel td.t-price .price-box .price.night small {
+    color: map-get($cabin-type-cn-cabin-type-tabel-td-t-price-price-box-price-night-small, color);
+    font-size: 13px;
+}
+/* End Cabin Type */
+
+/* Cabin Number */
+
+.balcony-desk .caption-desk {
+    color: map-get($balcony-desk-caption-desk, color);
+    font-family: 'Open sans';
+    font-size: 18px;
+}
+
+.balcony-desk .caption-desk span {
+    font-size: 13px;
+    color: map-get($balcony-desk-caption-desk-span, color);
+    font-style: italic;
+}
+
+.balcony-desk .ul-desk li label {
+    color: map-get($balcony-desk-ul-desk-li-label, color);
+}
+
+.stateroom-cat .panel-group .panel-body {
+    color: map-get($stateroom-cat-panel-group-panel-body, color);
+    font-size: 13px;
+}
+
+.available-cabins .available-cabins-table th {
+    color: map-get($available-cabins-available-cabins-table-th, color);
+    font-weight: 600;
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+
+.available-cabins .available-cabins-table td {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.available-cabins .available-cabins-table td.td-desk:after,
+.available-cabins .available-cabins-table td.td-desk:before {
+    border-left: 1px solid #e6e6e6;
+    content: '';
+}
+
+.available-cabins .available-cabins-table td.td-select span {
+    font-style: italic;
+    color: map-get($available-cabins-available-cabins-table-td-td-select-spa, color);
+    font-size: 13px;
+}
+
+.available-cabins .available-cabins-table td.td-select span:after {
+    font-style: normal;
+}
+
+.available-cabins .available-cabins-table td.td-select select {
+    font-size: 13px;
+    font-style: italic;
+    color: map-get($available-cabins-available-cabins-table-td-td-select-select, color);
+}
+/* End Cabin Number */
+/* Cruise Overview */
+
+.cruise-overview-item .title-detail {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.cruise-overview-item .text {
+    font-family: 'Open sans';
+    color: map-get($cruise-overview-item-text, color);
+}
+
+.ship-highlight-list li:before {
+    color: map-get($ship-highlight-list-li-before, color);
+    content: '\f178';
+    font-family: 'FontAwesome';
+}
+
+.cruise-overview-book:before {
+    border-top: 1px solid map-get($cruise-overview-book-before, borderTopColor);
+    content: '';
+}
+/* End Cruise Overview */
+/*============== End Cruise Detail =========*/
+/*============= Tour Detail ===========*/
+/* Text */
+.tour-detail-text {
+    color: map-get($tour-detail-text, color);;
+    font-family: 'Open sans';
+    font-size: 16px;
+}
+
+.tour-overview .tour-overview-cn {
+    border-bottom: 1px solid map-get($tour-overview-tour-overview-cn, borderBottomColor);;
+}
+
+.tour-description .title-detail {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+/* End Tour Overview */
+
+/* Optional Activities */
+
+
+.optional-acitivites .optional-acitivites-cn {
+    border-bottom: 1px solid map-get($optional-acitivites-optional-acitivites-cn, borderBottomColor);
+}
+
+.optional-list h4 {
+    font-family: 'Open sans';
+    color: map-get($optional-list-h4, color);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.optional-list p {
+    font-family: 'Open sans';
+    color: map-get($optional-list-p, color);
+}
+
+
+.optional-list p span {
+    color: map-get($optional-list-p-span, color);
+}
+/* End Optional Activities */
+
+/* Accomodation */
+
+.accomodation .accomodation-cn {
+    border-bottom: 1px solid map-get($accomodation-accomodation-cn, borderBottomColor);
+}
+/* End Accomodation */
+
+
+/* Meals */
+
+
+.tour-meals .tour-meals-cn {
+    border-bottom: 1px solid map-get($tour-meals-tour-meals-cn, borderBottomColor);
+}
+
+/* ENd Meals */
+/* Necessary */
+
+
+/* Room Detail */
+  
+.room-detail .featured-service h2 {
+    font-weight: 900;
+    font-size: 28px;
+    color:map-get(room-detail-featured-service-h2, color);
+    text-transform: uppercase;
+}
+
+
+.room-detail .room-desc p {
+    color: map-get($room-detail-room-desc-p, color);
+    font-family: 'Open sans';
+}
+
+
+.date-picker-price .date-head {
+    text-align: center;
+    color:map-get($date-picker-price-date-head, color);
+    font-family: 'Open Sans';
+    border: 1px solid map-get($date-picker-price-date-head, borderColor);
+    overflow: hidden;
+    font-size: 0;
+}
+
+.date-picker-price a:hover {
+    background-color: map-get($date-picker-price-a-hover, backgroundColor);
+}
+
+.date-picker-price .data-price thead {
+    background-color: map-get($date-picker-price-data-price-thead, backgroundColor);
+    border: 1px solid map-get($date-picker-price-data-price-thead, borderColor);
+}
+
+.date-picker-price .data-price td {
+    border: 1px solid map-get($date-picker-price-data-price-td, borderColor);
+    text-align: center;
+    font-family: 'Open Sans';
+    color: map-get($date-picker-price-data-price-td, color);
+    font-size: 13px;
+}
+
+.date-picker-price .data-price td.other-month {
+    color: map-get($date-picker-price-data-price-td-other-month, color);
+}
+
+.date-picker-price .data-price td.date-select {
+    background-color: map-get($date-picker-price-data-price-td-date-select, backgroundColor);
+}
+
+.date-picker-price .data-price td.date-select .price {
+    color: $white-color;
+}
+
+/* End Room Detail */
+
+
+/*============= End Tour Detail ===========*/
+.search-blog .search-blog-input {
+    outline: none;
+    background-color: transparent;
+    color: map-get($search-blog-search-blog-input, color);
+    font-family: Georgia;
+    font-style: italic;
+    border-radius: 0;
+}
+
+.search-blog .search-blog-input::placeholder {
+    color: map-get($search-blog-search-blog-input-placeholder, color);
+}
+
+.search-blog .btn-search-blog {
+    background-color: $white-color;
+    outline: none;
+    text-align: center;
+}
+
+.search-blog .btn-search-blog:after {
+    content: '\f002';
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    color: map-get($search-blog-btn-search-blog-after, color);
+}
+
+.widget .title-sidebar {
+    color: map-get($widget-title-sidebar, color);
+    font-size: 24px;
+}
+
+.widget_categories ul li,
+.widget_archive ul li {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.widget_categories ul li:first-child,
+.widget_archive ul li:first-child {
+    background: none;
+}
+
+.widget_categories ul li:hover:before,
+.widget_archive ul li:hover:before {
+    color: #049905;
+}
+
+.widget_categories ul li:before,
+.widget_archive ul li:before {
+    content: '\f178';
+    color: $black-color;
+    font-family: 'FontAwesome';
+    font-size: 10px;
+}
+
+.widget_categories ul li a,
+.widget_archive ul li a {
+    color: #333333;
+    font-family: 'Open sans';
+}
+
+
+
+.widget_archive ul li a:hover {
+    color: #049905;
+}
+
+.widget_categories ul li ul,
+.widget_archive ul li ul {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.widget_recent_entries ul li {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.widget_recent_entries ul li a {
+    color: map-get($widget_recent_entries-ul-li-a, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+
+.widget_recent_entries ul li a:hover {
+    color: map-get($widget_recent_entries-ul-li-a-hover, color);
+}
+
+.widget_recent_entries ul li span {
+    color: map-get($widget_recent_entries-ul-li-span, color);
+    font-family: 'Georgia';
+    font-style: italic;
+}
+
+.widget_tag_cloud .tagcloud a {
+    color: map-get($widget_tag_cloud-tagcloud-a, color);
+    font-family: 'Open sans';
+    border: 1px solid map-get($widget_tag_cloud-tagcloud-a, borderColor);
+    font-weight: 300;
+    font-size: 14px !important;
+    text-decoration: none;
+}
+
+.widget_tag_cloud .tagcloud a:hover {
+    color: map-get($widget_tag_cloud-tagcloud-a-hover, color);
+    border-color: map-get($widget_tag_cloud-tagcloud-a-hover, borderColor);
+}
+
+
+.author-date a {
+    color: map-get($author-date-a, color);
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.author-date a:hover {
+    border-bottom-color: map-get($author-date-a-hover, borderBottomColor);
+}
+
+.author-date span {
+    color: map-get($author-date-span, color);
+    font-family: 'Georgia';
+    font-style: italic;
+}
+
+.post-meta li:before {
+    content: '/';
+    color: map-get($post-meta-li-before, color);
+}  
+
+
+.post-meta li a {
+    color: map-get($post-meta-li-a, color);
+    font-family: Georgia;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.post-meta li a span {
+    color: map-get($post-meta-li-a-span, color);
+}
+
+.post .post-text h2 {
+    font-weight: 300;
+    font-size: 30px;
+    border-bottom: 1px solid map-get($post-post-text-h2, borderBottomColor);
+}
+
+
+.post .post-text h2 a {
+    color: map-get($post-post-text-h2-a, color);
+    text-decoration: none;
+}
+
+.post .post-text h2 a:hover {
+    color: map-get($post-post-text-h2-a-hover, color);
+}
+
+.post .post-text p {
+    color: map-get($post-post-text-p, color);
+    font-size: 14px;
+    font-family: 'Open sans';
+}
+
+.post .post-text p a {
+    font-style: italic;
+    color: map-get($post-post-text-p-a, color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.post .post-text p a:hover {
+    border-color: map-get($post-post-text-p-a-hover, borderColor);
+}
+
+.post .post-media .post-slide .owl-prev,
+.post .post-media .post-slide .owl-next {
+    font-size: 54px;
+    color: $white-color;
+}
+
+
+.post-cn .post {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+/* Post Single */
+
+.post-single .post-content {
+    font-family: 'Open sans';
+    color: map-get($post-single-post-content, color);
+    font-size: 14px;
+}
+
+.post-single .post-content .title-single-content {
+    color: map-get($post-single-post-content-title-single-content, color);
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Lato';
+}
+
+
+.post-single .post-meta-share {
+    background: url('../images/bg-border-v.png') repeat-x bottom left;
+}
+
+.post-single .post-meta-share:before {
+    content: '';
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+.post-single .author-about h4 {
+    color: map-get($post-single-author-about-h4, color);
+    font-size: 24px;
+}
+
+
+.post-single .author-about .author-info h5 {
+    font-size: 18px;
+    color: map-get($post-single-author-about-author-info-h5, color);
+    font-family: 'Open sans';
+    font-weight: bold;
+}
+
+.post-single .author-about .author-info .author-social a {
+    color: map-get($post-single-author-about-author-info-author-social-a, color);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.post-single .author-about .author-info p {
+    color: map-get($post-single-author-about-author-info-p, color);
+    font-family: 'Open sans';
+}
+
+/*Comment */
+
+.title-comment {
+    font-size: 24px;
+    color: map-get($title-comment, color);
+}
+
+.title-comment span {
+    color: map-get($title-comment-span, color);
+}
+
+.commentlist .comment {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+
+.commentlist .comment .comment-author img {
+    border: 1px solid map-get($commentlist-comment-comment-author-img, borderColor);
+    border-radius: 50%;
+}
+
+.commentlist .comment .comment-body cite {
+    font-style: normal;
+}
+
+.commentlist .comment .comment-body cite a {
+    color:map-get($commentlist-comment-comment-body-cite-a, color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.commentlist .comment .comment-body small {
+    font-weight: 300;
+    border-left: 1px solid map-get($commentlist-comment-comment-body-small, );
+    font-size: 14px;
+}
+
+.commentlist .comment .comment-body p {
+    font-weight: 300;
+    color: map-get($commentlist-comment-comment-body-p, color);
+}
+
+.commentlist .comment .comment-body .edit {
+    color: map-get($commentlist-comment-comment-body-edit, color);
+    font-size: 13px;
+}
+
+
+.commentlist .comment .comment-body .edit a {
+    color: map-get($commentlist-comment-comment-body-edit-a, color);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.commentlist .comment .comment-body .edit a:hover {
+    color: map-get($commentlist-comment-comment-body-edit-a-hover, color);
+}
+
+/* Live Form */
+
+.leave-comment .reply-title {
+    color: map-get($leave-comment-reply-title,color );
+    font-size: 24px;
+}
+/* 15. About Page 
+ --------------------------------------------------------------------------------*/
+ .about-cn .about-searved {
+    font-family: Georgia;
+    font-style: italic;
+    color: map-get($about-cn-about-searved, color);
+}
+
+.about-cn .about-searved:after {
+    border: 8px solid map-get($about-cn-about-searved-after, borderColor);
+    content: '';
+}
+
+.about-cn .about-searved:before {
+    border: 8px solid map-get($about-cn-about-searved-before, borderColor);
+    content: '';
+}
+
+.about-cn .about-searved span {
+    font-size: 22px;
+}
+
+.about-cn .about-text h1 {
+    color: map-get($about-cn-about-text-h1, color);
+    font-size: 34px;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.about-cn .about-text .about-description {
+    color: map-get($about-cn-about-text-about-description, color);
+    font-family: 'Open sans';
+}
+
+.team {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+
+.team .team-head h2 {
+    color:map-get($eam-team-head-h2, color);
+    font-size: 24px;
+}
+
+
+.team .team-head p {
+    color: map-get($team-team-head-p, color);
+    font-family: 'Open sans';
+}
+
+.team .team-item {
+    text-align: center;
+}
+
+.team .team-item h3 {
+    color: map-get($team-team-item-h3, );
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.team .team-item span {
+    font-family: 'Open sans';
+    color: map-get($team-team-item-span, color);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.twitter .twitter-cn .icon {
+    color: $white-color;
+    font-size: 34px;
+}
+
+.twitter .twitter-item p {
+    color: map-get($twitter-twitter-item-p, color);
+    font-size: 16px;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+
+.twitter .twitter-item ul li {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: $white-color;
+    font-family: 'Open sans';
+}
+
+
+.twitter .twitter-item ul li span {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 16. Contact Page 
+--------------------------------------------------------------------------------*/
+.contact-cn {
+    background-color: $white-color;
+}
+
+.contact-cn h3 {
+    color: map-get($contact-cn, color);
+    font-size: 34px;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+
+.contact-cn ul li {
+    color: map-get($contact-cn-ul-li, color);
+    font-family: 'Open sans';
+    font-weight: 300;
+}
+
+.contact-cn ul li a {
+    color: map-get($contact-cn-ul-li-a, color);
+}
+
+/* 17. Payment Page 
+ --------------------------------------------------------------------------------*/
+ .payment-step:before {
+    border-top: 1px solid map-get($payment-step-before, borderTopColor);
+    content: '';
+}
+
+
+.payment-step li.step-select:after{
+    background-color: map-get($payment-step-li-step-select-after, backgroundColor);
+}
+
+.payment-step li.step-select:before {
+    background-color: map-get($payment-step-li-step-select-before, backgroundColor);
+}
+
+// .payment-step li.step-done:before {
+//     background-color: map-get($, backgroundColor);
+// }
+
+// .payment-step li.step-done:after {
+//     background-color:map-get($, backgroundColor);
+// }
+
+.payment-step li.step-done span:after {
+    background: url('../images/icon-check-payment.png') no-repeat 50% 50%;
+    content: '';
+    border-radius: 50%;
+}
+
+
+.payment-step li.step-select span:after {
+    content: '';
+    border-radius: 50%;
+}
+
+.payment-step li.step-part:after {
+    background-color: map-get($payment-step-li-step-part-after, backgroundColor);
+}
+
+.payment-step li:after{
+    background-color: map-get($payment-step-li-after, backgroundColor);
+    content: '';
+    border-top: 4px solid map-get($payment-step-li-after, );
+    border-bottom: 4px solid map-get($payment-step-li-after, );
+}
+
+.payment-step li:before {
+    background-color: map-get($payment-step-li-before, backgroundColor);
+    content: '';
+    border-top: 4px solid map-get($payment-step-li-before, );
+    border-bottom: 4px solid map-get($payment-step-li-before, );
+}
+
+
+.payment-step li span {
+    background-color: map-get($payment-step-li-span, backgroundColor);
+    border: 2px solid map-get($payment-step-li-span, borderColor);
+    color: map-get($payment-step-li-span, color);
+    font-weight: 300;
+    line-height: 50px;
+    font-size: 34px;
+    border-radius: 50%;
+}
+
+.payment-step li p {
+    color: map-get($payment-step-li-p, color);
+    font-size: 18px;
+}
+
+
+.payment-room .payment-info h2 {
+    color: map-get($payment-room-payment-info-h2, color);
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.payment-room .payment-info .star-room {
+    color: map-get($payment-room-payment-info-star-room, color);
+    font-size: 12px;
+}
+
+.payment-room .payment-info ul li {
+    color: map-get($payment-room-payment-info-ul-li, color);
+    font-family: 'Open sans';
+}
+
+.payment-room .payment-price {
+    border: 1px solid map-get($payment-room-payment-price, borderColor);
+    background-color: map-get($payment-room-payment-price, backgroundColor);
+    font-family: 'Open sans';
+    overflow: hidden;
+}
+
+
+.payment-room .payment-price .total-trip span {
+    color: map-get($payment-room-payment-price-total-trip-span, color);
+    font-weight: 600;
+}
+
+
+.payment-room .payment-price .total-trip span small {
+    font-size: 14px;
+    font-weight: normal;
+    color: map-get($payment-room-payment-price-total-trip-span-small, color);
+}
+
+.payment-room .payment-price .total-trip p {
+    border-top: 1px solid map-get($payment-room-payment-price-total-trip-p, borderTopColor);
+}
+
+
+.payment-room .payment-price .total-trip p ins {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: map-get($payment-room-payment-price-total-trip-p-ins, color);
+}
+
+.payment-room .payment-price .total-trip p i {
+    color: map-get($payment-room-payment-price-total-trip-p-i, color);
+    font-size: 13px;
+}
+
+.payment-form {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+
+.payment-form .form:before {
+    background: url('../images/bg-border-h.png') repeat-y top left;
+    content: '';
+}
+
+.payment-form h2 {
+    color: map-get($payment-form-h2, color );
+    font-size: 24px;
+}
+
+.payment-form span {
+    color: map-get($payment-form-span, color);
+    font-family: 'Open sans';
+    font-weight: bold;
+}
+
+
+.payment-form .form-field .field-input {
+    border: 1px solid map-get($payment-form-form-field-field-input, borderColor);
+    color: map-get($payment-form-form-field-field-input, color);
+    font-family: 'Open sans';
+    outline: none;
+}
+
+.payment-form .form-field .field-input::placeholder {
+    color: map-get($payment-form-form-field-field-input-placeholder, color);
+}
+
+.payment-form ul li .radio-checkbox label {
+    color:map-get($payment-form-ul-li-radio-checkbox-label, color);
+}
+
+.payment-form .expiry-date:before {
+    content: '/';
+    position: absolute;
+    color: map-get($payment-form-expiry-date-before, color);
+    font-size: 18px;
+}
+
+
+.payment-form .expiry-date .form-field .field-input {
+    background: url('../images/icon-calendar.png') no-repeat right 10px center;
+}
+
+.payment-form .submit {
+    background: url('../images/bg-border-v.png') repeat-x top left;
+}
+
+/* 18. Cart 
+ --------------------------------------------------------------------------------*/
+
+.cart-cn .tb-cart thead th {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: map-get($cart-cn-tb-cart-thead-th, color);
+    font-weight: normal;
+    border-bottom: 1px solid map-get($cart-cn-tb-cart-thead-th, borderBottomColor);
+}
+
+.cart-cn .tb-cart .date {
+    color: map-get($cart-cn-tb-cart-date, color);
+    font-family: 'Open sans';
+}
+
+.cart-cn .tb-cart .date small {
+    color: map-get($cart-cn-tb-cart-date-small, color);
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Georgia';
+}
+
+
+.cart-cn .tb-cart .price {
+    font-family: 'Lato';
+    font-size: 24px;
+    color: map-get($cart-cn-tb-car-price, color);
+    text-align: center;
+}
+
+.cart-cn .tb-cart .price small {
+    color: map-get($cart-cn-tb-cart-price-small, color);
+    font-size: 13px;
+    font-family: 'Open Sans';
+}
+
+.cart-cn .tb-cart .select {
+    border-bottom: 1px dashed map-get($cart-cn-tb-cart-select, borderBottomColor);
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.cart-cn .tb-cart .sub-total-price {
+    color: map-get($cart-cn-tb-cart-sub-total-price, color);
+}
+
+.cart-room .star-room {
+    color: map-get($cart-room-star-room, color);
+}
+
+.cart-room ul li {
+    color: map-get($cart-room-ul-li, color);
+    font-size: 13px;
+    font-family: 'Open sans';
+}
+
+.cart-flight .airline span {
+    color: map-get($cart-flight-airline-span, color);
+    font-family: 'Open Sans';
+}
+
+.cart-flight .stop-cn label {
+    color: map-get($cart-flight-stop-cn-label, color);
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.cart-flight .stop-cn .stops {
+    background-color: map-get($cart-flight-stop-cn-stops, backgroundColor);
+    border-radius: 2px;
+}
+
+.cart-flight .stop-cn .stop {
+    border: 2px solid map-get($cart-flight-stop-cn-stop, );
+    background-color: $white-color;
+    content: '';
+    border-radius: 50%;
+}
+
+.cart-flight .group-time:before {
+    content: '';
+    background-color: map-get($cart-flight-group-time-before, backgroundColor);
+}
+
+.cart-flight .group-time p {
+    font-size: 16px;
+    font-family: 'Open sans';
+    font-weight: 600;
+    color: map-get($cart-flight-group-time-p, color);
+}
+
+.cart-flight .group-time p span {
+    color: map-get($cart-flight-group-time-p-span, color);
+    font-size: 14px;
+}
+
+.cart-flight .group-time p + p:before {
+    content: '\f105';
+    color: map-get($cart-flight-group-time-p-p-before, color);
+    font-family: 'FontAwesome';
+    font-size: 18px;
+}
+
+.cart-car h2 {
+    color:map-get($cart-car-h2, color);
+    font-family: 'Open sans';
+    font-size: 18px;
+}
+
+.cart-car p {
+    color: map-get($cart-car-p, color);
+    font-family: 'Open sans';
+    font-size: 13px;
+}
+
+.cart-car ul li,
+.cart-cruise ul li {
+    font-family: 'Open sans';
+    font-size: 13px;
+    color: map-get($cart-cruise-ul-li, color);
+}
+
+
+.cart-cn .tb-cart tfoot td {
+    border-top: 1px solid map-get($cart-cn-tb-cart-tfoot-td, borderTopColor);
+}
+
+/* 19. Element Page 
+ --------------------------------------------------------------------------------*/
+ .element-sc {
+    background-color: $white-color;
+}
+
+.element-sc .element-cn h2 {
+    color: map-get($element-sc-element-cn-h2, color);
+    font-size: 24px;
+}
+
+
+.element-sc .element-cn .tab-pane {
+    color: map-get($element-sc-element-cn-tab-pane, color);
+    font-family: 'Open sans';
+}
+
+/* 20. 404 
+ --------------------------------------------------------------------------------*/
+.page-comingsoon .page-body .item-content h4,
+.page-comingsoon .page-body .item-content p,
+.page-not-found .page-body .item-content * {
+    color: $white-color;
+}
+
+
+.page-slide .owl-pagination .owl-page span {
+    background-color: $white-color;
+    border-radius: 50%;
+}
+
+.page-slide .owl-pagination .owl-page.active span {
+    background-color: map-get($page-slide-owl-pagination-owl-page-active-span, backgroundColor);
+}
+
+/* 21. Comingsoon 
+ --------------------------------------------------------------------------------*/
+
+ .countdown-wrapper {
+    border-top: 6px solid map-get($countdown-wrapper, borderTopColor );
+    border-bottom: 6px solid map-get($countdown-wrapper, borderBottomColor);
+}
+
+.countdown-wrapper:before {
+    content: '';
+    background: url(../images/top-left-border.png);
+}
+
+.countdown-wrapper:after {
+    content: '';
+    background: url(../images/top-right-border.png);
+}
+
+.countdown-wrapper #countdown:before {
+    content: '';
+    background: url(../images/bottom-left-border.png);
+}
+
+.countdown-wrapper #countdown:after {
+    content: '';
+    background: url(../images/bottom-right-border.png);
+}
+
+
+#countdown .item {
+    font-family: 'Lato', Arial, Verdana;
+    color: $white-color;
+}
+
+#countdown .item .count:after {
+    content: ':';
+    font-size: 26px;
+}
+
+/* 22. User Profile 
+ --------------------------------------------------------------------------------*/
+
+.user-profile__header {
+    background-color:map-get($user-profile__header, backgroundColor);
+    text-align: center;
+    font-family: 'Lato';
+    color: map-get($user-profile__header, color);
+    font-weight: 300;
+}
+
+
+.user-profile__navigation {
+    background-color: map-get($user-profile__navigation, backgroundColor);
+}
+
+.user-profile__navigation li a {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: map-get($user-profile__navigation-li-a, color);
+    text-decoration: none;
+}
+
+
+.user-profile__navigation li:hover,
+.user-profile__navigation li.current {
+    background-color: $white-color;
+}
+
+.user-profile .user-profile__title {
+color: map-get($user-profile-user-profile__title, color);
+font-weight: 300;
+font-size: 34px;
+}
+
+.user-profile .user-profile__count-number span {
+    color: map-get($user-profile-user-profile__count-number-span, color);
+    font-size: 60px;
+    text-align: center;
+}
+
+.user-profile .user-profile__total li {
+    font-size: 18px;
+    font-weight: bold;
+    color: map-get($user-profile-user-profile__total-li, color);
+    text-align: center;
+    border-left: 1px solid map-get($user-profile-user-profile__total-li, borderLeftColor);
+    font-family: 'Lato'
+}
+
+.user-profile .user-profile__total li.has-number {
+    color: map-get($user-profile-user-profile__total-li-has-number, color);
+}
+
+.user-profile .user-profile__total li span {
+    color: map-get($user-profile-user-profile__total-li-span, color);
+}
+
+.user-profile__my-booking {
+    border-top: 1px solid map-get($user-profile__my-booking, borderTopColor);
+}
+
+.user-profile__my-booking .table thead th {
+    background-color: map-get($user-profile__my-booking-table-thead-th, backgroundColor);
+    color: map-get($user-profile__my-booking-table-thead-th, color);
+    font-weight: 600;
+    font-family: 'Open sans';
+}
+
+.user-profile__my-booking .table td {
+    border-top-width: 0;
+    color: map-get($user-profile__my-booking-table-td, color);
+    font-family: 'Open sans';
+    border-bottom: 1px dotted map-get($user-profile__my-booking-table-td, borderBottomColor);
+}
+
+.user-profile__my-booking .table td .icon {
+    border: 1px solid map-get($user-profile__my-booking-table-td-icon, borderColor);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-profile__my-booking .table td a {
+    background-color: map-get($user-profile__my-booking-table-td-a, backgroundColor);
+    color: map-get($user-profile__my-booking-table-td-a, color);
+    text-decoration: none;
+    border: 1px solid map-get($user-profile__my-booking-table-td-a, borderColor);
+}
+
+
+.user-profile__my-booking .table td a:hover {
+    background-color: map-get($user-profile__my-booking-table-td-a-hover, backgroundColor);
+}
+
+.my-profile .my-profile__title {
+    font-size: 24px;
+    color: map-get($my-profile-my-profile__title, color);
+    font-family: 'Lato';
+}
+
+.my-profile ul li {
+    color: map-get($my-profile-ul-li, color);
+    font-family: 'Open sans';
+}
+
+.my-profile ul li span {
+    color: map-get($my-profile-ul-li-span, color);
+    font-weight: 600;
+}
+
+
+.my-profile p {
+    color: map-get($my-profile-p, color);
+    font-size: 16px;
+    font-family: 'Georgia';
+    font-style: italic;
+}
+
+.user-profile .check-box label {
+    color: map-get($user-profile-check-box-label, color);
+    font-family: 'Open sans';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.user-profile .check-box label:before {
+    content: '';
+    border: 1px solid map-get($user-profile-check-box-label-before, color);
+    background-color: map-get($user-profile-check-box-label-before, color);
+    text-align: center;
+    font-size: 10px;
+    color: map-get($user-profile-check-box-label-before, color);
+    font-family: 'FontAwesome';
+    cursor: pointer;
+}
+
+
+.user-profile .check-box input:checked ~ label:before {
+    content: '\f00c';
+}
+
+.my-profile .btn {
+    border: 1px solid map-get($my-profile-btn, borderColor);
+    background-color:map-get($my-profile-btn, backgroundColor);
+    color: map-get($my-profile-btn, color);
+    border-radius: 0;
+    font-family: 'Open sans';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.my-profile .btn:hover {
+    color: $white-color;
+    background-color: map-get($my-profile-btn-hover, backgroundColor);
+    border-color: map-get($my-profile-btn-hover, borderColor);
+}
+
+.user-form h3 {
+    color: map-get($user-form-h3, color);
+    font-size: 24px;
+}
+
+.user-form .field-input .input-text {
+    border: 1px solid map-get($user-form-field-input-input-text, borderColor);
+    background-color: transparent;
+    color: map-get($user-form-field-input-input-text, color);
+    font-family: 'Open sans'
+}
+
+
+.user-form p {
+    font-family: 'Georgia';
+    font-style: italic;
+    font-size: 16px;
+    color: map-get($user-form-p, color);
+}
+
+.user-form a {
+    color: map-get($user-form-a, color);
+    text-decoration: underline;
+}
+
+.user-signup:after {
+    border-left: 1px solid map-get($user-signup-after, borderLeftColor);
+    content: '';
+}
+/* 23. Footer 
+ --------------------------------------------------------------------------------*/
+
+footer {
+    background-color: map-get($footer, backgroundColor);
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+footer .currency-lang-bottom .dropdown-head {
+    text-transform: inherit;
+    color:map-get($footer-currency-lang-bottom-dropdown-head, color);
+    border: 1px solid map-get($footer-currency-lang-bottom-dropdown-head, borderColor);
+    cursor: pointer;
+}
+
+footer .currency-lang-bottom .dropdown-head span {
+    color: map-get($footer-currency-lang-bottom-dropdown-head-span, color);
+}
+
+footer .currency-lang-bottom ul {
+    background-color: map-get($footer-currency-lang-bottom-ul, backgroundColor);
+    list-style: none;
+}
+
+footer .currency-lang-bottom ul li a {
+    color: map-get($footer-currency-lang-bottom-ul-li-a, color);
+    text-decoration: none;
+}
+
+footer .currency-lang-bottom ul li a:hover {
+    background-color: map-get($footer-currency-lang-bottom-ul-li-a-hover, backgroundColor);
+    color: map-get($footer-currency-lang-bottom-ul-li-a-hover, color);
+}
+
+footer .copyright {
+    color: map-get($footer-copyright, color);
+    background-color: map-get($footer-copyright, backgroundColor);
+    font-weight: 300;
+}
+/* 24. Responsive
+--------------------------------------------------------------------------------*/
+
+
+/** Patch CSS Works 
+-----------------------------------------------------------------------------------*/
+/* updated on sept 23 2021 **/
+footer{
+    padding-bottom: 0!important;
+}
+
+#header{
+    background-color: map-get($header, backgroundColor);
+}
+
+.cart-btn{
+    color: map-get($cart-btn, color);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: map-get($select2-container--default-select2-selection--single-select2-selection__placeholder, color);
+    font-weight: 600;
+}
+/**landing page*/
+.error {
+    color: red;
+}
+
+.select2-selection__rendered:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    color: map-get($select2-selection__rendered-after, color);
+    font-weight: normal;
+}
+
+
+

@@ -1,0 +1,52 @@
+
+
+// cursors
+$cursor-types: (
+    "pointer": pointer,
+    "progress": progress,
+);
+
+
+$text-position: (
+    "left": left,
+    "right": right,
+    "center": center,
+    "justify": justify,
+);
+
+
+$pointer-cursor: cursor;
+
+$overflow-hidden: hidden;
+$overflow-auto: auto;
+
+
+// basic colors
+$white-color: #fff;
+$black-color: #000;
+$colorTransparent: transparent;
+
+
+// bg properties
+$backgroundSize: (
+    "cover": cover,
+    "contain": contain,
+);
+
+
+/** Settings Scss ***/
+$page-loader-color: (
+    "border-rightColor": #59c45a,
+);
+
+$bodyP-backgroundColor: #f1f1f1;
+$overlayP-backgroundColor: rgba(0, 0, 0, 0.2);
+$hrP-backgroundColor: #111111;
+
+
+// background Size
+$background-size: (
+    "cover": cover,
+);
+
+
